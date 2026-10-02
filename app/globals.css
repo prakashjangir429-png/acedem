@@ -110,7 +110,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+    @apply px-4 max-w-7xl mx-auto;
   }
   .hero-gradient {
     background: radial-gradient(ellipse at top, hsl(199 89% 48% / 0.15), transparent 50%),
@@ -133,4 +133,239 @@ html {
 
 ::selection {
   background: hsl(199 89% 48% / 0.2);
+}
+
+
+@keyframes mega-in {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes mega-left {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mega-card {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-mega-in {
+  animation: mega-in 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-mega-left {
+  animation: mega-left 700ms 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-mega-card {
+  animation: mega-card 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mega-in,
+  .animate-mega-left,
+  .animate-mega-card {
+    animation: none !important;
+  }
+}
+
+.mega-menu-enter {
+  animation: megaReveal 550ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes megaReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-18px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
+/* Footer Background Grid */
+.footer-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+
+/* Floating Glow Orbs */
+.footer-orb {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+  filter: blur(100px);
+  opacity: 0.16;
+  animation: footerFloat 12s ease-in-out infinite alternate;
+}
+
+.footer-orb-one {
+  top: 10%;
+  left: -120px;
+  width: 350px;
+  height: 350px;
+  background: #0ea5e9;
+}
+
+.footer-orb-two {
+  top: 35%;
+  right: -120px;
+  width: 320px;
+  height: 320px;
+  background: #14b8a6;
+  animation-delay: -4s;
+}
+
+.footer-orb-three {
+  bottom: 0;
+  left: 45%;
+  width: 250px;
+  height: 250px;
+  background: #6366f1;
+  animation-delay: -7s;
+}
+
+@keyframes footerFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(35px, -25px, 0) scale(1.1);
+  }
+
+  100% {
+    transform: translate3d(-20px, 30px, 0) scale(0.95);
+  }
+}
+
+
+/* Footer Content Entrance */
+.footer-reveal {
+  animation: footerReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+
+.footer-reveal:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.footer-reveal:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+@keyframes footerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .footer-orb,
+  .footer-cta,
+  .footer-reveal {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+
+/* ==============================
+   DIGITONIX GLOBAL ATMOSPHERE
+================================ */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+  will-change: transform;
+}
+
+.ambient-glow-blue {
+  width: 550px;
+  height: 550px;
+  top: -150px;
+  left: -100px;
+  background: rgba(14, 165, 233, 0.24);
+  animation: glowMoveBlue 8s ease-in-out infinite alternate;
+}
+
+.ambient-glow-teal {
+  width: 500px;
+  height: 500px;
+  right: -120px;
+  top: 20%;
+  background: rgba(20, 184, 166, 0.2);
+  animation: glowMoveTeal 10s ease-in-out infinite alternate;
+}
+
+.ambient-glow-violet {
+  width: 450px;
+  height: 450px;
+  left: 30%;
+  bottom: -180px;
+  background: rgba(99, 102, 241, 0.16);
+  animation: glowMoveViolet 12s ease-in-out infinite alternate;
+}
+
+@keyframes glowMoveBlue {
+  from {
+    transform: translate(0, 0) scale(0.85);
+  }
+  to {
+    transform: translate(180px, 100px) scale(1.25);
+  }
+}
+
+@keyframes glowMoveTeal {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(-160px, 120px) scale(1.3);
+  }
+}
+
+@keyframes glowMoveViolet {
+  from {
+    transform: translate(0, 0) scale(0.9);
+  }
+  to {
+    transform: translate(100px, -120px) scale(1.2);
+  }
 }
