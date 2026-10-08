@@ -1,0 +1,5 @@
+'use client';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import { ClassicEditor,Essentials,Paragraph,Bold,Italic,Heading,Link,List,BlockQuote,Table,TableToolbar } from 'ckeditor5';
+import 'ckeditor5/ckeditor5.css';
+export default function RichEditor({value,onChange}:{value:string,onChange:(v:string)=>void}){const key=process.env.NEXT_PUBLIC_CKEDITOR_LICENSE_KEY;if(!key)return <div><p className="admin-error">Set NEXT_PUBLIC_CKEDITOR_LICENSE_KEY to activate CKEditor. <a href="https://ckeditor.com/docs/ckeditor5/latest/getting-started/licensing/license-key-and-activation.html" target="_blank" rel="noreferrer">License setup ↗</a></p><label>Article HTML<textarea rows={18} value={value} onChange={e=>onChange(e.target.value)}/></label></div>;return <CKEditor editor={ClassicEditor} data={value} config={{licenseKey:key,plugins:[Essentials,Paragraph,Bold,Italic,Heading,Link,List,BlockQuote,Table,TableToolbar],toolbar:['undo','redo','|','heading','|','bold','italic','link','bulletedList','numberedList','blockQuote','insertTable'],table:{contentToolbar:['tableColumn','tableRow','mergeTableCells']}}} onChange={(_,editor)=>onChange(editor.getData())}/>;}

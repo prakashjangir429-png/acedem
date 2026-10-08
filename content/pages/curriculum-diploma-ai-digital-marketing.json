@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Diploma in AI, Digital Marketing & Creative Media Curriculum | Digitonix Academy",
+    "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Diploma in AI, Digital Marketing & Creative Media — Your learning roadmap.",
+      "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+      "eyebrow": "Course curriculum",
+      "buttons": [
+        {
+          "label": "Program overview",
+          "href": "/courses/diploma-ai-digital-marketing"
+        },
+        {
+          "label": "Compare curricula",
+          "href": "/curriculum"
+        }
+      ]
+    },
+    {
+      "id": "foundation",
+      "type": "modules",
+      "heading": "AI & digital marketing foundation",
+      "items": [
+        {
+          "title": "AI Tools & ChatGPT for Digital Marketers",
+          "category": "Core AI Module",
+          "icon": "Sparkles",
+          "items": [
+            {
+              "name": "AI in Digital Marketing",
+              "desc": "Role of AI in modern marketing"
+            },
+            {
+              "name": "ChatGPT for Marketers",
+              "desc": "Content, ads & copywriting"
+            },
+            {
+              "name": "Prompt Engineering",
+              "desc": "Writing effective AI prompts"
+            }
+          ]
+        },
+        {
+          "title": "Website Development (No-Code)",
+          "category": "Foundation",
+          "icon": "Globe",
+          "items": [
+            {
+              "name": "No-Code Website Development",
+              "desc": "Build sites without coding"
+            },
+            {
+              "name": "AI-Assisted Content Creation",
+              "desc": "Page content & layout suggestions"
+            },
+            {
+              "name": "Website Optimization",
+              "desc": "Speed, mobile & security"
+            }
+          ]
+        },
+        {
+          "title": "Search Engine Optimization (SEO)",
+          "category": "AI Supported",
+          "icon": "Search",
+          "items": [
+            {
+              "name": "On-Page SEO",
+              "desc": "Content, keywords & technical elements"
+            },
+            {
+              "name": "Off-Page & Local SEO",
+              "desc": "Authority, backlinks & local visibility"
+            },
+            {
+              "name": "AI-Assisted SEO",
+              "desc": "Optimization, research & audits"
+            }
+          ]
+        },
+        {
+          "title": "Generative Engine Optimization (GEO)",
+          "category": "Next-Generation Search",
+          "icon": "Brain",
+          "items": [
+            {
+              "name": "AI Search Visibility",
+              "desc": "Generative search & brand discovery"
+            },
+            {
+              "name": "Entity & Content Optimization",
+              "desc": "Authority, structure & credibility"
+            }
+          ]
+        },
+        {
+          "title": "Facebook & Instagram Ads",
+          "category": "AI-Powered Advertising",
+          "icon": "Share2",
+          "items": [
+            {
+              "name": "Meta Ads Fundamentals",
+              "desc": "Campaigns, objectives & audiences"
+            },
+            {
+              "name": "Lead Generation & Conversion",
+              "desc": "Funnels, creatives & targeting"
+            },
+            {
+              "name": "AI-Powered Meta Ads",
+              "desc": "Automation & optimization"
+            }
+          ]
+        },
+        {
+          "title": "Google Ads (SEM / PPC)",
+          "category": "AI-Powered Advertising",
+          "icon": "Target",
+          "items": [
+            {
+              "name": "Google Ads Fundamentals",
+              "desc": "Search campaigns & keywords"
+            },
+            {
+              "name": "Campaign Optimization",
+              "desc": "Bidding, budget & Quality Score"
+            },
+            {
+              "name": "Google AI & Automation",
+              "desc": "Performance Max & smart optimization"
+            }
+          ]
+        },
+        {
+          "title": "Content Marketing & Social Media",
+          "category": "Brand & Community Growth",
+          "icon": "PenTool",
+          "items": [
+            {
+              "name": "Content Strategy",
+              "desc": "Calendars, formats & distribution"
+            },
+            {
+              "name": "Social Media Growth",
+              "desc": "Organic reach & community building"
+            },
+            {
+              "name": "AI-Assisted Content",
+              "desc": "Ideation, scripts & creative workflows"
+            }
+          ]
+        },
+        {
+          "title": "Analytics, Reporting & Automation",
+          "category": "Data & Insights",
+          "icon": "BarChart3",
+          "items": [
+            {
+              "name": "GA4 & Search Console",
+              "desc": "Traffic, events & conversion tracking"
+            },
+            {
+              "name": "Marketing Automation",
+              "desc": "Lead nurturing & workflow automation"
+            },
+            {
+              "name": "Reporting & Dashboards",
+              "desc": "Dashboards, insights & ROI storytelling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "specialisation",
+      "type": "modules",
+      "heading": "Go beyond the foundation.",
+      "items": [
+        {
+          "title": "Personality Development & Communication",
+          "category": "Professional Development",
+          "items": [
+            {
+              "name": "Personality Development",
+              "desc": "Professional confidence and workplace readiness."
+            },
+            {
+              "name": "Communication & Presentation",
+              "desc": "Communicating ideas and presenting work."
+            },
+            {
+              "name": "Interview Preparation",
+              "desc": "Discuss your skills, projects and career goals."
+            }
+          ]
+        },
+        {
+          "title": "Graphic Design & Video Editing",
+          "category": "Creative Media",
+          "items": [
+            {
+              "name": "Graphic Design",
+              "desc": "Build design skills alongside marketing training."
+            },
+            {
+              "name": "Video Editing",
+              "desc": "Learn video editing with industry tools."
+            },
+            {
+              "name": "Creative Portfolio",
+              "desc": "Bring marketing and creative work together."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "type": "features",
+      "heading": "Turn learning into experience.",
+      "items": [
+        "Build websites and landing pages",
+        "Create SEO strategies",
+        "Plan content calendars with AI",
+        "Work with AI marketing tools",
+        "Create live advertising campaigns",
+        "Analyse marketing performance data",
+        "Build lead-generation funnels",
+        "Optimise campaigns for conversion",
+        "Work on practical client briefs",
+        "Build a verified public portfolio",
+        "3-month internship on live client work"
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

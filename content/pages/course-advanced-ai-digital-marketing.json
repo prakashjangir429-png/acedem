@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Advanced AI & Digital Marketing Program | Digitonix Academy",
+    "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Advanced AI & Digital Marketing Program",
+      "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work.",
+      "eyebrow": "Flagship Program",
+      "buttons": [
+        {
+          "label": "Enquire about this program",
+          "href": "/contact"
+        },
+        {
+          "label": "Explore curriculum",
+          "href": "/curriculum/advanced-ai-digital-marketing"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "features",
+      "heading": "Included in your program",
+      "description": "3 Months Training + 3 Months Internship",
+      "items": [
+        "3 months intensive practical training",
+        "3 months internship on live client work",
+        "40+ live tools & AI platforms",
+        "15+ practical projects",
+        "Placement assistance & interview prep",
+        "Portfolio + certification"
+      ]
+    },
+    {
+      "id": "foundation",
+      "type": "modules",
+      "heading": "Shared marketing foundations",
+      "items": [
+        {
+          "title": "AI Tools & ChatGPT for Digital Marketers",
+          "category": "Core AI Module",
+          "icon": "Sparkles",
+          "items": [
+            {
+              "name": "AI in Digital Marketing",
+              "desc": "Role of AI in modern marketing"
+            },
+            {
+              "name": "ChatGPT for Marketers",
+              "desc": "Content, ads & copywriting"
+            },
+            {
+              "name": "Prompt Engineering",
+              "desc": "Writing effective AI prompts"
+            }
+          ]
+        },
+        {
+          "title": "Website Development (No-Code)",
+          "category": "Foundation",
+          "icon": "Globe",
+          "items": [
+            {
+              "name": "No-Code Website Development",
+              "desc": "Build sites without coding"
+            },
+            {
+              "name": "AI-Assisted Content Creation",
+              "desc": "Page content & layout suggestions"
+            },
+            {
+              "name": "Website Optimization",
+              "desc": "Speed, mobile & security"
+            }
+          ]
+        },
+        {
+          "title": "Search Engine Optimization (SEO)",
+          "category": "AI Supported",
+          "icon": "Search",
+          "items": [
+            {
+              "name": "On-Page SEO",
+              "desc": "Content, keywords & technical elements"
+            },
+            {
+              "name": "Off-Page & Local SEO",
+              "desc": "Authority, backlinks & local visibility"
+            },
+            {
+              "name": "AI-Assisted SEO",
+              "desc": "Optimization, research & audits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

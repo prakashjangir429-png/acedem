@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Course Curricula | Digitonix Academy",
+    "description": "Explore the curriculum for each program."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Your goals. Your learning path.",
+      "description": "Start with shared AI and marketing foundations, then explore your chosen specialisation.",
+      "eyebrow": "Your learning journey",
+      "buttons": []
+    },
+    {
+      "id": "paths",
+      "type": "cards",
+      "heading": "Choose your curriculum",
+      "items": [
+        {
+          "title": "Advanced AI & Digital Marketing Program",
+          "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work.",
+          "eyebrow": "Flagship Program",
+          "detail": "3 Months Training + 3 Months Internship",
+          "features": [
+            "3 months intensive practical training",
+            "3 months internship on live client work",
+            "40+ live tools & AI platforms",
+            "15+ practical projects",
+            "Placement assistance & interview prep",
+            "Portfolio + certification"
+          ],
+          "highlight": true,
+          "href": "/curriculum/advanced-ai-digital-marketing",
+          "linkLabel": "Explore curriculum"
+        },
+        {
+          "title": "Professional AI & Digital Marketing Program",
+          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to prepare for high-paying roles.",
+          "eyebrow": "With Personality Development",
+          "detail": "4 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "1 month personality development",
+            "Communication & presentation skills",
+            "High-paying job focus",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/curriculum/professional-ai-digital-marketing",
+          "linkLabel": "Explore curriculum"
+        },
+        {
+          "title": "Master AI, Digital Marketing & Creative Media",
+          "description": "Our most comprehensive learning path combines everything in the Advanced AI & Digital Marketing Program with two months of graphic design and video editing training.",
+          "eyebrow": "With Graphic & Video Editing",
+          "detail": "5 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "2 months graphic design training",
+            "Video editing with industry tools",
+            "Complete marketing + creative skills",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/curriculum/master-ai-digital-marketing-creative",
+          "linkLabel": "Explore curriculum"
+        },
+        {
+          "title": "Diploma in AI, Digital Marketing & Creative Media",
+          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+          "eyebrow": "Complete Career Diploma",
+          "detail": "6 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "Personality development module",
+            "Graphic design & video editing",
+            "Marketing, personality & creative skills",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/curriculum/diploma-ai-digital-marketing",
+          "linkLabel": "Explore curriculum"
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

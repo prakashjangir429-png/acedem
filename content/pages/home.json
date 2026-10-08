@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "AI & Digital Marketing Training | Digitonix Academy",
+    "description": "Practical AI and digital marketing training with internship experience."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Turn Your Passion Into a Digital Career.",
+      "description": "prakash janigd.",
+      "eyebrow": "AI-Powered Digital Marketing Academy",
+      "type": "hero",
+      "buttons": [
+        {
+          "label": "Explore our courses",
+          "href": "/courses"
+        },
+        {
+          "label": "Talk to an expert",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "stats",
+      "items": [
+        {
+          "value": 45,
+          "suffix": "+",
+          "label": "Modules"
+        },
+        {
+          "value": 14,
+          "suffix": "+",
+          "label": "Certifications"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "Months Training"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "Months Internship"
+        }
+      ]
+    },
+    {
+      "id": "programs",
+      "heading": "Skills that match your ambition.",
+      "type": "cards",
+      "items": [
+        {
+          "title": "Advanced AI & Digital Marketing Program",
+          "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work.",
+          "eyebrow": "Flagship Program",
+          "detail": "3 Months Training + 3 Months Internship",
+          "features": [
+            "3 months intensive practical training",
+            "3 months internship on live client work",
+            "40+ live tools & AI platforms",
+            "15+ practical projects",
+            "Placement assistance & interview prep",
+            "Portfolio + certification"
+          ],
+          "highlight": true,
+          "href": "/courses/advanced-ai-digital-marketing",
+          "linkLabel": "Explore program"
+        },
+        {
+          "title": "Professional AI & Digital Marketing Program",
+          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to prepare for high-paying roles.",
+          "eyebrow": "With Personality Development",
+          "detail": "4 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "1 month personality development",
+            "Communication & presentation skills",
+            "High-paying job focus",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/courses/professional-ai-digital-marketing",
+          "linkLabel": "Explore program"
+        },
+        {
+          "title": "Master AI, Digital Marketing & Creative Media",
+          "description": "Our most comprehensive learning path combines everything in the Advanced AI & Digital Marketing Program with two months of graphic design and video editing training.",
+          "eyebrow": "With Graphic & Video Editing",
+          "detail": "5 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "2 months graphic design training",
+            "Video editing with industry tools",
+            "Complete marketing + creative skills",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/courses/master-ai-digital-marketing-creative",
+          "linkLabel": "Explore program"
+        },
+        {
+          "title": "Diploma in AI, Digital Marketing & Creative Media",
+          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+          "eyebrow": "Complete Career Diploma",
+          "detail": "6 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "Personality development module",
+            "Graphic design & video editing",
+            "Marketing, personality & creative skills",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/courses/diploma-ai-digital-marketing",
+          "linkLabel": "Explore program"
+        }
+      ]
+    },
+    {
+      "id": "curriculum",
+      "heading": "Learn. Implement. Analyse.",
+      "type": "modules",
+      "items": [
+        {
+          "title": "AI Tools & ChatGPT for Digital Marketers",
+          "category": "Core AI Module",
+          "items": [
+            {
+              "name": "AI in Digital Marketing",
+              "desc": "Role of AI in modern marketing"
+            },
+            {
+              "name": "ChatGPT for Marketers",
+              "desc": "Content, ads & copywriting"
+            },
+            {
+              "name": "Prompt Engineering",
+              "desc": "Writing effective AI prompts"
+            }
+          ]
+        },
+        {
+          "title": "Website Development (No-Code)",
+          "category": "Foundation",
+          "items": [
+            {
+              "name": "No-Code Website Development",
+              "desc": "Build sites without coding"
+            },
+            {
+              "name": "AI-Assisted Content Creation",
+              "desc": "Page content & layout suggestions"
+            },
+            {
+              "name": "Website Optimization",
+              "desc": "Speed, mobile & security"
+            }
+          ]
+        },
+        {
+          "title": "Search Engine Optimization (SEO)",
+          "category": "AI Supported",
+          "items": [
+            {
+              "name": "On-Page SEO",
+              "desc": "Content, keywords & technical elements"
+            },
+            {
+              "name": "Off-Page & Local SEO",
+              "desc": "Authority, backlinks & local visibility"
+            },
+            {
+              "name": "AI-Assisted SEO",
+              "desc": "Optimization, research & audits"
+            }
+          ]
+        },
+        {
+          "title": "Generative Engine Optimization (GEO)",
+          "category": "Next-Generation Search",
+          "items": [
+            {
+              "name": "AI Search Visibility",
+              "desc": "Generative search & brand discovery"
+            },
+            {
+              "name": "Entity & Content Optimization",
+              "desc": "Authority, structure & credibility"
+            }
+          ]
+        },
+        {
+          "title": "Facebook & Instagram Ads",
+          "category": "AI-Powered Advertising",
+          "items": [
+            {
+              "name": "Meta Ads Fundamentals",
+              "desc": "Campaigns, objectives & audiences"
+            },
+            {
+              "name": "Lead Generation & Conversion",
+              "desc": "Funnels, creatives & targeting"
+            },
+            {
+              "name": "AI-Powered Meta Ads",
+              "desc": "Automation & optimization"
+            }
+          ]
+        },
+        {
+          "title": "Google Ads (SEM / PPC)",
+          "category": "AI-Powered Advertising",
+          "items": [
+            {
+              "name": "Google Ads Fundamentals",
+              "desc": "Search campaigns & keywords"
+            },
+            {
+              "name": "Campaign Optimization",
+              "desc": "Bidding, budget & Quality Score"
+            },
+            {
+              "name": "Google AI & Automation",
+              "desc": "Performance Max & smart optimization"
+            }
+          ]
+        },
+        {
+          "title": "Content Marketing & Social Media",
+          "category": "Brand & Community Growth",
+          "items": [
+            {
+              "name": "Content Strategy",
+              "desc": "Calendars, formats & distribution"
+            },
+            {
+              "name": "Social Media Growth",
+              "desc": "Organic reach & community building"
+            },
+            {
+              "name": "AI-Assisted Content",
+              "desc": "Ideation, scripts & creative workflows"
+            }
+          ]
+        },
+        {
+          "title": "Analytics, Reporting & Automation",
+          "category": "Data & Insights",
+          "items": [
+            {
+              "name": "GA4 & Search Console",
+              "desc": "Traffic, events & conversion tracking"
+            },
+            {
+              "name": "Marketing Automation",
+              "desc": "Lead nurturing & workflow automation"
+            },
+            {
+              "name": "Reporting & Dashboards",
+              "desc": "Dashboards, insights & ROI storytelling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "heading": "Turn lessons into real experience.",
+      "type": "features",
+      "items": [
+        "Build websites and landing pages",
+        "Create SEO strategies",
+        "Plan content calendars with AI",
+        "Work with AI marketing tools",
+        "Create live advertising campaigns",
+        "Analyse marketing performance data",
+        "Build lead-generation funnels",
+        "Optimise campaigns for conversion",
+        "Work on practical client briefs",
+        "Build a verified public portfolio"
+      ]
+    },
+    {
+      "id": "reviews",
+      "heading": "What our learners say.",
+      "type": "testimonials",
+      "items": [
+        {
+          "name": "Priyanka Choudhary",
+          "text": "Digitonix Academy is hands down the best place for digital marketing. What I loved most was the practical approach — we did more live projects than theory. The mentors genuinely care about your growth.",
+          "role": "Digital Marketing Student",
+          "rating": 5
+        },
+        {
+          "name": "Deeksha Vijayvargiya",
+          "text": "I actually learned how to do work here, not only the theory. The instructors aren't just reading slides, they clearly work in the industry. Real-world examples made everything click.",
+          "role": "Performance Marketing Intern",
+          "rating": 5
+        },
+        {
+          "name": "Bhupendar Singh",
+          "text": "My doubts were cleared patiently every time, the course structure is well planned and useful. Really appreciate the support from the entire team at the academy.",
+          "role": "SEO Specialist",
+          "rating": 5
+        },
+        {
+          "name": "Trisha Sharma",
+          "text": "I'm currently doing my digital marketing internship here and honestly it's been a great learning experience. Practical knowledge is prioritized and I got proper attention from mentors.",
+          "role": "Digital Marketing Intern",
+          "rating": 5
+        },
+        {
+          "name": "Rohit Kumar",
+          "text": "Learning at the academy feels comfortable and stress-free. The trainers focus on practical learning instead of just theory. I got proper attention and guidance throughout.",
+          "role": "Performance Marketing Executive",
+          "rating": 5
+        },
+        {
+          "name": "Anjali Mehta",
+          "text": "The mentors are supportive and motivating. They give personal attention whenever needed. Learning here feels comfortable and effective. I would recommend it to everyone.",
+          "role": "Social Media Manager",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "heading": "Questions before your next step.",
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is the duration of the flagship program?",
+          "answer": "The flagship Advanced AI & Digital Marketing Program is 3 months of intensive practical training followed by a 3-month internship on live client work — 6 months total."
+        },
+        {
+          "question": "Do I need prior marketing experience?",
+          "answer": "No. The flagship program is designed for beginners to job-ready professionals. We start with fundamentals and build up to advanced AI-integrated marketing."
+        },
+        {
+          "question": "Is the internship guaranteed?",
+          "answer": "Yes. The 3-month internship is part of the program. You work on live client accounts with mentor supervision — real budgets, real deadlines, real results."
+        },
+        {
+          "question": "What certifications will I earn?",
+          "answer": "You earn a Digitonix Academy Certificate of Achievement plus module-wise certificates. We also guide you toward official Google and Meta certifications."
+        },
+        {
+          "question": "Do you provide placement assistance?",
+          "answer": "Yes. We provide 100% placement assistance including resume preparation, LinkedIn optimization, mock interviews, and referrals through our hiring network until you land a role."
+        },
+        {
+          "question": "Are classes online or offline?",
+          "answer": "Both. We offer classroom training at our Vaishali Nagar, Jaipur campus and online training options. You can choose the mode that works best for you."
+        },
+        {
+          "question": "What tools and platforms will I learn?",
+          "answer": "You get hands-on practice with 40+ tools including Google Ads, Meta Ads Manager, GA4, Google Search Console, ChatGPT, Claude, Gemini, WordPress, Mailchimp, HubSpot, Zapier, and more."
+        },
+        {
+          "question": "How are batches structured?",
+          "answer": "We keep batches small and mentor-led. This ensures personal attention, practical feedback, and space for questions — not a lecture hall experience."
+        }
+      ]
+    },
+    {
+      "id": "differentiators",
+      "heading": "Why learn with Digitonix?",
+      "type": "cards",
+      "items": [
+        {
+          "title": "AI-integrated curriculum",
+          "description": "AI is taught inside every module, not as an add-on."
+        },
+        {
+          "title": "Small mentor-led batches",
+          "description": "Personal attention from practitioners, not lecturers."
+        },
+        {
+          "title": "Real campaign practice",
+          "description": "You work on practical Google and Meta campaigns using real performance data."
+        },
+        {
+          "title": "Placement assistance",
+          "description": "Interview prep and referrals until you are placed."
+        },
+        {
+          "title": "Certification prep",
+          "description": "Google and Meta certification guidance included."
+        },
+        {
+          "title": "Focused learning environment",
+          "description": "Small batches create space for guidance, questions and practical feedback."
+        }
+      ]
+    },
+    {
+      "id": "certifications",
+      "heading": "Build skills. Earn recognition.",
+      "type": "cards",
+      "items": [
+        {
+          "title": "Briwon Certified Digital Marketer",
+          "description": "Certificate of Achievement awarded on successful completion of the 3-month Digital Marketing training programme."
+        },
+        {
+          "title": "Google Certified Digital Marketer",
+          "description": "We prepare and guide you to earn official Google certifications, so your skills carry recognition beyond the classroom."
+        },
+        {
+          "title": "Meta Certified Social Media Marketer",
+          "description": "We prepare and guide you to earn official Meta certifications, adding social media marketing credentials that employers value."
+        },
+        {
+          "title": "Performance Marketing Certificate",
+          "description": "Paid advertising strategy, Google Ads, Meta Ads campaign management, audience targeting, conversion optimisation."
+        },
+        {
+          "title": "Search Engine Optimization (SEO) Certificate",
+          "description": "On-page SEO, off-page SEO, keyword research, technical optimisation, content strategy and search engine ranking techniques."
+        },
+        {
+          "title": "Website Development Certificate",
+          "description": "Website building under the AI-Integrated Digital Marketing Programme, with practical work on structure, content and AI-powered marketing workflows."
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "heading": "Work with industry tools.",
+      "type": "features",
+      "items": [
+        "Google Ads — Advertising",
+        "Meta Ads Manager — Advertising",
+        "Google Analytics 4 — Analytics",
+        "Search Console — Analytics",
+        "ChatGPT — AI Tools",
+        "Claude — AI Tools",
+        "Gemini — AI Tools",
+        "Perplexity — AI Tools",
+        "WordPress — Website",
+        "Canva — Design",
+        "Mailchimp — Email",
+        "HubSpot — CRM",
+        "Brevo — Email",
+        "Zapier — Automation",
+        "SEMrush — SEO",
+        "Ahrefs — SEO"
+      ]
+    },
+    {
+      "id": "partners",
+      "heading": "Our hiring partners",
+      "type": "features",
+      "items": [
+        "Dotsquares",
+        "UnivWork",
+        "Friscon Solutions",
+        "CarDekho",
+        "Devtechnosys",
+        "Arvian Business",
+        "W3era",
+        "Arena Infosolution",
+        "Inausco",
+        "Kalam IAS",
+        "Strad Solutions",
+        "Golden Globe"
+      ]
+    },
+    {
+      "id": "recognitions",
+      "heading": "Awards & recognitions",
+      "type": "cards",
+      "items": [
+        {
+          "title": "Most Trusted Digital Marketing Institute",
+          "description": "Indian School Awards · Jaipur"
+        },
+        {
+          "title": "Leading Institute for Digital Marketing Skills & Training",
+          "description": "Global Legacy Awards 2025"
+        },
+        {
+          "title": "Recognition for Marketing Education Excellence",
+          "description": "CMAI Recognition Ceremony"
+        }
+      ]
+    },
+    {
+      "id": "business-owners",
+      "heading": "Own a business? Build your marketing skills.",
+      "description": "Learn to plan campaigns, control ad spend, generate enquiries and use AI to produce content.",
+      "type": "cta",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "type": "cta",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

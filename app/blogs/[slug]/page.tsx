@@ -1,0 +1,9 @@
+import { database } from '@/lib/database';
+import { cleanHtml } from '@/lib/blogs';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { cache } from 'react';
+export const dynamic='force-dynamic';
+const getPost=cache(async(slug:string)=>{const post=await (await database()).collection('blogs').findOne({slug,status:'published'});if(!post)notFound();return post;});
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const post=await getPost((await params).slug);return {title:post.metaTitle||post.title,description:post.metaDescription||post.excerpt,openGraph:{title:post.metaTitle||post.title,description:post.metaDescription||post.excerpt,type:'article',...(post.coverImage?{images:[post.coverImage]}:{})}};}
+export default async function Page({params}:{params:Promise<{slug:string}>}){const post=await getPost((await params).slug);return <article className="course-layout-bg min-h-screen px-6 py-16"><div className="mx-auto max-w-3xl"><Link href="/blogs" className="text-sm">← All stories</Link><p className="course-eyebrow mt-10">{post.category}</p><h1 className="my-6 text-4xl font-semibold md:text-6xl">{post.title}</h1><p className="text-xl leading-8 text-slate-600">{post.excerpt}</p><p className="my-8 text-sm">{post.author} · {new Date(post.publishedAt||post.createdAt).toLocaleDateString('en-IN',{dateStyle:'long'})}</p>{post.coverImage&&<img src={post.coverImage} alt={post.title} className="mb-10 w-full rounded-3xl"/>}<div className="blog-prose rounded-3xl bg-white p-6 md:p-10" dangerouslySetInnerHTML={{__html:cleanHtml(post.content)}}/><div className="mt-12 rounded-3xl bg-[#101d3b] p-10 text-white"><h2 className="text-3xl font-semibold">Turn curiosity into capability.</h2><p className="my-4">Explore practical learning at Digitonix Academy.</p><Link href="/contact" className="inline-block rounded-xl bg-[#f5cc74] px-6 py-3 text-[#101d3b]">Talk to our team →</Link></div></div></article>;}

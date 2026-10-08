@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Our Programs | Digitonix Academy",
+    "description": "Compare four practical AI, digital marketing and creative media programs."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Build skills. Make your next move.",
+      "description": "Explore practical programs in AI, digital marketing and creative media.",
+      "eyebrow": "Four paths. Your next chapter.",
+      "buttons": []
+    },
+    {
+      "id": "programs",
+      "type": "cards",
+      "heading": "Find your fit",
+      "items": [
+        {
+          "title": "Advanced AI & Digital Marketing Program",
+          "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work.",
+          "eyebrow": "Flagship Program",
+          "detail": "3 Months Training + 3 Months Internship",
+          "features": [
+            "3 months intensive practical training",
+            "3 months internship on live client work",
+            "40+ live tools & AI platforms",
+            "15+ practical projects",
+            "Placement assistance & interview prep",
+            "Portfolio + certification"
+          ],
+          "highlight": true,
+          "href": "/courses/advanced-ai-digital-marketing",
+          "linkLabel": "Explore program"
+        },
+        {
+          "title": "Professional AI & Digital Marketing Program",
+          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to prepare for high-paying roles.",
+          "eyebrow": "With Personality Development",
+          "detail": "4 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "1 month personality development",
+            "Communication & presentation skills",
+            "High-paying job focus",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/courses/professional-ai-digital-marketing",
+          "linkLabel": "Explore program"
+        },
+        {
+          "title": "Master AI, Digital Marketing & Creative Media",
+          "description": "Our most comprehensive learning path combines everything in the Advanced AI & Digital Marketing Program with two months of graphic design and video editing training.",
+          "eyebrow": "With Graphic & Video Editing",
+          "detail": "5 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "2 months graphic design training",
+            "Video editing with industry tools",
+            "Complete marketing + creative skills",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/courses/master-ai-digital-marketing-creative",
+          "linkLabel": "Explore program"
+        },
+        {
+          "title": "Diploma in AI, Digital Marketing & Creative Media",
+          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+          "eyebrow": "Complete Career Diploma",
+          "detail": "6 Months Training + 3 Months Internship",
+          "features": [
+            "Complete Advanced curriculum",
+            "Personality development module",
+            "Graphic design & video editing",
+            "Marketing, personality & creative skills",
+            "Placement assistance",
+            "Portfolio + certification"
+          ],
+          "highlight": false,
+          "href": "/courses/diploma-ai-digital-marketing",
+          "linkLabel": "Explore program"
+        }
+      ]
+    },
+    {
+      "id": "curriculum",
+      "type": "modules",
+      "heading": "Learn it. Apply it. Build on it.",
+      "items": [
+        {
+          "title": "AI Tools & ChatGPT for Digital Marketers",
+          "category": "Core AI Module",
+          "icon": "Sparkles",
+          "items": [
+            {
+              "name": "AI in Digital Marketing",
+              "desc": "Role of AI in modern marketing"
+            },
+            {
+              "name": "ChatGPT for Marketers",
+              "desc": "Content, ads & copywriting"
+            },
+            {
+              "name": "Prompt Engineering",
+              "desc": "Writing effective AI prompts"
+            }
+          ]
+        },
+        {
+          "title": "Website Development (No-Code)",
+          "category": "Foundation",
+          "icon": "Globe",
+          "items": [
+            {
+              "name": "No-Code Website Development",
+              "desc": "Build sites without coding"
+            },
+            {
+              "name": "AI-Assisted Content Creation",
+              "desc": "Page content & layout suggestions"
+            },
+            {
+              "name": "Website Optimization",
+              "desc": "Speed, mobile & security"
+            }
+          ]
+        },
+        {
+          "title": "Search Engine Optimization (SEO)",
+          "category": "AI Supported",
+          "icon": "Search",
+          "items": [
+            {
+              "name": "On-Page SEO",
+              "desc": "Content, keywords & technical elements"
+            },
+            {
+              "name": "Off-Page & Local SEO",
+              "desc": "Authority, backlinks & local visibility"
+            },
+            {
+              "name": "AI-Assisted SEO",
+              "desc": "Optimization, research & audits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

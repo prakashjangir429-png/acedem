@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Diploma in AI, Digital Marketing & Creative Media | Digitonix Academy",
+    "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Diploma in AI, Digital Marketing & Creative Media",
+      "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+      "eyebrow": "Complete Career Diploma",
+      "buttons": [
+        {
+          "label": "Enquire about this program",
+          "href": "/contact"
+        },
+        {
+          "label": "Explore curriculum",
+          "href": "/curriculum/diploma-ai-digital-marketing"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "features",
+      "heading": "Included in your program",
+      "description": "6 Months Training + 3 Months Internship",
+      "items": [
+        "Complete Advanced curriculum",
+        "Personality development module",
+        "Graphic design & video editing",
+        "Marketing, personality & creative skills",
+        "Placement assistance",
+        "Portfolio + certification"
+      ]
+    },
+    {
+      "id": "foundation",
+      "type": "modules",
+      "heading": "Shared marketing foundations",
+      "items": [
+        {
+          "title": "AI Tools & ChatGPT for Digital Marketers",
+          "category": "Core AI Module",
+          "icon": "Sparkles",
+          "items": [
+            {
+              "name": "AI in Digital Marketing",
+              "desc": "Role of AI in modern marketing"
+            },
+            {
+              "name": "ChatGPT for Marketers",
+              "desc": "Content, ads & copywriting"
+            },
+            {
+              "name": "Prompt Engineering",
+              "desc": "Writing effective AI prompts"
+            }
+          ]
+        },
+        {
+          "title": "Website Development (No-Code)",
+          "category": "Foundation",
+          "icon": "Globe",
+          "items": [
+            {
+              "name": "No-Code Website Development",
+              "desc": "Build sites without coding"
+            },
+            {
+              "name": "AI-Assisted Content Creation",
+              "desc": "Page content & layout suggestions"
+            },
+            {
+              "name": "Website Optimization",
+              "desc": "Speed, mobile & security"
+            }
+          ]
+        },
+        {
+          "title": "Search Engine Optimization (SEO)",
+          "category": "AI Supported",
+          "icon": "Search",
+          "items": [
+            {
+              "name": "On-Page SEO",
+              "desc": "Content, keywords & technical elements"
+            },
+            {
+              "name": "Off-Page & Local SEO",
+              "desc": "Authority, backlinks & local visibility"
+            },
+            {
+              "name": "AI-Assisted SEO",
+              "desc": "Optimization, research & audits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

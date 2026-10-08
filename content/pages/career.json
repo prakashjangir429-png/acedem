@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Student Success | Digitonix Academy",
+    "description": "Practical learning and career preparation at Digitonix Academy."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Real learners. Real experiences.",
+      "description": "Practical AI and digital marketing skills for your next career step.",
+      "eyebrow": "Student success",
+      "buttons": []
+    },
+    {
+      "id": "roles",
+      "type": "features",
+      "heading": "Explore career possibilities.",
+      "items": [
+        "Performance Marketing Executive",
+        "SEO Specialist",
+        "Social Media Manager",
+        "Content & AI Strategist",
+        "Google Ads Specialist",
+        "Digital Marketing Executive"
+      ]
+    },
+    {
+      "id": "success-stories",
+      "type": "cards",
+      "heading": "From learning to real opportunities.",
+      "items": [
+        {
+          "title": "Preeti Thawani",
+          "eyebrow": "SEO Executive",
+          "detail": "Digital Agency",
+          "description": "From student to SEO Executive — the practical training and live projects gave me the confidence and portfolio to land my first role."
+        },
+        {
+          "title": "Sneha Sanjay",
+          "eyebrow": "Social Media Manager",
+          "detail": "E-commerce Brand",
+          "description": "The AI-integrated curriculum set me apart. I now manage social media for a growing e-commerce brand using skills I learned here."
+        },
+        {
+          "title": "Rohit Kumar",
+          "eyebrow": "Performance Marketing Executive",
+          "detail": "Marketing Agency",
+          "description": "The internship was a game-changer. Working on real client accounts with real budgets prepared me for the actual job from day one."
+        },
+        {
+          "title": "Aakash Verma",
+          "eyebrow": "Google Ads Specialist",
+          "detail": "Tech Startup",
+          "description": "The certification prep helped me earn my Google Ads certification. That credential opened doors and gave me an edge in interviews."
+        },
+        {
+          "title": "Nisha Agarwal",
+          "eyebrow": "Content & AI Strategist",
+          "detail": "Content Agency",
+          "description": "Learning AI tools inside every module was the highlight. I now use AI workflows daily to produce content at scale for multiple clients."
+        },
+        {
+          "title": "Karan Malhotra",
+          "eyebrow": "Digital Marketing Lead",
+          "detail": "Real Estate Firm",
+          "description": "The placement support was relentless. Mock interviews, resume prep, and referrals — they stayed with me until I landed the role."
+        }
+      ]
+    },
+    {
+      "id": "stories",
+      "type": "testimonials",
+      "heading": "Our learners’ experiences",
+      "items": [
+        {
+          "name": "Priyanka Choudhary",
+          "text": "Digitonix Academy is hands down the best place for digital marketing. What I loved most was the practical approach — we did more live projects than theory. The mentors genuinely care about your growth.",
+          "role": "Digital Marketing Student",
+          "rating": 5
+        },
+        {
+          "name": "Deeksha Vijayvargiya",
+          "text": "I actually learned how to do work here, not only the theory. The instructors aren't just reading slides, they clearly work in the industry. Real-world examples made everything click.",
+          "role": "Performance Marketing Intern",
+          "rating": 5
+        },
+        {
+          "name": "Bhupendar Singh",
+          "text": "My doubts were cleared patiently every time, the course structure is well planned and useful. Really appreciate the support from the entire team at the academy.",
+          "role": "SEO Specialist",
+          "rating": 5
+        },
+        {
+          "name": "Trisha Sharma",
+          "text": "I'm currently doing my digital marketing internship here and honestly it's been a great learning experience. Practical knowledge is prioritized and I got proper attention from mentors.",
+          "role": "Digital Marketing Intern",
+          "rating": 5
+        },
+        {
+          "name": "Rohit Kumar",
+          "text": "Learning at the academy feels comfortable and stress-free. The trainers focus on practical learning instead of just theory. I got proper attention and guidance throughout.",
+          "role": "Performance Marketing Executive",
+          "rating": 5
+        },
+        {
+          "name": "Anjali Mehta",
+          "text": "The mentors are supportive and motivating. They give personal attention whenever needed. Learning here feels comfortable and effective. I would recommend it to everyone.",
+          "role": "Social Media Manager",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "type": "features",
+      "heading": "Hiring partners",
+      "items": [
+        "Dotsquares",
+        "UnivWork",
+        "Friscon Solutions",
+        "CarDekho",
+        "Devtechnosys",
+        "Arvian Business",
+        "W3era",
+        "Arena Infosolution",
+        "Inausco",
+        "Kalam IAS",
+        "Strad Solutions",
+        "Golden Globe"
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

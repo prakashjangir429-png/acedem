@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Learning Resources & Marketing Templates | Digitonix Academy",
+    "description": "Explore practical digital marketing resources, downloadable templates, course curricula and AI insights from Digitonix Academy.",
+    "keywords": ["digital marketing resources", "content calendar template", "SEO checklist", "AI marketing guides"]
+  },
+  "sections": [
+    {
+      "id": "hero", "type": "hero", "eyebrow": "THE LEARNING ROOM",
+      "heading": "A little curiosity. A world of possibilities.",
+      "description": "A place to explore, practise and find your next idea. Discover useful templates, learning pathways and fresh perspectives on AI and digital marketing.",
+      "buttons": [{"label": "Explore the library", "href": "#resource-library"}, {"label": "Read our journal", "href": "#latest-insights"}]
+    },
+    {
+      "id": "resource-library", "type": "resource-library", "eyebrow": "LESS SCROLLING. MORE LEARNING.",
+      "heading": "Your next project starts here.",
+      "description": "Pick a topic, find a starting point and make something useful. Downloadable templates are ready to adapt to your own project.",
+      "searchPlaceholder": "Search guides, templates and topics…", "allLabel": "All resources", "emptyMessage": "No resources match your search. Try another topic or clear the filters.",
+      "items": [
+        {"title":"Your weekly content calendar","description":"Plan content themes, channels, calls to action and review dates in a spreadsheet-friendly template.","category":"Social Media","format":"CSV template","href":"/resources/content-calendar.csv","linkLabel":"Download template","download":true},
+        {"title":"The first-website SEO checklist","description":"A practical checklist for page titles, search intent, internal links and the mobile experience.","category":"SEO","format":"Markdown checklist","href":"/resources/seo-checklist.md","linkLabel":"Download checklist","download":true},
+        {"title":"A clearer campaign brief","description":"Align your audience, message, budget, creative and measurement plan before launching a campaign.","category":"Paid Advertising","format":"Markdown template","href":"/resources/campaign-brief.md","linkLabel":"Download brief","download":true},
+        {"title":"Build a better AI prompt","description":"Use a structured brief to define context, constraints, output format and review criteria.","category":"AI Marketing","format":"Markdown worksheet","href":"/resources/ai-prompt-worksheet.md","linkLabel":"Download worksheet","download":true},
+        {"title":"Explore the digital marketing curriculum","description":"See how SEO, paid media, social content and AI workflows connect in a practical learning journey.","category":"Learning Paths","format":"Curriculum","href":"/curriculum","linkLabel":"Explore curriculum"},
+        {"title":"Find your learning pathway","description":"Compare academy programmes and discover the course that matches your interests and goals.","category":"Learning Paths","format":"Course guide","href":"/courses","linkLabel":"Compare courses"},
+        {"title":"Start your marketing portfolio","description":"Learn how to describe a project, show your contribution and reflect on what you learned.","category":"Careers","format":"Article","href":"/blogs/sample-your-first-digital-marketing-portfolio-what-to-include","linkLabel":"Read the guide"},
+        {"title":"Turn an internship into experience","description":"Set learning goals, keep a project journal and make the most of feedback from your mentor.","category":"Careers","format":"Article","href":"/blogs/sample-making-the-most-of-your-marketing-internship","linkLabel":"Read the guide"},
+        {"title":"From curiosity to AI workflows","description":"Explore a course pathway with AI-assisted marketing, practical skills and project-based learning.","category":"AI Marketing","format":"Curriculum","href":"/curriculum/professional-ai-digital-marketing","linkLabel":"View learning modules"}
+      ]
+    },
+    {
+      "id":"practice-path", "type":"modules", "eyebrow":"MAKE IT YOUR OWN", "heading":"Read it. Try it. Build on it.",
+      "description":"You do not need to learn everything at once. Start with one useful task and turn the idea into something you can share.",
+      "items":[
+        {"title":"Choose your starting point","category":"01 / EXPLORE","items":[{"name":"Pick one question","desc":"Choose a topic that connects to a skill you want to improve."},{"name":"Find a useful resource","desc":"Start with a template, article or curriculum module that answers that question."}]},
+        {"title":"Turn learning into a project","category":"02 / PRACTISE","items":[{"name":"Apply it to a real brief","desc":"Create a content plan, SEO review or campaign outline for a business you understand."},{"name":"Document your thinking","desc":"Explain your choices, ask for feedback and record what you would improve next."}]}
+      ]
+    },
+    {
+      "id":"latest-insights", "type":"latest-blogs", "eyebrow":"FRESH FROM THE JOURNAL", "heading":"Ideas worth taking with you.",
+      "description":"The latest published stories from our academy blog, brought into your resource library automatically.",
+      "limit":3,"linkLabel":"Read the story","allLabel":"Explore all stories","emptyMessage":"New stories are on their way. Explore the templates above while you wait.","unavailableMessage":"Our journal is temporarily unavailable. You can still explore the templates and learning paths above."
+    },
+    {
+      "id":"next-step", "type":"cta", "eyebrow":"READY TO GO A LITTLE FURTHER?", "heading":"Turn what you learn into what you do.",
+      "description":"Explore practical courses or talk to our academy team about your goals. We will help you find a useful next step.",
+      "buttons":[{"label":"Explore our courses","href":"/courses"},{"label":"Talk to the academy","href":"/contact"}]
+    }
+  ]
+}

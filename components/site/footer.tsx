@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { courseCatalog } from '@/lib/course-catalog';
 import {
   GraduationCap,
   MapPin,
@@ -170,7 +171,7 @@ export function Footer() {
                   {programs.map((program, index) => (
                     <li key={program}>
                       <Link
-                        href="/courses"
+                        href={`/courses/${courseCatalog[index].slug}`}
                         className="group/program flex items-start gap-3 rounded-xl border border-transparent p-2.5 -ml-2.5 transition-all duration-300 hover:border-white/[0.07] hover:bg-white/[0.04]"
                       >
                         <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-400/10 text-[10px] font-bold text-sky-300 transition-all duration-300 group-hover/program:bg-sky-400 group-hover/program:text-slate-950">

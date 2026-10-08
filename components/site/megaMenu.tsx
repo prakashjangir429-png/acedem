@@ -3,6 +3,7 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { courseCatalog } from '@/lib/course-catalog';
 import { X, ArrowUpRight, ArrowRight, Sparkles } from 'lucide-react';
 
 const MegaMenuScene = dynamic(
@@ -24,32 +25,18 @@ const menuData = {
     description:
       'Explore structured learning programs designed to help you move forward with confidence.',
     items: [
-      {
-        title: 'Web Development',
-        description: 'Master frontend, backend and full-stack development.',
-        href: '/courses/web-development',
-        number: '01',
-        tag: 'Development',
-      },
-      {
-        title: 'UI / UX Design',
-        description: 'Create beautiful digital products and experiences.',
-        href: '/courses/ui-ux',
-        number: '02',
-        tag: 'Design',
-      },
-      {
-        title: 'Digital Marketing',
-        description: 'Learn modern growth and digital marketing strategies.',
-        href: '/courses/digital-marketing',
-        number: '03',
-        tag: 'Marketing',
-      },
+      ...courseCatalog.map((course, index) => ({
+        title: course.name,
+        description: course.audience,
+        href: `/courses/${course.slug}`,
+        number: `0${index + 1}`,
+        tag: course.shortName,
+      })),
       {
         title: 'Explore All Courses',
-        description: 'Find the right learning path for your goals.',
+        description: 'Compare all four learning paths.',
         href: '/courses',
-        number: '04',
+        number: '05',
         tag: 'All Programs',
       },
     ],

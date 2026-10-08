@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Contact Us | Digitonix Academy",
+    "description": "Talk to the academy about courses, internships and career preparation."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "heading": "Big ambitions. One conversation away.",
+      "description": "Let’s find the right course, skills and career path for you.",
+      "eyebrow": "Let’s talk about your future",
+      "buttons": []
+    },
+    {
+      "id": "enquiry",
+      "type": "contact",
+      "heading": "Good guidance. A great beginning.",
+      "description": "Questions about courses or internships? Our team is here to help.",
+      "contacts": [
+        {
+          "label": "Call us",
+          "value": "+91 70732 25806",
+          "href": "tel:+917073225806"
+        },
+        {
+          "label": "Call us",
+          "value": "+91 92512 25806",
+          "href": "tel:+919251225806"
+        },
+        {
+          "label": "Email us",
+          "value": "info@digitonixacademy.in",
+          "href": "mailto:info@digitonixacademy.in"
+        },
+        {
+          "label": "Visit us",
+          "value": "2nd Floor, Pink Hives Building, Plot No. B-2/425, Sector 2, Chitrakoot Scheme, Vaishali Nagar, Jaipur, Rajasthan 302021"
+        },
+        {
+          "label": "Opening hours",
+          "value": "Monday–Saturday · 9 AM–7 PM IST"
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Chat on WhatsApp",
+          "href": "https://wa.me/917073225806"
+        }
+      ],
+      "form": {
+        "heading": "Tell us a little about you.",
+        "description": "We’ll help you choose a program that fits your goals.",
+        "nameLabel": "Full name",
+        "emailLabel": "Email address",
+        "phoneLabel": "Phone number",
+        "programLabel": "Program of interest",
+        "messageLabel": "Your goals (optional)",
+        "submitLabel": "Send my enquiry",
+        "helpText": "Our academy team will get in touch with you soon.",
+        "readyHeading": "Thank you for reaching out!",
+        "readyDescription": "Your enquiry has been received. Our team will contact you soon.",
+        "draftLabel": "Open email draft",
+        "backLabel": "Back to your enquiry",
+        "emailSubject": "Course enquiry",
+        "email": "info@digitonixacademy.in",
+        "programs": [
+          "Advanced AI & Digital Marketing Program",
+          "Professional AI & Digital Marketing Program",
+          "Master AI, Digital Marketing & Creative Media",
+          "Diploma in AI, Digital Marketing & Creative Media"
+        ],
+        "programPlaceholder": "Help me choose a program"
+      }
+    },
+    {
+      "id": "about",
+      "type": "cards",
+      "eyebrow": "About Digitonix Academy",
+      "heading": "A place to learn. A platform to grow.",
+      "description": "We help aspiring marketers, creators and business owners turn curiosity into practical digital skills.",
+      "items": [
+        {
+          "title": "Learn the foundations",
+          "description": "Digital marketing, content and AI tools."
+        },
+        {
+          "title": "Put skills into practice",
+          "description": "Real campaigns and portfolio projects."
+        },
+        {
+          "title": "Build industry experience",
+          "description": "Internship learning and career preparation."
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "stats",
+      "items": [
+        {
+          "value": 45,
+          "suffix": "+",
+          "label": "Modules"
+        },
+        {
+          "value": 14,
+          "suffix": "+",
+          "label": "Certifications"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "Months Training"
+        },
+        {
+          "value": 3,
+          "suffix": "",
+          "label": "Months Internship"
+        }
+      ]
+    },
+    {
+      "id": "visit",
+      "type": "cta",
+      "heading": "Your journey starts in Jaipur.",
+      "description": "Pink Hives Building · Chitrakoot Scheme · Vaishali Nagar, Jaipur, Rajasthan 302021",
+      "buttons": [
+        {
+          "label": "Get directions",
+          "href": "https://www.google.com/maps/search/?api=1&query=Pink+Hives+Building+Chitrakoot+Jaipur"
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "heading": "Big goals? Start with a conversation.",
+      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "buttons": [
+        {
+          "label": "Talk to our team",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}
