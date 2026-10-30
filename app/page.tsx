@@ -1,8 +1,5 @@
-import { getPageContent, getPageMetadata } from '@/lib/content';
-import { PageRenderer } from '@/components/content/page-renderer';
+import { ReferenceHome } from '@/components/site/reference-home';
+import { getPageMetadata } from '@/lib/content';
 
-export const dynamic = 'force-dynamic';
 export function generateMetadata() { return getPageMetadata('home'); }
-export default async function Page() {
-  return <PageRenderer page={await getPageContent('home')} />;
-}
+export default function Page() { return <ReferenceHome />; }
