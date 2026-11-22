@@ -1,0 +1,82 @@
+/* Digitonix blue and amber accents for the homepage. */
+.ws-home {
+  --ws-blue: #0875ae;
+  --ws-ink: #10243a;
+  --ws-muted: #586b80;
+  --ws-amber: #e9a429;
+  font-family: var(--font-inter), Arial, sans-serif;
+  color: var(--ws-ink);
+}
+
+.ws-home .ws-hero {
+  background-image: radial-gradient(circle at 75% 40%, rgba(24, 156, 207, .32), transparent 35%), linear-gradient(115deg, rgba(5, 23, 49, .96), rgba(7, 59, 98, .91) 53%, rgba(9, 98, 139, .86)), url('/home-reference/hero-section-bg.svg');
+  background-size: cover;
+}
+.ws-home .ws-hero-copy h1 { font-family: var(--font-display), Arial, sans-serif; letter-spacing: -.045em; }
+.ws-home .ws-hero-copy h1::first-line { color: #fff; }
+.ws-home .ws-hero-copy > p { color: #d8eaf4; }
+.ws-home .ws-face { border-color: #fff; box-shadow: 0 0 0 3px #e9a429, 0 14px 30px #05162b5e; }
+.ws-home .ws-bubble { border-color: #d6e5ec; box-shadow: 0 7px 20px #03172c55; color: #14354b; }
+.ws-home .ws-stat-icon { box-shadow: 0 0 0 3px #e9a429, 0 8px 20px #04152b50; color: #086798; }
+.ws-home .ws-hero .ws-button:first-child,
+.ws-home .ws-journey-actions .ws-button:first-child { background: var(--ws-amber); border-color: var(--ws-amber); color: #14263b; }
+.ws-home .ws-hero .ws-button:first-child:hover,
+.ws-home .ws-journey-actions .ws-button:first-child:hover { background: #f6bb4d; border-color: #f6bb4d; }
+.ws-home .ws-button { border-radius: 10px; background: var(--ws-blue); border-color: var(--ws-blue); }
+.ws-home .ws-button:hover { background: #075d8c; border-color: #075d8c; }
+.ws-home .ws-button.outline:hover { color: var(--ws-blue); border-color: var(--ws-blue); }
+.ws-home .ws-hero .ws-button.white { background: #fff; color: #123047; border-color: #fff; }
+.ws-home .ws-heading h2,
+.ws-home h2 { font-family: var(--font-display), Arial, sans-serif; font-weight: 700; letter-spacing: -.035em; }
+.ws-home .ws-pattern { background-color: #f5f9fb; background-image: radial-gradient(circle at 8% 12%, #d7f2f38c, transparent 32%), radial-gradient(circle at 92% 8%, #fff0d091, transparent 28%); }
+.ws-home .ws-program-panel,
+.ws-home .ws-career-panel { border-radius: 24px; }
+.ws-home .ws-tabs button { border-color: #d5e5e9; }
+.ws-home .ws-tabs button.active { background: var(--ws-blue); border-color: var(--ws-blue); box-shadow: 0 8px 20px #0875ae27; }
+.ws-home .ws-domains { background: radial-gradient(circle at 12% 90%, #0a8da0 0, transparent 28%), linear-gradient(120deg, #0b2948, #075279); }
+.ws-home .ws-domain-card { border: 1px solid #d9e9ec; box-shadow: 0 10px 28px #00152b25; }
+.ws-home .ws-domain-card:hover { transform: translateY(-5px); }
+.ws-home .ws-domain-card > span { color: var(--ws-blue); }
+.ws-home .ws-dots button.active { background: var(--ws-amber); }
+.ws-home .ws-number { background-image: none; background-color: #0a729e; }
+.ws-home .ws-number.large { background: linear-gradient(125deg, #0d5996, #149caa); }
+.ws-home .ws-number.orange { background: linear-gradient(125deg, #d68d1f, #f2b546); color: #183047; }
+.ws-home .ws-number.coral { background: linear-gradient(125deg, #126a91, #25a3a6); }
+.ws-home .ws-learning-card { background: radial-gradient(circle at 50% 18%, #c9f1ee, transparent 35%), linear-gradient(150deg, #f8fcfd, #eaf5f7); border-color: #d3e8eb; color: #153248; justify-content: center; text-align: center; }
+.ws-home .ws-learning-card > strong { font-family: var(--font-display), Arial, sans-serif; font-size: clamp(30px, 3vw, 43px); margin-top: 24px; }
+.ws-home .ws-learning-card > span:not(.ws-youtube-play) { color: #397587; font-weight: 600; }
+.ws-home .ws-learning-card p { color: var(--ws-muted); max-width: 315px; margin: 15px auto 22px; line-height: 1.7; }
+.ws-home .ws-learning-card .ws-button { margin-top: 0; }
+.ws-learning-emblem { width: 108px; height: 108px; border-radius: 28px; display: grid; place-items: center; margin: 0 auto; background: linear-gradient(135deg, #0e83b5, #19aaa6); color: white; box-shadow: 0 17px 35px #0a789f2b; transform: rotate(-8deg); }
+.ws-home .ws-placement { background: #eaf3f4; }
+.ws-home .ws-placement > div:first-child { background: linear-gradient(125deg, #f5bf5f, #eaa326); }
+.ws-home .ws-job-stats { background: #eef8f8; border-color: #dbebeb; }
+.ws-home .ws-job-stats strong { color: #0a799c; }
+.ws-home .ws-schools.ws-journey { background: radial-gradient(circle at 85% 30%, #117e97, transparent 35%), linear-gradient(120deg, #0c2541, #0d5270); margin-bottom: 0; padding: 82px 0; }
+.ws-home .ws-schools.ws-journey::after { display: none; }
+.ws-journey-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 50px; }
+.ws-journey-grid article { position: relative; min-height: 260px; padding: 32px; border: 1px solid #ffffff40; border-radius: 20px; background: #ffffffed; box-shadow: 0 20px 40px #06162a2a; }
+.ws-journey-grid article > svg { color: var(--ws-blue); margin-top: 25px; }
+.ws-journey-number { font-size: 13px; font-weight: 800; letter-spacing: .16em; color: #ba7613; }
+.ws-journey-grid h3 { font-size: 22px; font-weight: 700; margin: 18px 0 10px; }
+.ws-journey-grid p { font-size: 14px; line-height: 1.8; color: var(--ws-muted); }
+.ws-journey-actions { display: flex; gap: 14px; justify-content: center; margin-top: 34px; flex-wrap: wrap; }
+.ws-home .ws-masterclasses { background: #f2f8fa; }
+.ws-path-card { min-height: 280px; padding: 34px; background: #fff; border: 1px solid #dbe9ed; border-radius: 20px; color: var(--ws-ink); box-shadow: 0 16px 40px #123d5910; transition: transform .2s, box-shadow .2s; }
+.ws-path-card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px #123d5926; }
+.ws-path-card > span { display: inline-flex; align-items: center; gap: 9px; font-size: 11px; font-weight: 800; letter-spacing: .1em; color: #057da6; }
+.ws-path-card > span svg { color: #d99322; }
+.ws-path-card h3 { max-width: 340px; font-family: var(--font-display), Arial, sans-serif; font-size: 25px; line-height: 1.3; margin: 25px 0 12px; }
+.ws-path-card p { font-size: 14px; line-height: 1.75; color: var(--ws-muted); }
+.ws-path-card > strong { display: inline-flex; align-items: center; gap: 8px; color: var(--ws-blue); margin-top: 25px; font-size: 14px; }
+.ws-review-card { padding: 29px; border: 1px solid #dfeaec; border-radius: 18px; min-height: 260px; display: flex; flex-direction: column; box-shadow: 0 10px 28px #112d4310; }
+.ws-review-card blockquote { color: var(--ws-muted); line-height: 1.8; font-size: 14px; margin: 18px 0 22px; }
+.ws-review-card figcaption { margin-top: auto; padding-top: 18px; border-top: 1px solid #e4edef; display: flex; align-items: center; gap: 11px; }
+.ws-review-card figcaption > span { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 50%; background: #e6f5f5; color: #0b7693; font-weight: 800; }
+.ws-review-card figcaption strong { font-size: 13px; }
+.ws-review-card figcaption small { display: block; color: var(--ws-muted); font-size: 11px; font-weight: 400; margin-top: 3px; }
+.ws-home .ws-resource-hub { background: linear-gradient(135deg, #096fa7, #18a6a4); border-color: #dff2f2; }
+.ws-home .ws-resource-links a { box-shadow: 2px 3px 0 #0e4460; }
+.ws-home .ws-mentor > div { background: #edf6f8; }
+@media(max-width:800px) { .ws-journey-grid { grid-template-columns: 1fr; gap: 16px; } .ws-journey-grid article { min-height: 0; } }
+@media(max-width:639px) { .ws-home .ws-schools.ws-journey { padding: 58px 0; } .ws-path-card { padding: 27px; min-height: 0; } .ws-path-card h3 { font-size: 22px; } .ws-home .ws-learning-card { min-height: 360px; } }

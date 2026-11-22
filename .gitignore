@@ -38,3 +38,6 @@ yarn-error.log*
 next-env.d.ts
 
 /outputs/Admin-access.txt
+
+# Private runtime JSON records and uploaded media
+/.data/

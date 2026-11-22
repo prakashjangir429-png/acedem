@@ -1,145 +1,127 @@
 {
   "version": 1,
   "metadata": {
-    "title": "Student Success | Digitonix Academy",
+    "title": "Career Preparation | Digitonix Academy",
     "description": "Practical learning and career preparation at Digitonix Academy."
   },
   "sections": [
     {
       "id": "hero",
       "type": "hero",
-      "heading": "Real learners. Real experiences.",
-      "description": "Practical AI and digital marketing skills for your next career step.",
-      "eyebrow": "Student success",
-      "buttons": []
+      "eyebrow": "Career support",
+      "heading": "Build skills that open doors.",
+      "description": "Explore the roles your training can prepare you for, and learn how to present your work with confidence.",
+      "buttons": [
+        {
+          "label": "Explore learning paths",
+          "href": "/courses"
+        },
+        {
+          "label": "See career preparation",
+          "href": "#support"
+        }
+      ]
     },
     {
       "id": "roles",
       "type": "features",
-      "heading": "Explore career possibilities.",
+      "eyebrow": "Where your skills can take you",
+      "heading": "A range of paths in modern marketing.",
+      "description": "Your direction depends on your interests, portfolio and experience.",
       "items": [
-        "Performance Marketing Executive",
-        "SEO Specialist",
-        "Social Media Manager",
-        "Content & AI Strategist",
-        "Google Ads Specialist",
-        "Digital Marketing Executive"
+        "SEO and search visibility",
+        "Paid media and performance marketing",
+        "Social media and community management",
+        "Content strategy and AI workflows",
+        "Analytics and campaign reporting",
+        "Creative production and design"
       ]
     },
     {
-      "id": "success-stories",
+      "id": "support",
       "type": "cards",
-      "heading": "From learning to real opportunities.",
+      "eyebrow": "The career journey",
+      "heading": "Support at every step.",
       "items": [
         {
-          "title": "Preeti Thawani",
-          "eyebrow": "SEO Executive",
-          "detail": "Digital Agency",
-          "description": "From student to SEO Executive — the practical training and live projects gave me the confidence and portfolio to land my first role."
+          "title": "Build a portfolio",
+          "eyebrow": "01 / SHOW YOUR WORK",
+          "description": "Turn practical projects into clear examples of your thinking, process and results."
         },
         {
-          "title": "Sneha Sanjay",
-          "eyebrow": "Social Media Manager",
-          "detail": "E-commerce Brand",
-          "description": "The AI-integrated curriculum set me apart. I now manage social media for a growing e-commerce brand using skills I learned here."
+          "title": "Prepare for interviews",
+          "eyebrow": "02 / TELL YOUR STORY",
+          "description": "Practise talking through your projects and the tools you have learned."
         },
         {
-          "title": "Rohit Kumar",
-          "eyebrow": "Performance Marketing Executive",
-          "detail": "Marketing Agency",
-          "description": "The internship was a game-changer. Working on real client accounts with real budgets prepared me for the actual job from day one."
-        },
-        {
-          "title": "Aakash Verma",
-          "eyebrow": "Google Ads Specialist",
-          "detail": "Tech Startup",
-          "description": "The certification prep helped me earn my Google Ads certification. That credential opened doors and gave me an edge in interviews."
-        },
-        {
-          "title": "Nisha Agarwal",
-          "eyebrow": "Content & AI Strategist",
-          "detail": "Content Agency",
-          "description": "Learning AI tools inside every module was the highlight. I now use AI workflows daily to produce content at scale for multiple clients."
-        },
-        {
-          "title": "Karan Malhotra",
-          "eyebrow": "Digital Marketing Lead",
-          "detail": "Real Estate Firm",
-          "description": "The placement support was relentless. Mock interviews, resume prep, and referrals — they stayed with me until I landed the role."
+          "title": "Explore opportunities",
+          "eyebrow": "03 / TAKE THE NEXT STEP",
+          "description": "Use career guidance and placement assistance to identify relevant roles and applications."
         }
       ]
     },
     {
-      "id": "stories",
-      "type": "testimonials",
-      "heading": "Our learners’ experiences",
+      "id": "portfolio",
+      "type": "cards",
+      "heading": "Make your work easier to understand.",
+      "eyebrow": "Portfolio foundations",
       "items": [
         {
-          "name": "Priyanka Choudhary",
-          "text": "Digitonix Academy is hands down the best place for digital marketing. What I loved most was the practical approach — we did more live projects than theory. The mentors genuinely care about your growth.",
-          "role": "Digital Marketing Student",
-          "rating": 5
+          "title": "Start with the brief",
+          "description": "Explain the audience, the task and the constraints. Give the reader enough context to understand your choices."
         },
         {
-          "name": "Deeksha Vijayvargiya",
-          "text": "I actually learned how to do work here, not only the theory. The instructors aren't just reading slides, they clearly work in the industry. Real-world examples made everything click.",
-          "role": "Performance Marketing Intern",
-          "rating": 5
+          "title": "Show your contribution",
+          "description": "Choose relevant examples such as a content calendar, search audit or campaign plan. Be clear about the work you did."
         },
         {
-          "name": "Bhupendar Singh",
-          "text": "My doubts were cleared patiently every time, the course structure is well planned and useful. Really appreciate the support from the entire team at the academy.",
-          "role": "SEO Specialist",
-          "rating": 5
-        },
-        {
-          "name": "Trisha Sharma",
-          "text": "I'm currently doing my digital marketing internship here and honestly it's been a great learning experience. Practical knowledge is prioritized and I got proper attention from mentors.",
-          "role": "Digital Marketing Intern",
-          "rating": 5
-        },
-        {
-          "name": "Rohit Kumar",
-          "text": "Learning at the academy feels comfortable and stress-free. The trainers focus on practical learning instead of just theory. I got proper attention and guidance throughout.",
-          "role": "Performance Marketing Executive",
-          "rating": 5
-        },
-        {
-          "name": "Anjali Mehta",
-          "text": "The mentors are supportive and motivating. They give personal attention whenever needed. Learning here feels comfortable and effective. I would recommend it to everyone.",
-          "role": "Social Media Manager",
-          "rating": 5
+          "title": "Reflect on the outcome",
+          "description": "Explain what you tested, what you learned and what you would improve. Label training exercises accurately."
         }
       ]
     },
     {
-      "id": "partners",
+      "id": "readiness",
       "type": "features",
-      "heading": "Hiring partners",
+      "eyebrow": "Prepare with intention",
+      "heading": "A practical checklist for your next application.",
       "items": [
-        "Dotsquares",
-        "UnivWork",
-        "Friscon Solutions",
-        "CarDekho",
-        "Devtechnosys",
-        "Arvian Business",
-        "W3era",
-        "Arena Infosolution",
-        "Inausco",
-        "Kalam IAS",
-        "Strad Solutions",
-        "Golden Globe"
+        "Select projects relevant to the role",
+        "Write a clear description of your contribution",
+        "Keep your CV and portfolio links up to date",
+        "Practise explaining one project in detail",
+        "Research the role and prepare thoughtful questions",
+        "Ask about current internship selection requirements"
       ]
     },
     {
       "id": "guidance",
       "type": "cta",
-      "heading": "Big goals? Start with a conversation.",
-      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "heading": "Ready to plan your next move?",
+      "description": "Tell us what you want to learn and we will help you compare the available programs. Career outcomes depend on individual skills, experience and opportunities.",
       "buttons": [
         {
           "label": "Talk to our team",
           "href": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "heading": "Career preparation questions",
+      "items": [
+        {
+          "question": "Does completing a course guarantee employment?",
+          "answer": "No. Career outcomes depend on your skills, experience, applications and available opportunities. The academy’s preparation can support your own job search."
+        },
+        {
+          "question": "What should a beginner portfolio include?",
+          "answer": "Choose a few complete examples that show your process. A clearly explained training exercise is more useful than an unsupported claim about client results."
+        },
+        {
+          "question": "Are internship opportunities guaranteed?",
+          "answer": "Opportunities depend on eligibility, selection and availability. Ask the academy about current terms before enrolling."
         }
       ]
     }

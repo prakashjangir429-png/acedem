@@ -20,12 +20,12 @@
       "items": [
         {
           "title": "Advanced AI & Digital Marketing Program",
-          "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work.",
+          "description": "Our flagship program includes the complete AI and digital marketing curriculum, with an internship pathway for eligible learners.",
           "eyebrow": "Flagship Program",
           "detail": "3 Months Training + 3 Months Internship",
           "features": [
             "3 months intensive practical training",
-            "3 months internship on live client work",
+            "Internship opportunities subject to selection",
             "40+ live tools & AI platforms",
             "15+ practical projects",
             "Placement assistance & interview prep",
@@ -37,14 +37,14 @@
         },
         {
           "title": "Professional AI & Digital Marketing Program",
-          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to prepare for high-paying roles.",
+          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to strengthen career readiness.",
           "eyebrow": "With Personality Development",
           "detail": "4 Months Training + 3 Months Internship",
           "features": [
             "Complete Advanced curriculum",
             "1 month personality development",
             "Communication & presentation skills",
-            "High-paying job focus",
+            "Career readiness focus",
             "Placement assistance",
             "Portfolio + certification"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "title": "Diploma in AI, Digital Marketing & Creative Media",
-          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, with an internship pathway for eligible learners.",
           "eyebrow": "Complete Career Diploma",
           "detail": "6 Months Training + 3 Months Internship",
           "features": [
@@ -92,7 +92,7 @@
       "id": "guidance",
       "type": "cta",
       "heading": "Big goals? Start with a conversation.",
-      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "description": "Ask about curriculum, fees, internship eligibility and upcoming batches. Our team will help you find your fit.",
       "buttons": [
         {
           "label": "Talk to our team",

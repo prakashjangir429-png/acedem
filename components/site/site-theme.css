@@ -1,0 +1,108 @@
+/* Shared public-site typography and Digitonix logo palette. */
+.public-site {
+  --site-navy: #10243a;
+  --site-blue: #0875ae;
+  --site-blue-dark: #075d8c;
+  --site-amber: #e9a429;
+  --site-muted: #586b80;
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+.public-site > main h1,
+.public-site .site-section-title,
+.public-site .course-layout > section h2,
+.public-site .course-layout-bg > div > h1 {
+  font-family: var(--font-display), var(--font-inter), sans-serif;
+  font-weight: 700;
+  letter-spacing: -.035em;
+}
+
+.public-site > main h1,
+.public-site .site-page-title { font-size: clamp(31px, 3vw, 42px); line-height: 1.16; }
+.public-site .site-section-title { font-size: clamp(27px, 2.4vw, 34px); line-height: 1.25; }
+.public-site .site-section-intro,
+.public-site .site-page-intro { font-size: 17px; line-height: 1.7; color: var(--site-muted); }
+.public-site .course-layout { color: var(--site-navy); background: radial-gradient(ellipse at 86% 4%, #f8e3b654, transparent 32%), radial-gradient(ellipse at 6% 62%, #d7edf44d, transparent 35%), #f8fafb; }
+.public-site .course-layout-bg { background: radial-gradient(ellipse at 86% 3%, #f8e3b654, transparent 31%), #f8fafb; color: var(--site-navy); }
+.public-site .course-eyebrow,
+.public-site .resource-category { color: #ad6e13; }
+.public-site .academy-hero-primary { background: linear-gradient(135deg, #0875ae, #0b95a9); }
+.public-site .academy-hero-primary:hover { background: linear-gradient(135deg, #075d8c, #087f94); }
+.public-site .contact-panel { background: radial-gradient(ellipse at 100% 0, #127a9e88, transparent 60%), linear-gradient(155deg, #10243a, #0c4a6a); }
+.public-site .resource-link { color: var(--site-blue); }
+.public-site .resource-icon { background: #fff4df; color: #ad6e13; }
+.public-site .resource-filters button.selected { background: var(--site-blue); border-color: var(--site-blue); }
+.public-site .contact-field:focus { border-color: var(--site-blue); box-shadow: 0 0 0 3px #0875ae24; }
+.public-site .footer-cta { background: radial-gradient(circle at 85% 20%, #126a8b88, transparent 32%), linear-gradient(120deg, #10243a, #0b334e); }
+.public-site .footer-cta a[href="/contact"] { background: linear-gradient(100deg, #e9a429, #f2bd5a); color: var(--site-navy); box-shadow: 0 10px 35px #e9a42930; }
+.public-site .footer-cta a[href="/contact"]:hover { box-shadow: 0 15px 45px #e9a42955; }
+
+/* The homepage has the same Inter body text and Space Grotesk heading scale. */
+.public-site .ws-home,
+.public-site .ws-home button,
+.public-site .ws-home a { font-family: var(--font-inter), Arial, sans-serif; }
+.public-site .ws-home :is(h1, h2, h3, h4) { font-family: var(--font-display), var(--font-inter), sans-serif; }
+.public-site .ws-home .ws-hero-copy h1 { font-size: clamp(31px, 3vw, 42px); }
+.public-site .ws-home .ws-heading h2 { font-size: clamp(27px, 2.4vw, 34px); }
+
+@media(max-width:639px) {
+  .public-site .site-section-intro,
+  .public-site .site-page-intro { font-size: 15px; }
+}
+
+/* A single 7xl content grid across the public site. */
+.public-site .ws-container,
+.public-site .section-padding,
+.public-site .course-layout-bg > div,
+.public-site .resource-journal-heading {
+  width: min(100% - 2rem, 80rem);
+  max-width: 80rem;
+  margin-inline: auto;
+}
+.public-site .section-padding { padding-inline: 0; }
+.public-site .ws-container { width: min(100% - 2rem, 80rem); }
+.public-site .course-layout { background: #f8fafb; }
+.public-site .course-layout > section { position: relative; }
+.public-site .course-layout > section[id="hero"] { padding-top: clamp(7rem, 11vw, 10rem); padding-bottom: 5rem; }
+.public-site .course-layout > section[id="hero"]::after { content: ""; position: absolute; width: 22rem; height: 22rem; right: 2rem; top: 6rem; border: 1px solid #0875ae25; border-radius: 50%; box-shadow: 0 0 0 3rem #0875ae08, 0 0 0 6rem #e9a4290a; pointer-events: none; }
+.public-site .course-layout > section[id="hero"] .site-page-title { max-width: 48rem; font-size: clamp(2.8rem, 5.2vw, 5rem); line-height: 1.06; letter-spacing: -.06em; }
+.public-site .course-layout > section[id="hero"] .site-page-intro { max-width: 37rem; font-size: clamp(1rem, 1.5vw, 1.2rem); }
+.public-site .course-layout > section:not([id="hero"]) { padding-bottom: clamp(4rem, 7vw, 7rem); }
+.public-site .course-layout .site-section-title { max-width: 46rem; font-size: clamp(2rem, 3.2vw, 3.3rem); line-height: 1.12; letter-spacing: -.05em; }
+.public-site .course-layout .course-eyebrow { display: inline-flex; align-items: center; gap: .65rem; color: #0875ae; font-size: .73rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.public-site .course-layout .course-eyebrow::before { content: ""; width: 1.5rem; height: 1px; background: currentColor; }
+.public-site .course-layout article { box-shadow: 0 10px 35px #10243a08; border-color: #dce5eb; border-radius: 1.5rem; }
+.public-site .course-layout article:hover { box-shadow: 0 22px 60px #10243a17; }
+.public-site .course-layout article > div:first-child { min-height: 12rem; background: #eaf4f7; padding: 2rem; }
+.public-site .course-layout article > div:first-child.contact-panel { background: linear-gradient(145deg,#10243a,#0875ae); }
+.public-site .course-layout article h3 { font-family: var(--font-display),sans-serif; font-size: clamp(1.35rem,2vw,1.8rem); letter-spacing: -.035em; line-height: 1.2; }
+.public-site .course-layout article > div:last-child { padding: 2rem; }
+.public-site .course-layout details { border-color: #dce5eb; border-radius: 1.25rem; box-shadow: 0 8px 28px #10243a06; }
+.public-site .course-layout details summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.public-site .course-layout details summary::-webkit-details-marker { display:none; }
+.public-site .course-layout details summary::after { content: "+"; color:#0875ae; font-size: 1.35rem; font-weight: 400; }
+.public-site .course-layout details[open] summary::after { content: "−"; }
+.public-site .course-layout .contact-panel { border-radius: 1.5rem; }
+@media(max-width: 640px) { .public-site .course-layout > section[id="hero"]::after { width: 10rem; height: 10rem; right: -4rem; opacity: .45; } }
+
+/* Match the homepage's heading and body scale throughout the content pages. */
+.public-site .course-layout > section[id="hero"] .site-page-title { font-size: clamp(31px, 3vw, 42px); line-height: 1.16; letter-spacing: -.035em; }
+.public-site .course-layout .site-section-title { font-size: clamp(27px, 2.4vw, 34px); line-height: 1.25; letter-spacing: -.035em; }
+.public-site .course-layout .site-page-intro,
+.public-site .course-layout .site-section-intro { font-size: 17px; line-height: 1.7; }
+.public-site .course-layout article p,
+.public-site .course-layout article li,
+.public-site .course-layout details p,
+.public-site .course-layout details li,
+.public-site .course-layout > section li { font-size: 15px; line-height: 1.7; }
+@media(max-width:639px) {
+  .public-site .course-layout .site-page-intro,
+  .public-site .course-layout .site-section-intro { font-size: 15px; }
+}
+/* Strong headings with marker-style emphasis in the brand palette. */
+.public-site :is(h1, h2, h3),
+.public-site .site-page-title,
+.public-site .site-section-title { font-weight: 800; }
+
+/* Contain off-screen menu decoration without creating a horizontal page scrollbar. */
+.public-site { position: relative; overflow-x: clip; }

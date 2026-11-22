@@ -20,12 +20,12 @@
       "items": [
         {
           "title": "Advanced AI & Digital Marketing Program",
-          "description": "Our flagship program includes the complete AI and digital marketing curriculum, followed by a 3-month internship on live client work.",
+          "description": "Our flagship program includes the complete AI and digital marketing curriculum, with an internship pathway for eligible learners.",
           "eyebrow": "Flagship Program",
           "detail": "3 Months Training + 3 Months Internship",
           "features": [
             "3 months intensive practical training",
-            "3 months internship on live client work",
+            "Internship opportunities subject to selection",
             "40+ live tools & AI platforms",
             "15+ practical projects",
             "Placement assistance & interview prep",
@@ -37,14 +37,14 @@
         },
         {
           "title": "Professional AI & Digital Marketing Program",
-          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to prepare for high-paying roles.",
+          "description": "A career-focused program with the complete Advanced curriculum plus a dedicated month of personality development to strengthen career readiness.",
           "eyebrow": "With Personality Development",
           "detail": "4 Months Training + 3 Months Internship",
           "features": [
             "Complete Advanced curriculum",
             "1 month personality development",
             "Communication & presentation skills",
-            "High-paying job focus",
+            "Career readiness focus",
             "Placement assistance",
             "Portfolio + certification"
           ],
@@ -71,7 +71,7 @@
         },
         {
           "title": "Diploma in AI, Digital Marketing & Creative Media",
-          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, followed by a three-month internship.",
+          "description": "The complete diploma combines Advanced AI and digital marketing, personality development, graphic design and video editing, with an internship pathway for eligible learners.",
           "eyebrow": "Complete Career Diploma",
           "detail": "6 Months Training + 3 Months Internship",
           "features": [
@@ -86,6 +86,19 @@
           "href": "/courses/diploma-ai-digital-marketing",
           "linkLabel": "Explore program"
         }
+      ]
+    },
+    {
+      "id": "compare",
+      "type": "features",
+      "eyebrow": "Choose your direction",
+      "heading": "One foundation. Four ways to grow.",
+      "description": "Each path begins with AI and digital marketing skills. Choose a longer program if you also want structured communication or creative media training.",
+      "items": [
+        "Advanced: marketing foundations and practical projects",
+        "Professional: Advanced plus personality development",
+        "Master: Advanced plus design and video editing",
+        "Diploma: marketing, communication and creative media together"
       ]
     },
     {
@@ -153,10 +166,54 @@
       ]
     },
     {
+      "id": "how-it-works",
+      "type": "cards",
+      "eyebrow": "Learning experience",
+      "heading": "From first concept to finished work.",
+      "items": [
+        {
+          "title": "Learn the essentials",
+          "description": "Build a foundation across search, social, paid media, analytics and AI."
+        },
+        {
+          "title": "Apply each skill",
+          "description": "Use briefs and exercises to practise planning, creating and measuring."
+        },
+        {
+          "title": "Show your progress",
+          "description": "Collect selected work into a portfolio and prepare to explain your decisions."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "Good to know",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Which program should I choose?",
+          "answer": "Choose based on the skills you want to add. Advanced focuses on AI and marketing; Professional adds communication; Master adds creative media; Diploma combines both."
+        },
+        {
+          "question": "Can I see the full syllabus?",
+          "answer": "Yes. Open the curriculum page for each program to review the learning areas in more detail."
+        },
+        {
+          "question": "Are internships included for every learner?",
+          "answer": "Internship opportunities are subject to eligibility, selection and availability. Confirm current terms with the academy before enrolling."
+        },
+        {
+          "question": "Can I ask about fees and schedules?",
+          "answer": "Yes. Contact the team for current fees, upcoming batches and delivery details."
+        }
+      ]
+    },
+    {
       "id": "guidance",
       "type": "cta",
       "heading": "Big goals? Start with a conversation.",
-      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "description": "Ask about curriculum, fees, internship eligibility and upcoming batches. Our team will help you find your fit.",
       "buttons": [
         {
           "label": "Talk to our team",

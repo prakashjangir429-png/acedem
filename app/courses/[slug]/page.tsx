@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getPageContent, getPageMetadata, pageExists } from '@/lib/content';
-import { PageRenderer } from '@/components/content/page-renderer';
+import { CourseExperience } from '@/components/content/course-experience';
 
 export const dynamic = 'force-dynamic';
 type Props = { params: Promise<{ slug: string }> };
@@ -14,5 +14,5 @@ export default async function Page({ params }: Props) {
   const { slug } = await params;
   const key = 'course-' + slug;
   if (!await pageExists(key)) notFound();
-  return <PageRenderer page={await getPageContent(key)} />;
+  return <CourseExperience page={await getPageContent(key)} slug={slug} />;
 }

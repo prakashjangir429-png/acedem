@@ -1,3 +1,4 @@
+import './admin-theme.css';
 import { AdminShell } from '@/components/admin/shell';
 export const metadata={title:'Academy workspace | Digitonix',robots:{index:false,follow:false}};
 export default function Layout({children}:{children:React.ReactNode}){return <AdminShell>{children}</AdminShell>;}

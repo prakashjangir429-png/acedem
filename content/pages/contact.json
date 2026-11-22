@@ -11,13 +11,22 @@
       "heading": "Big ambitions. One conversation away.",
       "description": "Let’s find the right course, skills and career path for you.",
       "eyebrow": "Let’s talk about your future",
-      "buttons": []
+      "buttons": [
+        {
+          "label": "Send an enquiry",
+          "href": "#enquiry"
+        },
+        {
+          "label": "Call the academy",
+          "href": "tel:+917073225806"
+        }
+      ]
     },
     {
       "id": "enquiry",
       "type": "contact",
       "heading": "Good guidance. A great beginning.",
-      "description": "Questions about courses or internships? Our team is here to help.",
+      "description": "Tell us about your learning goals or project. Use the form for course guidance, batch and fee questions, or a service brief.",
       "contacts": [
         {
           "label": "Call us",
@@ -47,6 +56,10 @@
         {
           "label": "Chat on WhatsApp",
           "href": "https://wa.me/917073225806"
+        },
+        {
+          "label": "Get directions",
+          "href": "https://www.google.com/maps/search/?api=1&query=Pink+Hives+Building+Chitrakoot+Jaipur"
         }
       ],
       "form": {
@@ -75,73 +88,45 @@
       }
     },
     {
-      "id": "about",
+      "id": "next-steps",
       "type": "cards",
-      "eyebrow": "About Digitonix Academy",
-      "heading": "A place to learn. A platform to grow.",
-      "description": "We help aspiring marketers, creators and business owners turn curiosity into practical digital skills.",
+      "heading": "A useful conversation starts with a little context.",
+      "eyebrow": "How we can help",
       "items": [
         {
-          "title": "Learn the foundations",
-          "description": "Digital marketing, content and AI tools."
+          "title": "For course enquiries",
+          "description": "Share your background, the skills you want to learn and the program you are considering. Ask about current fees and schedules."
         },
         {
-          "title": "Put skills into practice",
-          "description": "Real campaigns and portfolio projects."
+          "title": "For service enquiries",
+          "description": "Describe your audience, goal and current website or marketing activity. Include any timeline or scope requirements."
         },
         {
-          "title": "Build industry experience",
-          "description": "Internship learning and career preparation."
+          "title": "For a campus visit",
+          "description": "Call ahead to confirm availability and discuss what you would like to explore during your visit."
         }
       ]
     },
     {
-      "id": "stats",
-      "type": "stats",
+      "id": "faq",
+      "type": "faq",
+      "heading": "Contact questions",
       "items": [
         {
-          "value": 45,
-          "suffix": "+",
-          "label": "Modules"
+          "question": "Where is the academy located?",
+          "answer": "The academy is at the 2nd Floor, Pink Hives Building, Plot No. B-2/425, Sector 2, Chitrakoot Scheme, Vaishali Nagar, Jaipur, Rajasthan 302021."
         },
         {
-          "value": 14,
-          "suffix": "+",
-          "label": "Certifications"
+          "question": "What are the opening hours?",
+          "answer": "The listed hours are Monday to Saturday, 9 AM to 7 PM IST. Please call ahead to confirm availability before visiting."
         },
         {
-          "value": 3,
-          "suffix": "",
-          "label": "Months Training"
+          "question": "What should I include in my enquiry?",
+          "answer": "Include your contact details, the program or service you are interested in, and a brief description of your goals. Avoid including sensitive personal information."
         },
         {
-          "value": 3,
-          "suffix": "",
-          "label": "Months Internship"
-        }
-      ]
-    },
-    {
-      "id": "visit",
-      "type": "cta",
-      "heading": "Your journey starts in Jaipur.",
-      "description": "Pink Hives Building · Chitrakoot Scheme · Vaishali Nagar, Jaipur, Rajasthan 302021",
-      "buttons": [
-        {
-          "label": "Get directions",
-          "href": "https://www.google.com/maps/search/?api=1&query=Pink+Hives+Building+Chitrakoot+Jaipur"
-        }
-      ]
-    },
-    {
-      "id": "guidance",
-      "type": "cta",
-      "heading": "Big goals? Start with a conversation.",
-      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
-      "buttons": [
-        {
-          "label": "Talk to our team",
-          "href": "/contact"
+          "question": "Can I enquire without choosing a program?",
+          "answer": "Yes. Leave the program selection open and describe what you want to learn. The team can help you compare the available paths."
         }
       ]
     }

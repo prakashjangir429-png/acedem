@@ -20,3 +20,6 @@
 .ws-home,.ws-story-dialog{font-family:Arial,Helvetica,sans-serif}
 @media(min-width:1200px){.ws-tabs button{flex:none;padding-inline:29px}.ws-portraits{margin-top:50px}}
 @media(min-width:1200px){.ws-hero-grid{padding-block:75px 70px}.ws-portraits{margin-top:35px}.ws-tabs{max-width:1092px}.ws-tabs button{flex:1;padding-inline:15px}}
+/* The shared site navbar sits over a white strip, as it does on inner pages. */
+.ws-home{padding-top:90px}
+@media(max-width:900px){.ws-home{padding-top:80px}}

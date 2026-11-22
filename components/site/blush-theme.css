@@ -1,0 +1,164 @@
+/* Soft blush surfaces, natural type and violet-to-coral highlights. */
+.public-site{--site-navy:#161216;--site-blue:#883cc7;--site-blue-dark:#6c2ea1;--site-amber:#ec8253;--site-muted:#62575a;color:#161216}
+.public-site .dn-home{--ink:#161216;--blue:#883cc7;--teal:#b567a5;--amber:#ec8253;--muted:#62575a;color:#161216}
+.public-site :is(h1,h2,h3),.public-site .site-page-title,.public-site .site-section-title,.public-site .dn-home :is(h1,h2,h3),.public-site .dn-home .dn-program-card h3{font-weight:500;letter-spacing:-.045em}
+.public-site .dn-home .dn-hero h1{font-size:clamp(3rem,5vw,4.8rem);font-weight:500;line-height:1.08;letter-spacing:-.055em}
+.public-site .dn-home :is(h1,h2) em,.public-site .dn-home .dn-hero h1 em{background:linear-gradient(100deg,#8739d1,#b45d9c 48%,#ed8553);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.public-site .dn-home .dn-hero{background:#fff2ee}
+.public-site .academy-navbar[data-scrolled=false] .academy-nav-pill{background:#fff2eee8;border-color:#edddd7}
+.public-site .academy-navbar[data-scrolled=true] .academy-nav-pill{background:#fffffff5;border-color:#eadedb}
+.public-site .academy-nav-brand strong,.public-site .academy-nav-links>a,.public-site .academy-nav-links>button{color:#161216}
+.public-site .academy-nav-brand>span>span:first-child{background:#161216}
+.public-site .academy-nav-brand small{color:#8e559e}
+.public-site .academy-nav-links>a,.public-site .academy-nav-links>button{font-weight:500}
+.public-site .academy-nav-actions>a:last-child,.public-site .dn-home .dn-button-primary,.public-site .academy-hero-primary,.public-site .footer-cta a[href='/contact']{background:linear-gradient(105deg,#883bd0,#bc669a 55%,#ec8253);border:1px solid #ffffffa0;color:#fff}
+.public-site .dn-home .dn-button{font-weight:500;border-radius:18px}
+.public-site .dn-home .dn-button-light{background:#fff7f3;color:#161216;border:1px solid #cdbeb9}
+.public-site .dn-home .dn-hero-copy>p,.public-site .dn-home .dn-hero-proof span{color:#4c4245}
+.public-site .dn-home .dn-kicker,.public-site .dn-home .dn-eyebrow{color:#91509d;font-weight:500}
+.public-site .dn-home .dn-eyebrow{background:#fff9f6;border-color:#ecdfdb}
+.public-site .da-hero-bottom{border-color:#e8d9d3}
+.public-site .da-hero-bottom>span,.public-site .dn-home .da-hero-bottom p{color:#54464d}
+.public-site .dn-home .dn-programs,.public-site .dn-home .dn-project,.public-site .dn-home .dn-resources,.public-site .dn-home .da-admissions{background:#fff7f4}
+.public-site .dn-home .dn-audience,.public-site .dn-home .dn-curriculum,.public-site .dn-home .dn-services,.public-site .dn-home .dn-intro,.public-site .dn-home .dn-faq,.public-site .da-compare{background:#fff}
+.public-site .dn-home .dn-program-card,.public-site .dn-home .dn-module-grid article,.public-site .dn-home .dn-service-grid a,.public-site .dn-home .dn-resource-stack a{background:linear-gradient(150deg,#fff1eb,#fff 70%);border-color:#ecdfd9;box-shadow:0 12px 30px #654a5006}
+.public-site .dn-home .dn-program-card h3,.public-site .dn-home .dn-module-grid h3,.public-site .dn-home .dn-service-grid h3{color:#161216}
+.public-site .dn-home .dn-program-top span,.public-site .dn-home .dn-program-duration{color:#8a4d95}
+.public-site .dn-home .dn-program-duration,.public-site .dn-home .dn-program-card>a{border-color:#ebdfda}
+.public-site .dn-home .dn-program-card li{color:#62575a}
+.public-site .dn-home .dn-module-icon,.public-site .dn-home .dn-program-top svg,.public-site .dn-home .dn-board-item>span{background:linear-gradient(140deg,#f2e3fb,#fbe6db);color:#9557b6;border-color:#efdfdf;box-shadow:none}
+.public-site .dn-home .dn-service-grid>a>svg{background:linear-gradient(135deg,#9b5bcc,#e78a68);box-shadow:0 8px 22px #be7d8c18}
+.public-site .dn-home .dn-project-board,.public-site .dn-home .da-enquiry{background:#fff;border-color:#ecdfda;box-shadow:0 20px 50px #654a5010}
+.public-site .dn-home .dn-board-header,.public-site .dn-home .dn-board-header span:last-child{color:#9b608d}
+.public-site .dn-home .dn-board-progress i{background:linear-gradient(90deg,#924ace,#e78660)}
+.public-site .dn-home .dn-method,.public-site .dn-home .da-career{background:#242026}
+.public-site .dn-home .dn-method h2 em,.public-site .dn-home .da-career h2 em{background:linear-gradient(90deg,#c498ef,#efa184);background-clip:text;-webkit-background-clip:text}
+.public-site .dn-home .dn-method p,.public-site .dn-home .da-career p{color:#dfd7dc}
+.public-site .dn-home .dn-method .dn-eyebrow,.public-site .dn-home .da-career .dn-eyebrow{background:#ffffff0d;border-color:#ffffff25;color:#dfbad9}
+.public-site .da-prospectus{background:#242026;border:1px solid #322c35;box-shadow:12px 12px 0 #efdfd9,0 18px 50px #654a5014}
+.public-site .da-prospectus:before{border-color:#ffffff08}.public-site .da-prospectus:after{background:linear-gradient(#a058d2,#ed9772)}
+.public-site .dn-home .da-prospectus .da-prospectus-title h2{font-weight:500}
+.public-site .dn-home .da-prospectus .da-prospectus-title h2 em{background:linear-gradient(100deg,#c08be4,#ee9974);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent!important}
+.public-site .da-prospectus-title>span,.public-site .da-prospectus-bottom>span,.public-site .da-prospectus-bottom p{color:#e5d5e5}
+.public-site .da-prospectus-tab{background:#fff4ee;color:#7e4a8a}
+.public-site .dn-home .da-table-scroll{border-color:#eadbd5}
+.public-site .dn-home .da-table-scroll thead{background:#302630}
+.public-site .dn-home .da-table-scroll tbody tr:nth-child(even){background:#fff7f3}
+.public-site .dn-home .da-table-scroll th,.public-site .dn-home .da-table-scroll td{border-color:#eaded8}
+.public-site .dn-home .da-table-scroll tbody th{color:#62575a}
+.public-site .dn-home .dn-faq-list,.public-site .dn-home .dn-faq-list details,.public-site .dn-home .da-visit{border-color:#e8dcd6}
+.public-site .dn-home .da-enquiry .contact-field{background:#fffaf8;border-color:#e9dcd6}
+.public-site .dn-home .da-enquiry form>button{border-radius:16px;font-weight:500}
+.public-site .academy-dropdown{background:#fffdfa;border-color:#ebdcd7;box-shadow:0 25px 70px #6e465225}
+.public-site .academy-dropdown aside{background:linear-gradient(140deg,#f3e3f6,#fff0e8)}
+.public-site .academy-dropdown h2,.public-site .nav-course-link h3{color:#211b22;font-weight:500}
+.public-site .nav-course-link:hover{background:#fff2ed;border-color:#e9d4ce}
+.public-site .nav-dropdown-icon{background:linear-gradient(135deg,#f0dff9,#ffe9dc);color:#9a57b3}
+.public-site .footer-cta{background:radial-gradient(ellipse at 90% 80%,#65445e,transparent 65%),#242026;border-color:#403440}
+.public-site .footer-cta h2 span{background-image:linear-gradient(90deg,#c494e8,#ee9670)}
+.public-site footer>div:last-child{background:#211d23}
+.public-site .course-layout,.public-site .course-layout-bg{color:#211b22;background:#fff7f3}
+.public-site .course-layout article>div:first-child{background:#f8eae7}
+.public-site .contact-panel,.public-site .course-layout article>div:first-child.contact-panel{background:linear-gradient(140deg,#302630,#795671)}
+.public-site .contact-field:focus{border-color:#a15fbe;box-shadow:0 0 0 3px #a15fbe18}
+@media(max-width:760px){.public-site .dn-home .dn-hero h1{font-size:clamp(2.65rem,9vw,3.8rem)}}
+/* Clearer type hierarchy and stronger text contrast. */
+.public-site{--site-muted:#51454d;font-weight:500}
+.public-site .dn-home{--muted:#51454d;font-weight:500}
+.public-site :is(h1,h2,h3,h4),
+.public-site .site-page-title,
+.public-site .site-section-title,
+.public-site .dn-home :is(h1,h2,h3),
+.public-site .dn-home .dn-program-card h3,
+.public-site .academy-dropdown h2,
+.public-site .nav-course-link h3{font-weight:600}
+.public-site :is(p,li,input,textarea,select){font-weight:500}
+.public-site :is(button,label,summary),
+.public-site .academy-nav-links>a,
+.public-site .academy-nav-links>button,
+.public-site .dn-home .dn-button{font-weight:600}
+.public-site .dn-home .dn-hero h1{font-size:clamp(2.7rem,4.2vw,4rem);font-weight:600;line-height:1.12}
+.public-site .dn-home .dn-hero-copy>p{color:#613956;font-weight:500;font-size:1.1rem;line-height:1.8}
+.public-site .dn-home .dn-kicker,
+.public-site .dn-home .dn-eyebrow{color:#813b91;font-weight:650}
+.public-site .dn-home .dn-hero-proof span{color:#51404d;font-weight:600}
+.public-site .site-page-intro,
+.public-site .site-section-intro,
+.public-site .resource-description,
+.public-site .nav-course-link p,
+.public-site .academy-dropdown aside p{color:#594a60;font-weight:500}
+.public-site .dn-home .dn-program-card li,
+.public-site .dn-home .dn-board-progress,
+.public-site .dn-home .da-table-scroll tbody th{color:#51454d}
+.public-site .dn-home .dn-method p,
+.public-site .dn-home .da-career p{color:#e8dfe6}
+.public-site .dn-home .dn-method .dn-eyebrow,
+.public-site .dn-home .da-career .dn-eyebrow{color:#e6bfdf}
+.public-site .da-prospectus-bottom strong{font-weight:600}
+.public-site footer :is(p,li){font-weight:500}
+@media(max-width:760px){.public-site .dn-home .dn-hero h1{font-size:clamp(2.35rem,8vw,3.35rem)}.public-site .dn-home .dn-hero-copy>p{font-size:1rem}}
+/* Slightly smaller hero title across screen sizes. */
+.public-site .dn-home .dn-hero h1{font-size:clamp(2.1rem,3.2vw,3.1rem)}
+@media(max-width:760px){.public-site .dn-home .dn-hero h1{font-size:clamp(1.9rem,6.5vw,2.6rem)}}
+.public-site .dn-home .dn-hero h1 .hero-title-line{display:block;white-space:nowrap}
+@media(max-width:760px){.public-site .dn-home .dn-hero h1{font-size:clamp(1.2rem,5.2vw,2.6rem)}}
+/* A photographic learning scene replaces the illustrated prospectus. */
+.public-site .da-hero-image{position:relative;margin:0;min-width:0;border-radius:28px;overflow:hidden;border:6px solid #ffffffc7;box-shadow:0 24px 55px #805b691a;background:#f3e5df}
+.public-site .da-hero-image>img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.public-site .da-hero-image figcaption{position:absolute;inset:auto 0 0;padding:2.8rem 1.4rem 1.4rem;background:linear-gradient(transparent,#231b2bd9);color:#fff}
+.public-site .da-hero-image figcaption>span{display:flex;align-items:center;gap:.5rem;font-size:.65rem;letter-spacing:.1em;font-weight:600;color:#f7e5f0}
+.public-site .da-hero-image figcaption strong{display:block;font-size:1.1rem;font-weight:500;letter-spacing:-.02em;margin-top:.5rem}
+@media(max-width:760px){.public-site .da-hero-image{border-radius:22px;margin-top:.5rem}.public-site .da-hero-image figcaption{padding:2.5rem 1rem 1rem}}
+/* Keep the animated navbar shell separate from its centered 7xl content. */
+.public-site .academy-navbar .academy-nav-pill{padding-inline:0}
+.public-site .academy-nav-content{display:flex;align-items:center;justify-content:space-between;gap:16px;width:calc(100% - 3rem);max-width:80rem;margin-inline:auto;min-width:0}
+@media(min-width:1024px) and (max-width:1100px){.public-site .academy-nav-content{gap:8px;width:calc(100% - 2rem)}}
+@media(max-width:760px){.public-site .academy-nav-content{width:calc(100% - 2rem);gap:12px}}
+/* Stronger readable text on the site's light surfaces. */
+.public-site{--site-muted:#4d424b}
+.public-site .dn-home{--muted:#4d424b}
+.public-site :is(.site-page-intro,.site-section-intro,.resource-description,.nav-course-link p,.academy-dropdown aside p){color:#51434f}
+.public-site .dn-home :is(.dn-hero-copy>p,.dn-intro-grid>p,.dn-section-head p,.dn-project-copy>p,.dn-module-grid p,.dn-service-grid p,.dn-resources-grid p,.dn-faq-grid>div>p,.dn-faq-list details p,.da-admissions-copy>p,.da-visit p,.da-visit small,.dn-program-card p,.dn-program-card li,.dn-board-item small,.dn-resource-stack small,.dn-program-footnote){color:#51434f;font-weight:500}
+.public-site .dn-home .da-enquiry p{color:#594753}
+.public-site .courses-experience :is(.cx-breadcrumb,.cx-hero-copy>p,.cx-facts span,.cx-facts-note,.cx-jump a,.cx-fit-heading p,.cf-card-body>p,.cf-card li,.cf-bottom>p,.cl-heading>p,.cl-more,.cl-faq-intro>p,.cm-heading>p,.cm-panel-intro,.cm-topic p,.cm-panel-footer){color:#51434f;font-weight:500}
+.public-site .courses-experience .cx-facts strong{color:#30262f;font-weight:650}
+.public-site .courses-experience .course-layout :is(.site-section-intro,article p,article li,.cl-modules li p,.cl-faq-list details>p,details li p){color:#51434f;font-weight:500}
+.public-site .courses-experience .course-layout>section>ul>li{color:#51434f}
+.public-site .courses-experience .cm-tabs button{color:#51434f}
+.public-site .courses-experience .cm-tabs button.active{color:#fff}
+.public-site .courses-experience .cm-topic h4{color:#382b35}
+/* Light copy stays legible on dark feature panels. */
+.public-site .dn-home :is(.dn-method p,.da-career p){color:#e8dfe6}
+.public-site .dn-home .da-prospectus-bottom p{color:#e8dfe6}
+.public-site .courses-experience .cl-process p{color:#e8dfe6}
+.public-site .courses-experience .course-layout article>div:first-child.contact-panel p{color:#f8e6f5}
+.public-site .courses-experience .course-layout>section>.contact-panel>p{color:#e8dfe6}
+.public-site .contact-panel>p{color:#e8dfe6}
+.public-site footer :is(p,a,small){color:#d8cdd6}
+.public-site footer h2,.public-site footer h3,.public-site footer strong{color:#fff}
+.public-site .footer-cta a[href='/contact']{color:#fff}
+/* Black text for descriptions and supporting details on light surfaces. */
+.public-site{--site-muted:#000}
+.public-site .dn-home{--muted:#000}
+.public-site :is(.site-page-intro,.site-section-intro,.resource-description,.nav-course-link p,.academy-dropdown aside p){color:#000}
+.public-site .dn-home :is(.dn-hero-copy>p,.dn-intro-grid>p,.dn-section-head p,.dn-project-copy>p,.dn-module-grid p,.dn-service-grid p,.dn-resources-grid p,.dn-faq-grid>div>p,.dn-faq-list details p,.da-admissions-copy>p,.da-visit p,.da-visit small,.dn-program-card p,.dn-program-card li,.dn-board-item small,.dn-resource-stack small,.dn-program-footnote,.da-enquiry p){color:#000}
+.public-site .courses-experience :is(.cx-breadcrumb,.cx-hero-copy>p,.cx-facts span,.cx-facts-note,.cx-jump a,.cx-fit-heading p,.cf-card-body>p,.cf-card li,.cf-bottom>p,.cl-heading>p,.cl-more,.cl-faq-intro>p,.cm-heading>p,.cm-panel-intro,.cm-topic p,.cm-panel-footer){color:#000}
+.public-site .courses-experience .course-layout :is(.site-section-intro,article p,article li,.cl-modules li p,.cl-faq-list details>p,details li p){color:#000}
+.public-site .courses-experience .course-layout>section>ul>li,
+.public-site .courses-experience .cm-tabs button,
+.public-site .courses-experience .cm-topic h4{color:#000}
+.public-site .courses-experience .cm-tabs button.active{color:#fff}
+.public-site .dn-home :is(.dn-method p,.da-career p),
+.public-site .courses-experience .cl-process p,
+.public-site .courses-experience .course-layout>section>.contact-panel>p{color:#e8dfe6}
+.public-site .courses-experience .course-layout article>div:first-child.contact-panel p{color:#fff}
+/* Slightly larger public navigation labels. */
+.public-site .academy-nav-links>a,
+.public-site .academy-nav-links>button{font-size:14px;font-weight:600}
+@media(min-width:1024px) and (max-width:1100px){.public-site .academy-nav-links>a,.public-site .academy-nav-links>button{font-size:13px}}
+/* Navigation hover emphasis without a background fill. */
+.public-site .academy-nav-links>a,
+.public-site .academy-nav-links>button{transition:color .2s ease,font-weight .2s ease}
+.public-site .academy-nav-links>a:hover,
+.public-site .academy-nav-links>button:hover,
+.public-site .academy-nav-links>button[aria-expanded=true]{background:transparent;color:#883cc7;font-weight:650}

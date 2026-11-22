@@ -1,8 +1,8 @@
 import { getPageContent, getPageMetadata } from '@/lib/content';
-import { PageRenderer } from '@/components/content/page-renderer';
+import { EditorialExperience } from '@/components/content/editorial-experience';
 
 export const dynamic = 'force-dynamic';
 export function generateMetadata() { return getPageMetadata('contact'); }
 export default async function Page() {
-  return <PageRenderer page={await getPageContent('contact')} />;
+  return <EditorialExperience page={await getPageContent('contact')} kind="contact" />;
 }

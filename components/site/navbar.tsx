@@ -18,8 +18,8 @@ import {
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import MegaMenu from './megaMenu';
+import { gsap } from 'gsap';
 
 const MobileMenuScene = dynamic(
   () => import('./mobileMenu'),
@@ -31,10 +31,9 @@ const navLinks = [
   { href: '/', label: 'Home', number: '01' },
   { href: '/courses', label: 'Courses', number: '02' },
   { href: '/services', label: 'Services', number: '03' },
-  { href: '/resources', label: 'Resources', number: '04' },
-  { href: '/blogs', label: 'Blogs', number: '05' },
-  { href: '/career', label: 'Career', number: '06' },
-  { href: '/contact', label: 'Contact', number: '07' },
+  { href: '/blogs', label: 'Blogs', number: '04' },
+  { href: '/career', label: 'Career', number: '05' },
+  { href: '/contact', label: 'Contact', number: '06' },
 ];
 
 export function Navbar() {
@@ -44,6 +43,8 @@ export function Navbar() {
   const [activeMegaMenu, setActiveMegaMenu] =
     useState<'courses' | 'services' | null>(null);
 
+  const navRef = useRef<HTMLElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearCloseTimer = () => {
@@ -52,6 +53,20 @@ export function Navbar() {
       closeTimer.current = null;
     }
   };
+
+  useEffect(() => {
+    if (!navRef.current || !headerRef.current) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const tween = gsap.to(navRef.current, {
+      width: scrolled ? 'calc(100% - 40px)' : '100%',
+      maxWidth: scrolled ? 1280 : 1800,
+      borderRadius: scrolled ? 999 : 0,
+      boxShadow: scrolled ? '0 10px 40px rgba(90,30,140,0.12)' : '0 0 0 rgba(90,30,140,0)',
+      duration: reduced ? 0 : 0.55, ease: 'power3.out', overwrite: 'auto',
+    });
+    const headerTween = gsap.to(headerRef.current, { paddingTop: scrolled ? 14 : 0, duration: reduced ? 0 : 0.55, ease: 'power3.out' });
+    return () => { tween.kill(); headerTween.kill(); };
+  }, [scrolled]);
 
   const openMegaMenu = (type: "courses" | "services") => {
     clearCloseTimer();
@@ -144,24 +159,26 @@ export function Navbar() {
 
       {/* Navbar */}
       <header
+        ref={headerRef}
+        data-scrolled={scrolled}
         className={cn(
-          'fixed inset-x-0 top-0 z-[100] transition-all duration-500',
+          'academy-navbar fixed inset-x-0 top-0 z-[100] transition-all duration-500',
           scrolled
             ? 'bg-white shadow-[0_8px_40px_rgba(15,23,42,0.07)] py-3'
             : 'bg-transparent py-5'
         )}
       >
-        <nav className="section-padding flex items-center justify-between">
+        <nav ref={navRef} className="academy-nav-pill section-padding flex items-center justify-between">
+          <div className="academy-nav-content">
           {/* Logo */}
           <Link
             href="/"
-            className="relative z-[102] flex items-center gap-3"
+            className="academy-nav-brand relative z-[102] flex items-center gap-3"
           >
-            <div className="relative">
-              <div className="relative">
-                <Image src={"https://www.digitonix.in/log.png"} className='h-50' alt="Digitonix Academy" width={130} height={50} />
-              </div>
-            </div>
+            <span className="flex items-center gap-2.5" aria-label="Digitonix Academy">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#0875ae] to-[#0d95a0] font-display text-xl font-bold text-white shadow-sm">D</span>
+              <span className="flex flex-col font-display leading-none text-[#10243a]"><strong className="text-lg tracking-tight">Digitonix</strong><small className="mt-1 text-[10px] font-bold uppercase tracking-[.22em] text-[#0875ae]">Academy</small></span>
+            </span>
           </Link>
 
           {/* <div className="hidden lg:flex items-center gap-px rounded-full border border-white/70 bg-white/65 p-1.5 shadow-sm backdrop-blur-xl">
@@ -186,7 +203,7 @@ export function Navbar() {
           </div> */}
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1 rounded-full border border-white/70 bg-white/70 p-1.5 shadow-sm backdrop-blur-xl">
+          <div className="academy-nav-links hidden lg:flex items-center gap-1 rounded-full border border-white/70 bg-white/70 p-1.5 shadow-sm backdrop-blur-xl">
 
             <Link
               href="/"
@@ -199,6 +216,8 @@ export function Navbar() {
               <button
                 key={item}
                 onMouseEnter={() => openMegaMenu(item)}
+                onKeyDown={event => { if (event.key === 'ArrowDown') { event.preventDefault(); openMegaMenu(item); } }}
+                aria-controls="academy-dropdown"
                 onMouseLeave={scheduleClose}
                 onClick={() =>
                   setActiveMegaMenu((prev) =>
@@ -224,10 +243,6 @@ export function Navbar() {
               </button>
             ))}
 
-            <Link href="/resources" className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50">
-              Resources
-            </Link>
-
             <Link href="/blogs" className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50">
               Blogs
             </Link>
@@ -242,7 +257,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="academy-nav-actions hidden lg:flex items-center gap-5">
             <a
               href="tel:+917891757705"
               className="group flex items-center gap-2 text-sm font-semibold text-slate-700 transition-colors hover:text-sky-600"
@@ -294,6 +309,7 @@ export function Navbar() {
               />
             </span>
           </button>
+          </div>
         </nav>
       </header>
 

@@ -1,10 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import { SiteFrame } from '@/components/site/site-frame';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
+const inter = DM_Sans({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+const spaceGrotesk = DM_Sans({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'Digitonix Academy — AI & Digital Marketing Training with Internship',

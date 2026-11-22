@@ -1,9 +1,23 @@
-import { database } from '@/lib/database';
-import { cleanHtml } from '@/lib/blogs';
+import { cleanHtml, findPublishedBlog } from '@/lib/blogs';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { cache } from 'react';
+import { BookOpen, CalendarDays, Clock3 } from 'lucide-react';
+import { ArticleNavigation } from '@/components/content/article-navigation';
+import '../journal.css';
 export const dynamic='force-dynamic';
-const getPost=cache(async(slug:string)=>{const post=await (await database()).collection('blogs').findOne({slug,status:'published'});if(!post)notFound();return post;});
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const post=await getPost((await params).slug);return {title:post.metaTitle||post.title,description:post.metaDescription||post.excerpt,openGraph:{title:post.metaTitle||post.title,description:post.metaDescription||post.excerpt,type:'article',...(post.coverImage?{images:[post.coverImage]}:{})}};}
-export default async function Page({params}:{params:Promise<{slug:string}>}){const post=await getPost((await params).slug);return <article className="course-layout-bg min-h-screen px-6 py-16"><div className="mx-auto max-w-3xl"><Link href="/blogs" className="text-sm">← All stories</Link><p className="course-eyebrow mt-10">{post.category}</p><h1 className="my-6 text-4xl font-semibold md:text-6xl">{post.title}</h1><p className="text-xl leading-8 text-slate-600">{post.excerpt}</p><p className="my-8 text-sm">{post.author} · {new Date(post.publishedAt||post.createdAt).toLocaleDateString('en-IN',{dateStyle:'long'})}</p>{post.coverImage&&<img src={post.coverImage} alt={post.title} className="mb-10 w-full rounded-3xl"/>}<div className="blog-prose rounded-3xl bg-white p-6 md:p-10" dangerouslySetInnerHTML={{__html:cleanHtml(post.content)}}/><div className="mt-12 rounded-3xl bg-[#101d3b] p-10 text-white"><h2 className="text-3xl font-semibold">Turn curiosity into capability.</h2><p className="my-4">Explore practical learning at Digitonix Academy.</p><Link href="/contact" className="inline-block rounded-xl bg-[#f5cc74] px-6 py-3 text-[#101d3b]">Talk to our team →</Link></div></div></article>;}
+const getPost=cache(async(slug:string)=>{try{const post=await findPublishedBlog(slug);return {post,unavailable:false};}catch{return {post:null,unavailable:true};}});
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {post,unavailable}=await getPost((await params).slug);if(unavailable)return {title:'Journal temporarily unavailable | Digitonix Academy',robots:{index:false,follow:true}};if(!post)notFound();return {title:post.metaTitle||post.title,description:post.metaDescription||post.excerpt,keywords:post.keywords||[],openGraph:{title:post.metaTitle||post.title,description:post.metaDescription||post.excerpt,type:'article',...(post.coverImage?{images:[post.coverImage]}:{})}};}
+export default async function Page({params}:{params:Promise<{slug:string}>}){
+ const {slug}=await params;const {post,unavailable}=await getPost(slug);
+ if(unavailable)return <div className="journal-page"><section className="jr-container jr-unavailable"><div className="jr-empty"><BookOpen size={38}/><h1>The journal is taking a short pause.</h1><p>We could not load this article right now. Please check back soon.</p><Link href="/blogs">Back to the journal</Link></div></section></div>;
+ if(!post)notFound();
+ const headings:{id:string;title:string}[]=[];
+ const html=cleanHtml(String(post.content||'')).replace(/<(h[23])>([\s\S]*?)<\/\1>/gi,(match,tag:string,inner:string)=>{const id=`article-section-${headings.length+1}`;const title=inner.replace(/<[^>]*>/g,'').replace(/&amp;/g,'&').replace(/&nbsp;/g,' ').replace(/&quot;/g,'"').replace(/&#39;/g,"'");headings.push({id,title});return `<${tag} id="${id}">${inner}</${tag}>`;});
+ const minutes=Math.max(1,Math.ceil(html.replace(/<[^>]*>/g,' ').split(/\s+/).filter(Boolean).length/200));
+ const date=new Date(post.publishedAt||post.createdAt);const dateText=Number.isNaN(date.getTime())?'':date.toLocaleDateString('en-IN',{dateStyle:'long',timeZone:'Asia/Kolkata'});
+ return <article className="journal-page jr-article"><header className="jr-article-header"><div className="jr-container"><nav className="jr-breadcrumb" aria-label="Breadcrumb"><Link href="/blogs">The journal</Link><span>/</span><span>{post.category}</span></nav><span className="jr-eyebrow">{post.category}</span><h1>{post.title}</h1><p>{post.excerpt}</p><div className="jr-byline"><span className="jr-author-avatar">{String(post.author||'D').slice(0,1).toUpperCase()}</span><strong>{post.author||'Digitonix Academy'}</strong>{dateText&&<span><CalendarDays size={15}/><time dateTime={date.toISOString()}>{dateText}</time></span>}<span><Clock3 size={15}/>{minutes} min read</span></div></div></header>
+ {post.coverImage&&<div className="jr-container jr-article-cover"><img src={post.coverImage} alt={post.title}/></div>}
+ <div className="jr-container jr-reading-layout"><ArticleNavigation headings={headings}/><div><div id="journal-content" className="jr-prose" dangerouslySetInnerHTML={{__html:html}}/><div className="jr-article-end"><span>KEEP THE CURIOSITY GOING</span><h2>One idea. A useful next step.</h2><p>Explore a learning path or find another perspective in the journal.</p><div><Link href="/courses">Explore courses</Link><Link href="/blogs">More articles</Link></div></div></div></div>
+ </article>;
+}

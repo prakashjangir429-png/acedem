@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Services | Digitonix Academy",
+    "description": "Explore Digitonix web development, UI/UX design and digital marketing services."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "eyebrow": "Our services",
+      "heading": "Digital work, thoughtfully made.",
+      "description": "From your first website to a sharper marketing plan, explore services built around clarity, usability and measurable decisions.",
+      "buttons": [
+        {
+          "label": "Discuss your project",
+          "href": "/contact"
+        },
+        {
+          "label": "Explore our services",
+          "href": "#services"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "type": "cards",
+      "eyebrow": "What we can help with",
+      "heading": "Choose the right starting point.",
+      "items": [
+        {
+          "title": "Web Development",
+          "eyebrow": "01 / SERVICE",
+          "description": "Plan, design and build a website that is clear, fast and useful.",
+          "features": [
+            "Discovery and content planning",
+            "Information architecture and page structure",
+            "Responsive interface design"
+          ],
+          "href": "/services/web-development",
+          "linkLabel": "Explore service"
+        },
+        {
+          "title": "UI / UX Design",
+          "eyebrow": "02 / SERVICE",
+          "description": "Make digital journeys easier to understand and more enjoyable to use.",
+          "features": [
+            "Product and audience discovery",
+            "User journeys and wireframes",
+            "Visual interface design"
+          ],
+          "href": "/services/ui-ux",
+          "linkLabel": "Explore service"
+        },
+        {
+          "title": "Digital Marketing",
+          "eyebrow": "03 / SERVICE",
+          "description": "Connect the right message, channel and measurement to your growth goals.",
+          "features": [
+            "Audience and channel discovery",
+            "SEO and content planning",
+            "Social media strategy"
+          ],
+          "href": "/services/digital-marketing",
+          "linkLabel": "Explore service"
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "type": "cards",
+      "heading": "A better brief makes a better beginning.",
+      "eyebrow": "Start with clarity",
+      "items": [
+        {
+          "title": "Your audience",
+          "description": "Who needs this work, what do they want to understand and what should they do next?"
+        },
+        {
+          "title": "Your priorities",
+          "description": "Which business goal matters most, and which practical constraints should shape the project?"
+        },
+        {
+          "title": "Your definition of done",
+          "description": "Agree on deliverables, review points and responsibilities so everyone knows what the work includes."
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "type": "cards",
+      "eyebrow": "Our approach",
+      "heading": "A focused path from idea to action.",
+      "items": [
+        {
+          "title": "Discover",
+          "description": "Understand the audience, business goal, current challenges and constraints."
+        },
+        {
+          "title": "Design the plan",
+          "description": "Prioritise the pages, journeys, channels or campaigns that matter most."
+        },
+        {
+          "title": "Build and refine",
+          "description": "Create the work, review it together and improve it using feedback and data."
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "type": "features",
+      "eyebrow": "A useful first conversation",
+      "heading": "Share the goal. We will help define the work.",
+      "items": [
+        "Your business and the audience you want to reach",
+        "Your existing website, product or marketing presence",
+        "The problem you want to solve",
+        "Relevant examples, content or brand assets",
+        "Your preferred timeline and practical budget"
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "Good to know",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Can you help us choose a service?",
+          "answer": "Yes. Describe your business goal and current challenge, and we can recommend a sensible starting point."
+        },
+        {
+          "question": "Do you work on one-off projects?",
+          "answer": "Project scope depends on your needs. Contact the team to discuss a defined deliverable or ongoing support."
+        },
+        {
+          "question": "How do you estimate cost and timing?",
+          "answer": "The team will review your goals, scope and available materials before providing a project-specific estimate."
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "type": "cta",
+      "eyebrow": "Start a conversation",
+      "heading": "Let’s make the next step clear.",
+      "description": "Talk through your goals with our team. We can explain scope, timelines and the best next step.",
+      "buttons": [
+        {
+          "label": "Get in touch",
+          "href": "/contact"
+        }
+      ]
+    }
+  ]
+}

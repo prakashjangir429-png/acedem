@@ -3,6 +3,9 @@ import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import { Navbar } from './navbar';
 import { Footer } from './footer';
+import './site-theme.css';
+import './reference-palette.css';
+import './blush-theme.css';
 export function SiteFrame({children}:{children:React.ReactNode}) {
   const pathname = usePathname();
   useEffect(() => {
@@ -12,6 +15,7 @@ export function SiteFrame({children}:{children:React.ReactNode}) {
       if(pathname!=='/contact') sessionStorage.setItem('academy:source',pathname);
     } catch {}
   }, [pathname]);
-  if(pathname.startsWith('/admin') || pathname === '/') return <>{children}</>;
-  return <><Navbar/><main>{children}</main><Footer/></>;
+  if(pathname.startsWith('/admin')) return <>{children}</>;
+  if(pathname === '/') return <div className="public-site"><Navbar/>{children}<Footer/></div>;
+  return <div className="public-site"><Navbar/><main>{children}</main><Footer/></div>;
 }

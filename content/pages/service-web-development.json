@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Web Development | Digitonix Academy",
+    "description": "Create a clear digital home for your business. Connect content, navigation and responsive development so visitors can understand your offer and take the next step."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "eyebrow": "Digitonix services",
+      "heading": "Web Development that works harder for your goals.",
+      "description": "Create a clear digital home for your business. Connect content, navigation and responsive development so visitors can understand your offer and take the next step.",
+      "buttons": [
+        {
+          "label": "Discuss a project",
+          "href": "/contact"
+        },
+        {
+          "label": "Explore the scope",
+          "href": "#scope"
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "type": "cards",
+      "heading": "Good digital work starts with clear decisions.",
+      "eyebrow": "The service in context",
+      "items": [
+        {
+          "title": "Start with the audience",
+          "description": "Identify the people you want to reach, the questions they bring and the actions your website should support."
+        },
+        {
+          "title": "Structure before screens",
+          "description": "Organise your pages, content and calls to action before visual details and development begin."
+        },
+        {
+          "title": "Build for everyday use",
+          "description": "Review mobile layouts, forms, navigation and essential performance considerations before handoff."
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "type": "modules",
+      "eyebrow": "Inside the service",
+      "heading": "A clearer picture of the work.",
+      "description": "These are common areas of work. The final scope, deliverables and responsibilities are agreed for your project.",
+      "items": [
+        {
+          "title": "Content and page planning",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Map your key pages and identify the copy, imagery and supporting material each page needs."
+            }
+          ]
+        },
+        {
+          "title": "Responsive layouts",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Adapt navigation, spacing, forms and content for desktop, tablet and mobile screens."
+            }
+          ]
+        },
+        {
+          "title": "Build and integration",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Develop the agreed pages and connect approved forms, content workflows or third-party services within scope."
+            }
+          ]
+        },
+        {
+          "title": "Launch checks and handoff",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Review links, forms and essential page behavior, and document the steps needed to manage the delivered work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deliverables",
+      "type": "cards",
+      "heading": "Practical deliverables. A defined purpose.",
+      "eyebrow": "What a project can look like",
+      "items": [
+        {
+          "title": "Business websites",
+          "description": "A structured website that explains your business, presents your services and makes contact details easy to find."
+        },
+        {
+          "title": "Focused landing pages",
+          "description": "A page organised around one offer or campaign, with a clear message, supporting content and enquiry path."
+        },
+        {
+          "title": "Website refreshes",
+          "description": "An update to page structure, responsive layouts or usability where an existing site no longer supports its goals."
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "type": "modules",
+      "eyebrow": "Working together",
+      "heading": "From a first conversation to a considered handoff.",
+      "description": "Clear review points keep the work grounded in the agreed brief.",
+      "items": [
+        {
+          "title": "Discover and define",
+          "category": "Discovery",
+          "items": [
+            {
+              "name": "Understand the brief",
+              "desc": "Discuss the audience, objectives and constraints, then define deliverables and responsibilities."
+            },
+            {
+              "name": "Agree the plan",
+              "desc": "Confirm the scope, review stages and timeline before production begins."
+            }
+          ]
+        },
+        {
+          "title": "Create and review",
+          "category": "Production",
+          "items": [
+            {
+              "name": "Develop a direction",
+              "desc": "Create the agreed structure, designs or campaign materials for review."
+            },
+            {
+              "name": "Refine the work",
+              "desc": "Consolidate feedback around the brief and resolve agreed changes."
+            }
+          ]
+        },
+        {
+          "title": "Deliver and continue",
+          "category": "Handoff",
+          "items": [
+            {
+              "name": "Prepare the final work",
+              "desc": "Complete the agreed checks and package the deliverables or launch requirements."
+            },
+            {
+              "name": "Discuss next steps",
+              "desc": "Confirm ownership, documentation and any separately scoped ongoing support."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "type": "features",
+      "eyebrow": "Before we begin",
+      "heading": "Bring the context. We will help shape the brief.",
+      "description": "You do not need a finished specification. A few useful starting points make the first conversation more productive.",
+      "items": [
+        "Your website URL, if you have one",
+        "The pages and user actions that matter most",
+        "Available copy, brand assets and images",
+        "Any required forms or integrations",
+        "Your target launch date and practical constraints"
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "Good to know",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Can you improve an existing website?",
+          "answer": "Yes, a review can identify where structure, content or usability could improve. The team will confirm what can be retained and what needs rebuilding."
+        },
+        {
+          "question": "Are hosting and maintenance included?",
+          "answer": "Hosting, domains and ongoing support depend on the agreed scope. Ask which costs and responsibilities are included before the project begins."
+        },
+        {
+          "question": "What content should I provide?",
+          "answer": "Prepare your services, contact details, brand assets and any existing copy or images. The discovery conversation will identify gaps and content responsibilities."
+        },
+        {
+          "question": "How do you estimate timing and fees?",
+          "answer": "The team will review your brief, available materials and deliverables before sharing a project-specific estimate. Changes in scope can affect both timing and cost."
+        }
+      ]
+    }
+  ]
+}

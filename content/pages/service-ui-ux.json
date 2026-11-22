@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "UI / UX Design | Digitonix Academy",
+    "description": "Make your website or product easier to understand. Explore the user journey, resolve confusing steps and develop a consistent visual direction before implementation."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "eyebrow": "Digitonix services",
+      "heading": "UI / UX Design that works harder for your goals.",
+      "description": "Make your website or product easier to understand. Explore the user journey, resolve confusing steps and develop a consistent visual direction before implementation.",
+      "buttons": [
+        {
+          "label": "Discuss a project",
+          "href": "/contact"
+        },
+        {
+          "label": "Explore the scope",
+          "href": "#scope"
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "type": "cards",
+      "heading": "Good digital work starts with clear decisions.",
+      "eyebrow": "The service in context",
+      "items": [
+        {
+          "title": "Understand the task",
+          "description": "Identify what users are trying to achieve and where the current journey creates friction."
+        },
+        {
+          "title": "Explore before polishing",
+          "description": "Use flows and wireframes to test structure and interaction before committing to a visual direction."
+        },
+        {
+          "title": "Design for consistency",
+          "description": "Bring type, spacing, controls and reusable components together so the interface feels coherent."
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "type": "modules",
+      "eyebrow": "Inside the service",
+      "heading": "A clearer picture of the work.",
+      "description": "These are common areas of work. The final scope, deliverables and responsibilities are agreed for your project.",
+      "items": [
+        {
+          "title": "Discovery and experience review",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Understand the product, audience and constraints. Review relevant screens and identify questions for the design process."
+            }
+          ]
+        },
+        {
+          "title": "Flows and information architecture",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Map the steps, content and navigation that support the main user tasks."
+            }
+          ]
+        },
+        {
+          "title": "Interface design and components",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Develop a visual direction and reusable patterns for the screens included in the project."
+            }
+          ]
+        },
+        {
+          "title": "Prototype review and handoff",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Collect focused feedback, resolve agreed revisions and prepare assets and specifications for development."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deliverables",
+      "type": "cards",
+      "heading": "Practical deliverables. A defined purpose.",
+      "eyebrow": "What a project can look like",
+      "items": [
+        {
+          "title": "Website and product journeys",
+          "description": "Map important tasks and the screens needed to complete them, from discovery to the final action."
+        },
+        {
+          "title": "Wireframes and prototypes",
+          "description": "Explore the layout and interaction in a format that makes review easier before development."
+        },
+        {
+          "title": "Visual systems and handoff",
+          "description": "Define core components, responsive states and design decisions so implementation has a clear starting point."
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "type": "modules",
+      "eyebrow": "Working together",
+      "heading": "From a first conversation to a considered handoff.",
+      "description": "Clear review points keep the work grounded in the agreed brief.",
+      "items": [
+        {
+          "title": "Discover and define",
+          "category": "Discovery",
+          "items": [
+            {
+              "name": "Understand the brief",
+              "desc": "Discuss the audience, objectives and constraints, then define deliverables and responsibilities."
+            },
+            {
+              "name": "Agree the plan",
+              "desc": "Confirm the scope, review stages and timeline before production begins."
+            }
+          ]
+        },
+        {
+          "title": "Create and review",
+          "category": "Production",
+          "items": [
+            {
+              "name": "Develop a direction",
+              "desc": "Create the agreed structure, designs or campaign materials for review."
+            },
+            {
+              "name": "Refine the work",
+              "desc": "Consolidate feedback around the brief and resolve agreed changes."
+            }
+          ]
+        },
+        {
+          "title": "Deliver and continue",
+          "category": "Handoff",
+          "items": [
+            {
+              "name": "Prepare the final work",
+              "desc": "Complete the agreed checks and package the deliverables or launch requirements."
+            },
+            {
+              "name": "Discuss next steps",
+              "desc": "Confirm ownership, documentation and any separately scoped ongoing support."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "type": "features",
+      "eyebrow": "Before we begin",
+      "heading": "Bring the context. We will help shape the brief.",
+      "description": "You do not need a finished specification. A few useful starting points make the first conversation more productive.",
+      "items": [
+        "The audience and problem you want to solve",
+        "Links to existing pages, screens or prototypes",
+        "The main tasks your users need to complete",
+        "Brand guidance and implementation constraints",
+        "Feedback you have already collected"
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "Good to know",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Is development part of UI/UX design?",
+          "answer": "Design and development are different scopes. A design project can end at handoff, or the team can discuss development as a separate part of the work."
+        },
+        {
+          "question": "Can you work with our existing brand?",
+          "answer": "Yes. Share your current brand guidance, assets and components so the design can build on what is already established."
+        },
+        {
+          "question": "How do revisions work?",
+          "answer": "Review stages and revision rounds are agreed in the project scope. Consolidating feedback around user goals helps keep revisions focused."
+        },
+        {
+          "question": "How do you estimate timing and fees?",
+          "answer": "The team will review your brief, available materials and deliverables before sharing a project-specific estimate. Changes in scope can affect both timing and cost."
+        }
+      ]
+    }
+  ]
+}

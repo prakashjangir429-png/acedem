@@ -2,44 +2,93 @@
   "version": 1,
   "metadata": {
     "title": "Master AI, Digital Marketing & Creative Media | Digitonix Academy",
-    "description": "Our most comprehensive learning path combines everything in the Advanced AI & Digital Marketing Program with two months of graphic design and video editing training."
+    "description": "Combine the marketing foundation with graphic design, content production and video editing."
   },
   "sections": [
     {
       "id": "hero",
       "type": "hero",
       "heading": "Master AI, Digital Marketing & Creative Media",
-      "description": "Our most comprehensive learning path combines everything in the Advanced AI & Digital Marketing Program with two months of graphic design and video editing training.",
+      "description": "Combine the marketing foundation with graphic design, content production and video editing.",
       "eyebrow": "With Graphic & Video Editing",
       "buttons": [
         {
-          "label": "Enquire about this program",
+          "label": "Enquire about this course",
           "href": "/contact"
         },
         {
-          "label": "Explore curriculum",
+          "label": "Explore full curriculum",
           "href": "/curriculum/master-ai-digital-marketing-creative"
         }
       ]
     },
     {
-      "id": "features",
-      "type": "features",
-      "heading": "Included in your program",
-      "description": "5 Months Training + 3 Months Internship",
+      "id": "overview",
+      "type": "cards",
+      "eyebrow": "Course overview",
+      "heading": "Learn by doing, from the first module.",
+      "description": "5 months of training built around practical skills and portfolio-ready work.",
       "items": [
-        "Complete Advanced curriculum",
-        "2 months graphic design training",
-        "Video editing with industry tools",
-        "Complete marketing + creative skills",
-        "Placement assistance",
-        "Portfolio + certification"
+        {
+          "title": "A clear learning path",
+          "eyebrow": "01 / FOUNDATION",
+          "description": "Start with core concepts, then connect each channel to a complete digital strategy."
+        },
+        {
+          "title": "Tools in context",
+          "eyebrow": "02 / PRACTICE",
+          "description": "Use AI, analytics and marketing tools to solve realistic briefs and evaluate your decisions."
+        },
+        {
+          "title": "Work you can show",
+          "eyebrow": "03 / PORTFOLIO",
+          "description": "Document campaign ideas, audits and creative work so you can explain your process."
+        }
       ]
     },
     {
-      "id": "foundation",
+      "id": "who-its-for",
+      "type": "features",
+      "eyebrow": "Who this is for",
+      "heading": "A practical path for curious learners.",
+      "description": "The program can suit different starting points. Your goals and prior experience will shape the pace of your work.",
+      "items": [
+        "Students exploring a career in digital marketing",
+        "Graduates who want practical project experience",
+        "Working professionals adding digital and AI skills",
+        "Entrepreneurs who want to understand online growth",
+        "Creators interested in content, campaigns and measurement"
+      ]
+    },
+    {
+      "id": "learning-process",
+      "type": "cards",
+      "eyebrow": "How learning works",
+      "heading": "A simple process, repeated until it sticks.",
+      "items": [
+        {
+          "title": "Understand",
+          "eyebrow": "STEP 01",
+          "description": "Learn the purpose, vocabulary and core decisions behind each topic."
+        },
+        {
+          "title": "Practise",
+          "eyebrow": "STEP 02",
+          "description": "Apply concepts to a brief, tool or campaign exercise and get feedback."
+        },
+        {
+          "title": "Reflect and improve",
+          "eyebrow": "STEP 03",
+          "description": "Review results, refine the work and record what changed in your portfolio."
+        }
+      ]
+    },
+    {
+      "id": "skills",
       "type": "modules",
-      "heading": "Shared marketing foundations",
+      "eyebrow": "What you will study",
+      "heading": "Explore the core learning areas.",
+      "description": "Open a topic to see the skills and tools covered. The detailed curriculum gives the full module sequence.",
       "items": [
         {
           "title": "AI Tools & ChatGPT for Digital Marketers",
@@ -97,17 +146,199 @@
               "desc": "Optimization, research & audits"
             }
           ]
+        },
+        {
+          "title": "Generative Engine Optimization (GEO)",
+          "category": "Next-Generation Search",
+          "icon": "Brain",
+          "items": [
+            {
+              "name": "AI Search Visibility",
+              "desc": "Generative search & brand discovery"
+            },
+            {
+              "name": "Entity & Content Optimization",
+              "desc": "Authority, structure & credibility"
+            }
+          ]
+        },
+        {
+          "title": "Facebook & Instagram Ads",
+          "category": "AI-Powered Advertising",
+          "icon": "Share2",
+          "items": [
+            {
+              "name": "Meta Ads Fundamentals",
+              "desc": "Campaigns, objectives & audiences"
+            },
+            {
+              "name": "Lead Generation & Conversion",
+              "desc": "Funnels, creatives & targeting"
+            },
+            {
+              "name": "AI-Powered Meta Ads",
+              "desc": "Automation & optimization"
+            }
+          ]
+        },
+        {
+          "title": "Google Ads (SEM / PPC)",
+          "category": "AI-Powered Advertising",
+          "icon": "Target",
+          "items": [
+            {
+              "name": "Google Ads Fundamentals",
+              "desc": "Search campaigns & keywords"
+            },
+            {
+              "name": "Campaign Optimization",
+              "desc": "Bidding, budget & Quality Score"
+            },
+            {
+              "name": "Google AI & Automation",
+              "desc": "Performance Max & smart optimization"
+            }
+          ]
+        },
+        {
+          "title": "Content Marketing & Social Media",
+          "category": "Brand & Community Growth",
+          "icon": "PenTool",
+          "items": [
+            {
+              "name": "Content Strategy",
+              "desc": "Calendars, formats & distribution"
+            },
+            {
+              "name": "Social Media Growth",
+              "desc": "Organic reach & community building"
+            },
+            {
+              "name": "AI-Assisted Content",
+              "desc": "Ideation, scripts & creative workflows"
+            }
+          ]
+        },
+        {
+          "title": "Analytics, Reporting & Automation",
+          "category": "Data & Insights",
+          "icon": "BarChart3",
+          "items": [
+            {
+              "name": "GA4 & Search Console",
+              "desc": "Traffic, events & conversion tracking"
+            },
+            {
+              "name": "Marketing Automation",
+              "desc": "Lead nurturing & workflow automation"
+            },
+            {
+              "name": "Reporting & Dashboards",
+              "desc": "Dashboards, insights & ROI storytelling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "type": "features",
+      "eyebrow": "Practical work",
+      "heading": "Make the learning tangible.",
+      "description": "Projects help you practise decisions you will encounter in real marketing work.",
+      "items": [
+        "Plan and build a landing page or simple website",
+        "Research search intent and prepare an SEO audit",
+        "Create a social content calendar and campaign brief",
+        "Draft and review AI-assisted marketing content",
+        "Map a paid campaign with audience, budget and measurement",
+        "Build a reporting view and explain the insights"
+      ]
+    },
+    {
+      "id": "specialisation",
+      "type": "modules",
+      "heading": "Go beyond the foundation.",
+      "items": [
+        {
+          "title": "Graphic Design & Video Editing",
+          "category": "Creative Media",
+          "items": [
+            {
+              "name": "Graphic Design",
+              "desc": "Build design skills alongside marketing training."
+            },
+            {
+              "name": "Video Editing",
+              "desc": "Learn video editing with industry tools."
+            },
+            {
+              "name": "Creative Portfolio",
+              "desc": "Bring marketing and creative work together."
+            }
+          ]
+        }
+      ],
+      "eyebrow": "Your additional focus",
+      "description": "This track builds on the shared AI and marketing foundation."
+    },
+    {
+      "id": "next-step",
+      "type": "cards",
+      "eyebrow": "Beyond the classroom",
+      "heading": "Prepare for what comes next.",
+      "items": [
+        {
+          "title": "Portfolio guidance",
+          "description": "Organise your strongest projects into case studies with a clear brief, process and outcome."
+        },
+        {
+          "title": "Career preparation",
+          "description": "Practise explaining your work, choosing relevant roles and preparing for interviews."
+        },
+        {
+          "title": "Internship pathway",
+          "description": "Ask our team about current internship opportunities, eligibility and selection before enrolling."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "Good to know",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Do I need prior marketing experience?",
+          "answer": "No specific background is required to explore this program. We recommend discussing your current skills and goals with the team so you can choose the right starting point."
+        },
+        {
+          "question": "How long is the training? ",
+          "answer": "The planned training duration is 5 months of training. Ask the team for current batch schedules, delivery format and fees."
+        },
+        {
+          "question": "Is an internship guaranteed?",
+          "answer": "Internship opportunities depend on eligibility, selection and availability. Please confirm the current terms with the admissions team."
+        },
+        {
+          "question": "Will I build a portfolio?",
+          "answer": "The learning path includes practical exercises that can become portfolio examples. Your final portfolio depends on the work you complete."
+        },
+        {
+          "question": "How is this different from the other programs?",
+          "answer": "All four programs share AI and digital marketing foundations. The longer programs add professional communication, creative media skills or both."
         }
       ]
     },
     {
       "id": "guidance",
       "type": "cta",
-      "heading": "Big goals? Start with a conversation.",
-      "description": "Ask about curriculum, fees and upcoming batches. Our team will help you find your fit.",
+      "eyebrow": "Start a conversation",
+      "heading": "Let’s make the next step clear.",
+      "description": "Ask about the curriculum, current batches, fees and internship eligibility. We will help you compare the four learning paths.",
       "buttons": [
         {
-          "label": "Talk to our team",
+          "label": "Get in touch",
           "href": "/contact"
         }
       ]

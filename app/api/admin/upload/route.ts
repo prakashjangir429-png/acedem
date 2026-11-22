@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import sharp from 'sharp';
-import { Binary } from 'mongodb';
-import { database } from '@/lib/database';
+import { saveImage } from '@/lib/json-store';
 import { isAdmin, sameOrigin } from '@/lib/admin';
 export const runtime='nodejs';
 const limit=5*1024*1024;
@@ -18,7 +17,7 @@ export async function POST(request:Request){
     const input=Buffer.from(await file.arrayBuffer());const processor=sharp(input,{limitInputPixels:25000000});
     const metadata=await processor.metadata();if(!['jpeg','png','webp'].includes(metadata.format||''))return NextResponse.json({error:'Choose a JPEG, PNG or WebP image'},{status:400});
     const {data,info}=await processor.rotate().resize({width:1600,height:1600,fit:'inside',withoutEnlargement:true}).webp({quality:85}).toBuffer({resolveWithObject:true});
-    const result=await (await database()).collection('blogImages').insertOne({data:new Binary(data),contentType:'image/webp',width:info.width,height:info.height,createdAt:new Date()});
-    return NextResponse.json({url:`/api/images/${result.insertedId}`,width:info.width,height:info.height});
+    const id=await saveImage(data);
+    return NextResponse.json({url:`/api/images/${id}`,width:info.width,height:info.height});
   }catch{return NextResponse.json({error:'Image upload failed. Choose a valid image and try again.'},{status:400});}
 }

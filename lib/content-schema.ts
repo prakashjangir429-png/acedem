@@ -19,7 +19,7 @@ export const sectionSchema = z.discriminatedUnion('type', [
   z.object({...base,type:z.literal('faq'),items:z.array(z.object({question:z.string(),answer:z.string()}))}),
   z.object({...base,type:z.literal('contact'),heading:z.string(),contacts:z.array(z.object({label:z.string(),value:z.string(),href:safeHref.optional()})),buttons:z.array(button),form:formSchema}),
 ]);
-export const pageSchema = z.object({version:z.literal(1),metadata:z.object({title:z.string(),description:z.string(),keywords:z.array(z.string()).optional(),canonical:safeHref.optional(),noIndex:z.boolean().optional()}),sections:z.array(sectionSchema)}).superRefine((page,context)=>{const ids=new Set<string>();page.sections.forEach((section,index)=>{if(ids.has(section.id))context.addIssue({code:z.ZodIssueCode.custom,path:['sections',index,'id'],message:'Section IDs must be unique'});ids.add(section.id);});});
+export const pageSchema = z.object({version:z.literal(1),metadata:z.object({title:z.string(),description:z.string(),keywords:z.array(z.string()).optional().transform(value=>value?.map(word=>word.trim()).filter(Boolean)),canonical:safeHref.optional(),noIndex:z.boolean().optional()}),sections:z.array(sectionSchema)}).superRefine((page,context)=>{const ids=new Set<string>();page.sections.forEach((section,index)=>{if(ids.has(section.id))context.addIssue({code:z.ZodIssueCode.custom,path:['sections',index,'id'],message:'Section IDs must be unique'});ids.add(section.id);});});
 export type ContentPage = z.infer<typeof pageSchema>;
 export type ContentSection = z.infer<typeof sectionSchema>;
 export type ContactFormContent = z.infer<typeof formSchema>;

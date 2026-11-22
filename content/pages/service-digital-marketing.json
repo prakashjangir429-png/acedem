@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Digital Marketing | Digitonix Academy",
+    "description": "Build a connected marketing plan around your audience, message and business goals. Combine useful content, appropriate channels and clear measurement to guide ongoing decisions."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "eyebrow": "Digitonix services",
+      "heading": "Digital Marketing that works harder for your goals.",
+      "description": "Build a connected marketing plan around your audience, message and business goals. Combine useful content, appropriate channels and clear measurement to guide ongoing decisions.",
+      "buttons": [
+        {
+          "label": "Discuss a project",
+          "href": "/contact"
+        },
+        {
+          "label": "Explore the scope",
+          "href": "#scope"
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "type": "cards",
+      "heading": "Good digital work starts with clear decisions.",
+      "eyebrow": "The service in context",
+      "items": [
+        {
+          "title": "Choose a clear objective",
+          "description": "Understand the audience, offer and action you want marketing to support before selecting channels."
+        },
+        {
+          "title": "Connect the channels",
+          "description": "Plan how search, social content, landing pages and paid campaigns should work together."
+        },
+        {
+          "title": "Measure useful signals",
+          "description": "Agree what to track and review results in context, so reporting informs the next round of work."
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "type": "modules",
+      "eyebrow": "Inside the service",
+      "heading": "A clearer picture of the work.",
+      "description": "These are common areas of work. The final scope, deliverables and responsibilities are agreed for your project.",
+      "items": [
+        {
+          "title": "Audience and channel planning",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Review your offer, audience and existing digital presence to decide where the work should begin."
+            }
+          ]
+        },
+        {
+          "title": "SEO and content direction",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Organise search themes, useful page content and priorities for improving discoverability."
+            }
+          ]
+        },
+        {
+          "title": "Campaign planning and creative briefs",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Connect audience, message, creative requirements and landing-page needs in a clear campaign plan."
+            }
+          ]
+        },
+        {
+          "title": "Reporting and refinement",
+          "category": "Scope of work",
+          "items": [
+            {
+              "name": "What this covers",
+              "desc": "Review agreed measures and use the findings to identify adjustments to messaging, content or campaigns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deliverables",
+      "type": "cards",
+      "heading": "Practical deliverables. A defined purpose.",
+      "eyebrow": "What a project can look like",
+      "items": [
+        {
+          "title": "Search and content plans",
+          "description": "Identify relevant topics, page opportunities and useful content that answers your audience’s questions."
+        },
+        {
+          "title": "Social content and campaigns",
+          "description": "Develop content themes, campaign briefs and a publishing direction grounded in audience needs."
+        },
+        {
+          "title": "Paid media planning and reporting",
+          "description": "Define audiences, messages, campaign structure and reporting needs for the agreed platforms."
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "type": "modules",
+      "eyebrow": "Working together",
+      "heading": "From a first conversation to a considered handoff.",
+      "description": "Clear review points keep the work grounded in the agreed brief.",
+      "items": [
+        {
+          "title": "Discover and define",
+          "category": "Discovery",
+          "items": [
+            {
+              "name": "Understand the brief",
+              "desc": "Discuss the audience, objectives and constraints, then define deliverables and responsibilities."
+            },
+            {
+              "name": "Agree the plan",
+              "desc": "Confirm the scope, review stages and timeline before production begins."
+            }
+          ]
+        },
+        {
+          "title": "Create and review",
+          "category": "Production",
+          "items": [
+            {
+              "name": "Develop a direction",
+              "desc": "Create the agreed structure, designs or campaign materials for review."
+            },
+            {
+              "name": "Refine the work",
+              "desc": "Consolidate feedback around the brief and resolve agreed changes."
+            }
+          ]
+        },
+        {
+          "title": "Deliver and continue",
+          "category": "Handoff",
+          "items": [
+            {
+              "name": "Prepare the final work",
+              "desc": "Complete the agreed checks and package the deliverables or launch requirements."
+            },
+            {
+              "name": "Discuss next steps",
+              "desc": "Confirm ownership, documentation and any separately scoped ongoing support."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "type": "features",
+      "eyebrow": "Before we begin",
+      "heading": "Bring the context. We will help shape the brief.",
+      "description": "You do not need a finished specification. A few useful starting points make the first conversation more productive.",
+      "items": [
+        "Your offer, audience and business objective",
+        "Current website and social profiles",
+        "Existing campaign history, if available",
+        "Your planned media budget and priorities",
+        "Access requirements and approval responsibilities"
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "Good to know",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Is advertising spend included in service fees?",
+          "answer": "Media spend and service work should be agreed separately in the proposal. Confirm platform budgets, billing and ownership before launching a campaign."
+        },
+        {
+          "question": "Can you guarantee rankings or leads?",
+          "answer": "No specific outcome can be guaranteed. Results depend on the market, budget, execution and other factors. The scope should define the work and the measures used to review it."
+        },
+        {
+          "question": "How will we review performance?",
+          "answer": "Agree the objectives, reporting cadence and available data at the start. Reports should explain what happened, the limits of the data and possible next actions."
+        },
+        {
+          "question": "How do you estimate timing and fees?",
+          "answer": "The team will review your brief, available materials and deliverables before sharing a project-specific estimate. Changes in scope can affect both timing and cost."
+        }
+      ]
+    }
+  ]
+}
