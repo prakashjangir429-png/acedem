@@ -1,3 +1,4 @@
+import { BrandLogo } from '@/components/brand/logo';
 
 import Link from "next/link";
 import { courseCatalog } from '@/lib/course-catalog';
@@ -94,18 +95,7 @@ export function Footer() {
               {/* Brand */}
               <div className="footer-reveal space-y-6 lg:col-span-4">
 
-                <Link href="/" className="group inline-flex items-center gap-3">
-
-
-
-                  <div>
-                    <span className="block font-display text-xl font-extrabold tracking-tight text-white">
-                      Digitonix
-                    </span>
-                    <span className="block text-[11px] font-semibold uppercase tracking-[0.25em] text-sky-300">
-                      Academy
-                    </span>
-                  </div>
+                <Link href="/" className="group inline-flex items-center gap-3"><BrandLogo onDark/>
                 </Link>
 
                 <p className="max-w-sm text-sm leading-7 text-slate-400">

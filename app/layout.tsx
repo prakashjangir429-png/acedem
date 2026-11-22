@@ -1,4 +1,5 @@
 import './globals.css';
+import '@/components/brand/logo.css';
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import { SiteFrame } from '@/components/site/site-frame';
@@ -7,6 +8,7 @@ const inter = DM_Sans({ subsets: ['latin'], variable: '--font-inter', display: '
 const spaceGrotesk = DM_Sans({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 
 export const metadata: Metadata = {
+  icons: { icon: '/brand/digitonix-icon.png', apple: '/brand/digitonix-icon.png' },
   title: 'Digitonix Academy — AI & Digital Marketing Training with Internship',
   description:
     'Build practical digital marketing skills through hands-on training, live projects, industry tools, AI-powered workflows and internship experience. 3 months training + 3 months internship.',

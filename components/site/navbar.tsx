@@ -20,6 +20,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import MegaMenu from './megaMenu';
 import { gsap } from 'gsap';
+import { BrandLogo } from '@/components/brand/logo';
 
 const MobileMenuScene = dynamic(
   () => import('./mobileMenu'),
@@ -175,10 +176,7 @@ export function Navbar() {
             href="/"
             className="academy-nav-brand relative z-[102] flex items-center gap-3"
           >
-            <span className="flex items-center gap-2.5" aria-label="Digitonix Academy">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#0875ae] to-[#0d95a0] font-display text-xl font-bold text-white shadow-sm">D</span>
-              <span className="flex flex-col font-display leading-none text-[#10243a]"><strong className="text-lg tracking-tight">Digitonix</strong><small className="mt-1 text-[10px] font-bold uppercase tracking-[.22em] text-[#0875ae]">Academy</small></span>
-            </span>
+            <BrandLogo priority/>
           </Link>
 
           {/* <div className="hidden lg:flex items-center gap-px rounded-full border border-white/70 bg-white/65 p-1.5 shadow-sm backdrop-blur-xl">

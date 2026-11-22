@@ -1,0 +1,4 @@
+.brand-logo{display:inline-flex;align-items:center;justify-content:center;width:176px;max-width:100%;height:auto;flex:none;line-height:0;vertical-align:middle}.brand-logo>img{display:block!important;width:100%;height:auto;object-fit:contain}.brand-logo--on-dark{background:#fff;padding:8px 12px;border-radius:12px;border:1px solid #ffffff80}
+.public-site .academy-nav-brand .brand-logo{width:142px;max-width:142px;background:transparent;border:0;padding:0;border-radius:0}
+.public-site footer .brand-logo{width:215px}
+@media(max-width:760px){.public-site .academy-nav-brand .brand-logo{width:130px;max-width:130px}.public-site footer .brand-logo{width:195px}}

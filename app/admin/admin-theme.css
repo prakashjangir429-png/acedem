@@ -56,3 +56,9 @@
 .admin-topbar{padding-left:16px}
 @media(max-width:1000px) and (min-width:761px){.admin-workspace{margin-left:236px;width:calc(100% - 236px)}}
 @media(max-width:760px){.admin-workspace{margin-left:0;width:100%}.admin-main,.admin-topbar{padding-left:16px}}
+/* Use the supplied full academy logo throughout the workspace. */
+.admin-brand{padding:0 3px;display:flex;justify-content:center}
+.admin-brand .brand-logo{width:100%;height:auto;font-size:initial;background:#fff;padding:8px 10px;line-height:0;border-radius:12px}
+.admin-login-brand .brand-logo{width:200px;height:auto;background:#fff;padding:8px 12px;border:1px solid #ffffff80;border-radius:12px;font-size:initial;line-height:0}
+.admin-account-card .brand-logo.admin-dashboard-logo{width:180px;margin:0 auto 12px;background:transparent;padding:0;border:0;border-radius:0}
+@media(max-width:760px){.admin-login-brand .brand-logo{width:180px}.admin-brand .brand-logo{max-width:190px}}
