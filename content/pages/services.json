@@ -7,10 +7,10 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
-      "eyebrow": "Our services",
       "heading": "Digital work, thoughtfully made.",
       "description": "From your first website to a sharper marketing plan, explore services built around clarity, usability and measurable decisions.",
+      "eyebrow": "Our services",
+      "type": "hero",
       "buttons": [
         {
           "label": "Discuss your project",
@@ -24,14 +24,14 @@
     },
     {
       "id": "services",
-      "type": "cards",
-      "eyebrow": "What we can help with",
       "heading": "Choose the right starting point.",
+      "eyebrow": "What we can help with",
+      "type": "cards",
       "items": [
         {
           "title": "Web Development",
-          "eyebrow": "01 / SERVICE",
           "description": "Plan, design and build a website that is clear, fast and useful.",
+          "eyebrow": "01 / SERVICE",
           "features": [
             "Discovery and content planning",
             "Information architecture and page structure",
@@ -42,8 +42,8 @@
         },
         {
           "title": "UI / UX Design",
-          "eyebrow": "02 / SERVICE",
           "description": "Make digital journeys easier to understand and more enjoyable to use.",
+          "eyebrow": "02 / SERVICE",
           "features": [
             "Product and audience discovery",
             "User journeys and wireframes",
@@ -54,8 +54,8 @@
         },
         {
           "title": "Digital Marketing",
-          "eyebrow": "03 / SERVICE",
           "description": "Connect the right message, channel and measurement to your growth goals.",
+          "eyebrow": "03 / SERVICE",
           "features": [
             "Audience and channel discovery",
             "SEO and content planning",
@@ -68,9 +68,9 @@
     },
     {
       "id": "overview",
-      "type": "cards",
       "heading": "A better brief makes a better beginning.",
       "eyebrow": "Start with clarity",
+      "type": "cards",
       "items": [
         {
           "title": "Your audience",
@@ -88,9 +88,9 @@
     },
     {
       "id": "process",
-      "type": "cards",
-      "eyebrow": "Our approach",
       "heading": "A focused path from idea to action.",
+      "eyebrow": "Our approach",
+      "type": "cards",
       "items": [
         {
           "title": "Discover",
@@ -108,9 +108,9 @@
     },
     {
       "id": "prepare",
-      "type": "features",
-      "eyebrow": "A useful first conversation",
       "heading": "Share the goal. We will help define the work.",
+      "eyebrow": "A useful first conversation",
+      "type": "features",
       "items": [
         "Your business and the audience you want to reach",
         "Your existing website, product or marketing presence",
@@ -121,9 +121,9 @@
     },
     {
       "id": "faq",
-      "type": "faq",
-      "eyebrow": "Good to know",
       "heading": "Frequently asked questions",
+      "eyebrow": "Good to know",
+      "type": "faq",
       "items": [
         {
           "question": "Can you help us choose a service?",
@@ -141,10 +141,10 @@
     },
     {
       "id": "guidance",
-      "type": "cta",
-      "eyebrow": "Start a conversation",
       "heading": "Let’s make the next step clear.",
       "description": "Talk through your goals with our team. We can explain scope, timelines and the best next step.",
+      "eyebrow": "Start a conversation",
+      "type": "cta",
       "buttons": [
         {
           "label": "Get in touch",
@@ -152,5 +152,47 @@
         }
       ]
     }
-  ]
+  ],
+  "experience": {
+    "breadcrumb": "Services",
+    "breadcrumbParent": "Services",
+    "heroChecks": [
+      "A considered scope",
+      "Clear next steps"
+    ],
+    "image": "/images/academy-learning-hero.webp",
+    "imageAlt": "Illustrative scene of students collaborating in a learning studio",
+    "imageCaption": "Your next step starts with the work you build.",
+    "board": {
+      "toolbar": "THE PROJECT WORKSPACE",
+      "eyebrow": "BUILT AROUND YOUR GOALS",
+      "title": "A connected digital presence",
+      "items": [
+        "A website with a clear purpose",
+        "An experience that feels intuitive",
+        "Marketing grounded in a plan"
+      ],
+      "footer": "Discover · Create · Refine"
+    },
+    "jumpLabels": {
+      "services": "Our services",
+      "overview": "Overview",
+      "roles": "Career paths",
+      "support": "Career preparation",
+      "scope": "Scope of work",
+      "process": "Our process",
+      "enquiry": "Send an enquiry",
+      "portfolio": "Portfolio",
+      "deliverables": "Deliverables",
+      "faq": "FAQs"
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "heading": "Let’s make things",
+      "highlight": "a little clearer.",
+      "description": "A few useful answers before you plan a project. For scope, timing and pricing, tell us what you have in mind.",
+      "actionLabel": "Talk to our team",
+      "actionHref": "/contact"
+    }
+  }
 }

@@ -4,6 +4,7 @@ import { isAdmin,sameOrigin } from '@/lib/admin';
 import { blogSchema,cleanHtml } from '@/lib/blogs';
 import { adminLeadSchema } from '@/lib/lead-schema';
 import { pageSchema } from '@/lib/content-schema';
+import { validateExperience,validateHomeSections } from '@/lib/experience-schema';
 import { getContentKeys } from '@/lib/content';
 import { readFile,writeFile,rename,unlink,stat } from 'node:fs/promises';
 import { createHash,randomUUID } from 'node:crypto';
@@ -13,7 +14,7 @@ export const runtime='nodejs';
 export const dynamic='force-dynamic';
 const revision=(raw:string)=>createHash('sha256').update(raw).digest('hex');
 const pagePath=(key:unknown)=>{if(typeof key!=='string'||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(key)||key.length>120)throw new Error('Invalid page key');return path.join(process.cwd(),'content','pages',key+'.json');};
-const builtIn=(key:string)=>['home','courses','curriculum','career','contact','services'].includes(key)||/^(course-|curriculum-|service-)/.test(key);
+const builtIn=(key:string)=>['home','courses','curriculum','career','contact','services','blogs','site-settings'].includes(key)||/^(course-|curriculum-|service-)/.test(key);
 const reserved=['admin','api','blogs','resources','login','favicon','_not-found'];
 function fail(error:unknown){const e=error as {message?:string;code?:string;issues?:{path:(string|number)[];message:string}[]};const code=e.message==='CONFLICT'?409:e.message==='NOT_FOUND'||e.code==='ENOENT'?404:e.message==='PROTECTED'?409:e.issues||e.message==='DUPLICATE'||e.message==='Invalid page key'||e.message==='RESERVED'?400:503;return NextResponse.json({error:e.message==='CONFLICT'?'This record changed. Reload before saving.':e.message==='NOT_FOUND'||e.code==='ENOENT'?'Record not found.':e.message==='PROTECTED'?'Built-in pages are required by the website. Edit their content instead.':e.message==='DUPLICATE'?'This slug or page key already exists.':e.message==='RESERVED'?'That page key is reserved for an existing website route.':e.issues?e.issues.map(i=>i.path.join('.')+': '+i.message).join('\n'):e.message==='Invalid page key'?'Use a lowercase page key with letters, numbers and hyphens.':'Unable to access the JSON files. Please try again.'},{status:code});}
 function paginate<T>(items:T[],url:URL){const size=[10,20,50].includes(Number(url.searchParams.get('pageSize')))?Number(url.searchParams.get('pageSize')):10;const total=items.length;const pages=Math.max(1,Math.ceil(total/size));const page=Math.min(pages,Math.max(1,Math.floor(Number(url.searchParams.get('page'))||1)));return {items:items.slice((page-1)*size,page*size),total,page,pageSize:size,pages};}
@@ -33,7 +34,7 @@ export async function POST(request:Request,{params}:{params:Promise<{resource:st
  if(!await isAdmin())return NextResponse.json({error:'Sign in required'},{status:401});if(!sameOrigin(request))return NextResponse.json({error:'Invalid origin'},{status:403});
  try{const raw=await request.text();if(raw.length>1000000)return NextResponse.json({error:'Content is too large'},{status:413});const body=JSON.parse(raw);const {resource}=await params;
  if(resource==='pages'){
-  const content=pageSchema.parse(body.content);const target=pagePath(body.key);const result=await exclusiveFileWrite(async()=>{let existing:string|null=null;try{existing=await readFile(target,'utf8');}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
+  const content=pageSchema.parse(body.content);validateExperience(body.key,content.experience);if(body.key==='home')validateHomeSections(content.sections);const target=pagePath(body.key);const result=await exclusiveFileWrite(async()=>{let existing:string|null=null;try{existing=await readFile(target,'utf8');}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
    if(body.create){if(reserved.includes(body.key)||builtIn(body.key))throw new Error('RESERVED');if(existing!==null)throw new Error('DUPLICATE');}else{if(existing===null)throw new Error('NOT_FOUND');if(revision(existing)!==body.revision)throw new Error('CONFLICT');}
    const next=JSON.stringify(content,null,2)+'\n';const temp=target+'.'+randomUUID()+'.tmp';try{await writeFile(temp,next,'utf8');await rename(temp,target);}finally{await unlink(temp).catch(()=>{});}return revision(next);
   });revalidatePath('/', 'layout');return NextResponse.json({ok:true,id:body.key,revision:result});

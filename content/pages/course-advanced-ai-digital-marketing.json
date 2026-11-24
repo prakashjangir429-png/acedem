@@ -7,10 +7,10 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
       "heading": "Advanced AI & Digital Marketing Program",
       "description": "Learn the foundations of search, social, paid media, analytics and AI-assisted workflows through guided practice.",
       "eyebrow": "Flagship Program",
+      "type": "hero",
       "buttons": [
         {
           "label": "Enquire about this course",
@@ -24,34 +24,34 @@
     },
     {
       "id": "overview",
-      "type": "cards",
-      "eyebrow": "Course overview",
       "heading": "Learn by doing, from the first module.",
       "description": "3 months of training built around practical skills and portfolio-ready work.",
+      "eyebrow": "Course overview",
+      "type": "cards",
       "items": [
         {
           "title": "A clear learning path",
-          "eyebrow": "01 / FOUNDATION",
-          "description": "Start with core concepts, then connect each channel to a complete digital strategy."
+          "description": "Start with core concepts, then connect each channel to a complete digital strategy.",
+          "eyebrow": "01 / FOUNDATION"
         },
         {
           "title": "Tools in context",
-          "eyebrow": "02 / PRACTICE",
-          "description": "Use AI, analytics and marketing tools to solve realistic briefs and evaluate your decisions."
+          "description": "Use AI, analytics and marketing tools to solve realistic briefs and evaluate your decisions.",
+          "eyebrow": "02 / PRACTICE"
         },
         {
           "title": "Work you can show",
-          "eyebrow": "03 / PORTFOLIO",
-          "description": "Document campaign ideas, audits and creative work so you can explain your process."
+          "description": "Document campaign ideas, audits and creative work so you can explain your process.",
+          "eyebrow": "03 / PORTFOLIO"
         }
       ]
     },
     {
       "id": "who-its-for",
-      "type": "features",
-      "eyebrow": "Who this is for",
       "heading": "A practical path for curious learners.",
       "description": "The program can suit different starting points. Your goals and prior experience will shape the pace of your work.",
+      "eyebrow": "Who this is for",
+      "type": "features",
       "items": [
         "Students exploring a career in digital marketing",
         "Graduates who want practical project experience",
@@ -62,38 +62,45 @@
     },
     {
       "id": "learning-process",
-      "type": "cards",
-      "eyebrow": "How learning works",
       "heading": "A simple process, repeated until it sticks.",
+      "eyebrow": "How learning works",
+      "type": "cards",
       "items": [
         {
           "title": "Understand",
-          "eyebrow": "STEP 01",
-          "description": "Learn the purpose, vocabulary and core decisions behind each topic."
+          "description": "Learn the purpose, vocabulary and core decisions behind each topic.",
+          "eyebrow": "STEP 01"
         },
         {
           "title": "Practise",
-          "eyebrow": "STEP 02",
-          "description": "Apply concepts to a brief, tool or campaign exercise and get feedback."
+          "description": "Apply concepts to a brief, tool or campaign exercise and get feedback.",
+          "eyebrow": "STEP 02"
         },
         {
           "title": "Reflect and improve",
-          "eyebrow": "STEP 03",
-          "description": "Review results, refine the work and record what changed in your portfolio."
+          "description": "Review results, refine the work and record what changed in your portfolio.",
+          "eyebrow": "STEP 03"
         }
       ]
     },
     {
       "id": "skills",
-      "type": "modules",
-      "eyebrow": "What you will study",
       "heading": "Explore the core learning areas.",
       "description": "Open a topic to see the skills and tools covered. The detailed curriculum gives the full module sequence.",
+      "eyebrow": "What you will study",
+      "copy": {
+        "windowTitle": "Digitonix · Learning workspace",
+        "moduleLabel": "Module",
+        "sidebarTitle": "Course modules",
+        "topicLabel": "learning topics",
+        "intro": "Explore the concepts and workflows in this module.",
+        "footer": "Connect each topic with practical exercises and portfolio work."
+      },
+      "type": "modules",
       "items": [
         {
           "title": "AI Tools & ChatGPT for Digital Marketers",
           "category": "Core AI Module",
-          "icon": "Sparkles",
           "items": [
             {
               "name": "AI in Digital Marketing",
@@ -112,7 +119,6 @@
         {
           "title": "Website Development (No-Code)",
           "category": "Foundation",
-          "icon": "Globe",
           "items": [
             {
               "name": "No-Code Website Development",
@@ -131,7 +137,6 @@
         {
           "title": "Search Engine Optimization (SEO)",
           "category": "AI Supported",
-          "icon": "Search",
           "items": [
             {
               "name": "On-Page SEO",
@@ -150,7 +155,6 @@
         {
           "title": "Generative Engine Optimization (GEO)",
           "category": "Next-Generation Search",
-          "icon": "Brain",
           "items": [
             {
               "name": "AI Search Visibility",
@@ -165,7 +169,6 @@
         {
           "title": "Facebook & Instagram Ads",
           "category": "AI-Powered Advertising",
-          "icon": "Share2",
           "items": [
             {
               "name": "Meta Ads Fundamentals",
@@ -184,7 +187,6 @@
         {
           "title": "Google Ads (SEM / PPC)",
           "category": "AI-Powered Advertising",
-          "icon": "Target",
           "items": [
             {
               "name": "Google Ads Fundamentals",
@@ -203,7 +205,6 @@
         {
           "title": "Content Marketing & Social Media",
           "category": "Brand & Community Growth",
-          "icon": "PenTool",
           "items": [
             {
               "name": "Content Strategy",
@@ -222,7 +223,6 @@
         {
           "title": "Analytics, Reporting & Automation",
           "category": "Data & Insights",
-          "icon": "BarChart3",
           "items": [
             {
               "name": "GA4 & Search Console",
@@ -242,10 +242,10 @@
     },
     {
       "id": "projects",
-      "type": "features",
-      "eyebrow": "Practical work",
       "heading": "Make the learning tangible.",
       "description": "Projects help you practise decisions you will encounter in real marketing work.",
+      "eyebrow": "Practical work",
+      "type": "features",
       "items": [
         "Plan and build a landing page or simple website",
         "Research search intent and prepare an SEO audit",
@@ -257,9 +257,9 @@
     },
     {
       "id": "next-step",
-      "type": "cards",
-      "eyebrow": "Beyond the classroom",
       "heading": "Prepare for what comes next.",
+      "eyebrow": "Beyond the classroom",
+      "type": "cards",
       "items": [
         {
           "title": "Portfolio guidance",
@@ -277,9 +277,13 @@
     },
     {
       "id": "faq",
-      "type": "faq",
-      "eyebrow": "Good to know",
       "heading": "Frequently asked questions",
+      "description": "Get a clearer picture of the programs, practical work and next steps. Our team can help with anything more specific.",
+      "eyebrow": "Good to know",
+      "copy": {
+        "actionLabel": "Ask our team"
+      },
+      "type": "faq",
       "items": [
         {
           "question": "Do I need prior marketing experience?",
@@ -305,10 +309,10 @@
     },
     {
       "id": "guidance",
-      "type": "cta",
-      "eyebrow": "Start a conversation",
       "heading": "Let’s make the next step clear.",
       "description": "Ask about the curriculum, current batches, fees and internship eligibility. We will help you compare the four learning paths.",
+      "eyebrow": "Start a conversation",
+      "type": "cta",
       "buttons": [
         {
           "label": "Get in touch",
@@ -316,5 +320,31 @@
         }
       ]
     }
-  ]
+  ],
+  "experience": {
+    "breadcrumb": "Program overview",
+    "breadcrumbParent": "Courses",
+    "heroChecks": [
+      "Practical learning",
+      "Portfolio preparation"
+    ],
+    "image": "/images/academy-learning-hero.webp",
+    "imageAlt": "Illustrative scene of students learning together around a laptop",
+    "imageCaption": "Build your marketing foundation",
+    "durationLabel": "Training duration",
+    "duration": "3 months",
+    "focusLabel": "Your focus",
+    "focus": "AI & digital marketing",
+    "factsNote": "Ask about current batches, fees and internship eligibility before enrolling.",
+    "jumpIntro": "EXPLORE THIS COURSE",
+    "jumpLabels": {
+      "programs": "Programs",
+      "overview": "Overview",
+      "skills": "Curriculum",
+      "projects": "Practical work",
+      "next-step": "Career preparation",
+      "faq": "FAQs"
+    },
+    "jumpAction": "Talk to the academy"
+  }
 }

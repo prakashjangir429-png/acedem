@@ -1,7 +1,7 @@
 import { BrandLogo } from '@/components/brand/logo';
+import type { SiteSettings } from '@/lib/site-settings';
 
 import Link from "next/link";
-import { courseCatalog } from '@/lib/course-catalog';
 import {
   GraduationCap,
   MapPin,
@@ -17,21 +17,6 @@ import {
   MoveUpRight,
 } from "lucide-react";
 
-const exploreLinks = [
-  { label: "Home", href: "/" },
-  { label: "Our Courses", href: "/courses" },
-  { label: "Curriculum", href: "/curriculum" },
-  { label: "Student Success", href: "/career" },
-  { label: "Our Services", href: "/services" },
-  { label: "Contact Us", href: "/contact" },
-];
-
-const programs = [
-  "Advanced AI & Digital Marketing",
-  "Professional AI & Digital Marketing",
-  "Master AI, Digital Marketing & Creative",
-  "Diploma in AI & Digital Marketing",
-];
 
 const socialLinks = [
   { name: "Facebook", icon: Facebook },
@@ -40,7 +25,8 @@ const socialLinks = [
   { name: "YouTube", icon: Youtube },
 ];
 
-export function Footer() {
+export function Footer({settings,programs}:{settings:SiteSettings['footer'];programs:NonNullable<SiteSettings['programLinks']>}) {
+  const exploreLinks=settings.exploreLinks;
   return (
     <footer className="">
 
@@ -54,27 +40,26 @@ export function Footer() {
 
               <div className="max-w-2xl">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/20 bg-sky-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-sky-300">
-                  Your future starts here
+                  {settings.eyebrow}
                 </div>
 
                 <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl">
-                  Ready to build your
+                  {settings.heading}
                   <span className="ms-2 bg-gradient-to-r from-sky-300 via-cyan-300 to-teal-300 mt-2 bg-clip-text text-transparent">
-                    digital future?
+                    {settings.highlight}
                   </span>
                 </h2>
 
                 <p className="mt-4 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-                  Learn in-demand skills, work on real projects, and take the
-                  next step toward your career with Digitonix Academy.
+                  {settings.description}
                 </p>
               </div>
 
               <Link
-                href="/contact"
+                href={settings.actionHref}
                 className="group/btn inline-flex shrink-0 items-center gap-3 rounded-full bg-gradient-to-r from-sky-400 to-teal-400 px-7 py-4 text-sm font-bold text-slate-950 shadow-[0_10px_35px_rgba(56,189,248,0.2)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_45px_rgba(56,189,248,0.35)]"
               >
-                Start Your Journey
+                {settings.actionLabel}
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-950/10 transition-transform duration-300 group-hover/btn:rotate-45">
                   <ArrowUpRight className="h-4 w-4" />
                 </span>
@@ -99,9 +84,7 @@ export function Footer() {
                 </Link>
 
                 <p className="max-w-sm text-sm leading-7 text-slate-400">
-                  Premium AI & Digital Marketing Institute in India. 100%
-                  practical training, AI-integrated curriculum and placement
-                  assistance — built for careers and business growth.
+                  {settings.brandDescription}
                 </p>
 
                 {/* Social Links */}
@@ -123,7 +106,7 @@ export function Footer() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-60" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-400" />
                   </span>
-                  Learn. Grow. Succeed.
+                  {settings.tagline}
                 </div>
               </div>
 
@@ -131,7 +114,7 @@ export function Footer() {
               <div className="footer-reveal lg:col-span-2">
                 <h4 className="mb-6 flex items-center gap-2 font-display text-sm font-bold text-white">
                   <span className="h-5 w-1 rounded-full bg-sky-400" />
-                  Explore
+                  {settings.exploreHeading}
                 </h4>
 
                 <ul className="space-y-3.5">
@@ -154,14 +137,14 @@ export function Footer() {
               <div className="footer-reveal lg:col-span-3">
                 <h4 className="mb-6 flex items-center gap-2 font-display text-sm font-bold text-white">
                   <span className="h-5 w-1 rounded-full bg-teal-400" />
-                  Our Programs
+                  {settings.programsHeading}
                 </h4>
 
                 <ul className="space-y-3">
                   {programs.map((program, index) => (
-                    <li key={program}>
+                    <li key={program.href}>
                       <Link
-                        href={`/courses/${courseCatalog[index].slug}`}
+                        href={program.href}
                         className="group/program flex items-start gap-3 rounded-xl border border-transparent p-2.5 -ml-2.5 transition-all duration-300 hover:border-white/[0.07] hover:bg-white/[0.04]"
                       >
                         <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-400/10 text-[10px] font-bold text-sky-300 transition-all duration-300 group-hover/program:bg-sky-400 group-hover/program:text-slate-950">
@@ -169,7 +152,7 @@ export function Footer() {
                         </span>
 
                         <span className="text-sm leading-6 text-slate-400 transition-colors duration-300 group-hover/program:text-white">
-                          {program}
+                          {program.title}
                         </span>
 
                         <ArrowUpRight className="ml-auto mt-1 h-4 w-4 shrink-0 text-slate-600 opacity-0 transition-all duration-300 group-hover/program:translate-x-0.5 group-hover/program:text-sky-300 group-hover/program:opacity-100" />
@@ -183,7 +166,7 @@ export function Footer() {
               <div className="footer-reveal lg:col-span-3">
                 <h4 className="mb-6 flex items-center gap-2 font-display text-sm font-bold text-white">
                   <span className="h-5 w-1 rounded-full bg-violet-400" />
-                  Get In Touch
+                  {settings.contactHeading}
                 </h4>
 
                 <div className="space-y-4">
@@ -196,19 +179,17 @@ export function Footer() {
 
                     <div>
                       <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-slate-500">
-                        Visit Our Campus
+                        {settings.addressLabel}
                       </span>
                       <p className="text-xs leading-6 text-slate-400">
-                        2nd Floor, Pink Hives Building, Plot No. B-2/425,
-                        Sector 2, Chitrakoot Scheme, Vaishali Nagar,
-                        Jaipur, Rajasthan 302021
+                        {settings.address}
                       </p>
                     </div>
                   </div>
 
                   {/* Phone */}
                   <a
-                    href="tel:+917073225806"
+                    href={settings.phoneHref}
                     className="group/contact flex items-center gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.025] p-4 transition-all duration-300 hover:border-teal-400/20 hover:bg-white/[0.05]"
                   >
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-teal-400/10 text-teal-300 transition-all duration-300 group-hover/contact:bg-teal-400 group-hover/contact:text-slate-950">
@@ -217,10 +198,10 @@ export function Footer() {
 
                     <div className="min-w-0">
                       <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-slate-500">
-                        Call Us
+                        {settings.phoneLabel}
                       </span>
                       <span className="text-sm font-medium text-slate-300 transition-colors group-hover/contact:text-white">
-                        +91 70732 25806
+                        {settings.phone}
                       </span>
                     </div>
 
@@ -229,7 +210,7 @@ export function Footer() {
 
                   {/* Email */}
                   <a
-                    href="mailto:info@digitonixacademy.in"
+                    href={settings.emailHref}
                     className="group/contact flex items-center gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.025] p-4 transition-all duration-300 hover:border-violet-400/20 hover:bg-white/[0.05]"
                   >
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-violet-400/10 text-violet-300 transition-all duration-300 group-hover/contact:bg-violet-400 group-hover/contact:text-slate-950">
@@ -238,10 +219,10 @@ export function Footer() {
 
                     <div className="min-w-0">
                       <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-slate-500">
-                        Email Us
+                        {settings.emailLabel}
                       </span>
                       <span className="break-all text-sm font-medium text-slate-300 transition-colors group-hover/contact:text-white">
-                        info@digitonixacademy.in
+                        {settings.email}
                       </span>
                     </div>
 
@@ -261,15 +242,15 @@ export function Footer() {
                 <p className="text-xs leading-6 text-slate-500 sm:text-sm">
                   © {new Date().getFullYear()}{" "}
                   <span className="font-semibold text-slate-300">
-                    Digitonix Academy
+                    {settings.copyright}
                   </span>
-                  . All rights reserved.
+                  {settings.copyrightSuffix}
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-slate-500 sm:text-sm">
-                  <span>Made for ambitious learners</span>
+                  <span>{settings.closing}</span>
                   <span className="text-sky-400">✦</span>
-                  <span>Jaipur, India</span>
+                  <span>{settings.location}</span>
                 </div>
 
                 <Link

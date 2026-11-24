@@ -4,12 +4,13 @@ import path from 'node:path';
 import { cache } from 'react';
 import type { Metadata } from 'next';
 import { pageSchema } from './content-schema';
+import { validateExperience,validateHomeSections } from './experience-schema';
 
 const directory = path.join(process.cwd(), 'content', 'pages');
 export const getPageContent = cache(async (key:string) => {
   if (!/^[a-z0-9-]+$/.test(key)) throw new Error('Invalid content key');
   const raw = await readFile(path.join(directory,`${key}.json`),'utf8');
-  try { return pageSchema.parse(JSON.parse(raw.replace(/^\uFEFF/,''))); }
+  try { const page=pageSchema.parse(JSON.parse(raw.replace(/^\uFEFF/,'')));validateExperience(key,page.experience);if(key==='home')validateHomeSections(page.sections);return page; }
   catch(error) { throw new Error(`Invalid page content: content/pages/${key}.json`,{cause:error}); }
 });
 export async function pageExists(key:string) {

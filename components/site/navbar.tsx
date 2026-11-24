@@ -21,6 +21,7 @@ import { cn } from '@/lib/utils';
 import MegaMenu from './megaMenu';
 import { gsap } from 'gsap';
 import { BrandLogo } from '@/components/brand/logo';
+import type { SiteSettings } from '@/lib/site-settings';
 
 const MobileMenuScene = dynamic(
   () => import('./mobileMenu'),
@@ -28,16 +29,9 @@ const MobileMenuScene = dynamic(
 );
 
 
-const navLinks = [
-  { href: '/', label: 'Home', number: '01' },
-  { href: '/courses', label: 'Courses', number: '02' },
-  { href: '/services', label: 'Services', number: '03' },
-  { href: '/blogs', label: 'Blogs', number: '04' },
-  { href: '/career', label: 'Career', number: '05' },
-  { href: '/contact', label: 'Contact', number: '06' },
-];
 
-export function Navbar() {
+export function Navbar({settings,programs}:{settings:SiteSettings['navigation'];programs:NonNullable<SiteSettings['programLinks']>}) {
+  const navLinks=settings.links.map((link,index)=>({...link,number:String(index+1).padStart(2,'0')}));
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
@@ -150,6 +144,8 @@ export function Navbar() {
         >
           <MegaMenu
             type={activeMegaMenu}
+            settings={settings}
+            programs={programs}
             onClose={() => {
               clearCloseTimer();
               setActiveMegaMenu(null);
@@ -202,74 +198,36 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="academy-nav-links hidden lg:flex items-center gap-1 rounded-full border border-white/70 bg-white/70 p-1.5 shadow-sm backdrop-blur-xl">
-
-            <Link
-              href="/"
-              className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50 hover:text-sky-700"
-            >
-              Home
-            </Link>
-
-            {(['courses', 'services'] as const).map((item) => (
-              <button
-                key={item}
-                onMouseEnter={() => openMegaMenu(item)}
-                onKeyDown={event => { if (event.key === 'ArrowDown') { event.preventDefault(); openMegaMenu(item); } }}
-                aria-controls="academy-dropdown"
-                onMouseLeave={scheduleClose}
-                onClick={() =>
-                  setActiveMegaMenu((prev) =>
-                    prev === item ? null : item
-                  )
-                }
-                aria-expanded={activeMegaMenu === item}
-                className={cn(
-                  'flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold capitalize transition-all',
-                  activeMegaMenu === item
-                    ? 'bg-slate-900 text-white'
-                    : 'text-slate-600 hover:bg-sky-50 hover:text-sky-700'
-                )}
-              >
-                {item}
-
-                <ChevronDown
-                  className={cn(
-                    'h-4 w-4 transition-transform duration-300',
-                    activeMegaMenu === item && 'rotate-180'
-                  )}
-                />
-              </button>
-            ))}
-
-            <Link href="/blogs" className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50">
-              Blogs
-            </Link>
-
-            <Link href="/career" className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50">
-              Career
-            </Link>
-
-            <Link href="/contact" className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50">
-              Contact
-            </Link>
+            {settings.links.map(link => {
+              const item=link.href==='/courses'?'courses':link.href==='/services'?'services':null;
+              if(item)return <button key={link.href} type="button"
+                onMouseEnter={()=>openMegaMenu(item)} onMouseLeave={scheduleClose}
+                onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();openMegaMenu(item);}}}
+                onClick={()=>setActiveMegaMenu(previous=>previous===item?null:item)}
+                aria-controls="academy-dropdown" aria-expanded={activeMegaMenu===item}
+                className={cn('flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition-all',activeMegaMenu===item?'bg-slate-900 text-white':'text-slate-600 hover:bg-sky-50 hover:text-sky-700')}>
+                {link.label}<ChevronDown className={cn('h-4 w-4 transition-transform duration-300',activeMegaMenu===item&&'rotate-180')}/>
+              </button>;
+              return <Link key={link.href} href={link.href} className="rounded-full px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-sky-50 hover:text-sky-700">{link.label}</Link>;
+            })}
           </div>
 
           {/* Desktop Actions */}
           <div className="academy-nav-actions hidden lg:flex items-center gap-5">
             <a
-              href="tel:+917891757705"
+              href={settings.phoneHref}
               className="group flex items-center gap-2 text-sm font-semibold text-slate-700 transition-colors hover:text-sky-600"
             >
               <Phone className="h-4 w-4" />
-              +91 78917 57705
+              {settings.phone}
             </a>
 
             <Button
               asChild
               className="rounded-full bg-slate-900 px-6 text-white shadow-lg shadow-slate-900/15 transition-all hover:-translate-y-0.5 hover:bg-sky-600"
             >
-              <Link href="/contact">
-                Enroll Now
+              <Link href={settings.actionHref}>
+                {settings.actionLabel}
                 <ArrowUpRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -405,17 +363,17 @@ export function Navbar() {
             )}
           >
             <Link
-              href="/contact"
+              href={settings.actionHref}
               onClick={() => setMobileOpen(false)}
               tabIndex={mobileOpen ? 0 : -1}
               className="group flex w-full items-center justify-between rounded-2xl bg-gradient-to-r from-sky-500 to-teal-400 p-5 text-slate-950 shadow-[0_12px_50px_rgba(14,165,233,0.2)] transition-transform active:scale-[0.98]"
             >
               <div>
                 <span className="block text-xs font-semibold uppercase tracking-widest text-slate-900/60">
-                  Start your journey
+                  {settings.coursesMenu.eyebrow}
                 </span>
                 <span className="mt-1 block text-xl font-extrabold">
-                  Enroll Now
+                  {settings.actionLabel}
                 </span>
               </div>
 
@@ -426,15 +384,15 @@ export function Navbar() {
 
             <div className="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
               <a
-                href="tel:+917073225806"
+                href={settings.phoneHref}
                 className="flex items-center gap-2 text-sm font-medium text-white/70 transition-colors hover:text-white"
               >
                 <Phone className="h-4 w-4 text-teal-300" />
-                +91 70732 25806
+                {settings.phone}
               </a>
 
               <span className="text-xs text-white/30">
-                Learn. Grow. Succeed.
+                {settings.coursesMenu.highlight}
               </span>
             </div>
           </div>

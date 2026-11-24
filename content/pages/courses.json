@@ -7,16 +7,23 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
       "heading": "Build skills. Make your next move.",
       "description": "Explore practical programs in AI, digital marketing and creative media.",
       "eyebrow": "Four paths. Your next chapter.",
+      "type": "hero",
       "buttons": []
     },
     {
       "id": "programs",
-      "type": "cards",
       "heading": "Find your fit",
+      "copy": {
+        "eyebrow": "YOUR LEARNING PATH",
+        "description": "Compare the focus. Pick your next step.",
+        "durationFallback": "Ask about duration",
+        "includedLabel": "What’s included",
+        "note": "Internship opportunities depend on eligibility, selection and availability."
+      },
+      "type": "cards",
       "items": [
         {
           "title": "Advanced AI & Digital Marketing Program",
@@ -90,10 +97,10 @@
     },
     {
       "id": "compare",
-      "type": "features",
-      "eyebrow": "Choose your direction",
       "heading": "One foundation. Four ways to grow.",
       "description": "Each path begins with AI and digital marketing skills. Choose a longer program if you also want structured communication or creative media training.",
+      "eyebrow": "Choose your direction",
+      "type": "features",
       "items": [
         "Advanced: marketing foundations and practical projects",
         "Professional: Advanced plus personality development",
@@ -103,13 +110,17 @@
     },
     {
       "id": "curriculum",
-      "type": "modules",
       "heading": "Learn it. Apply it. Build on it.",
+      "description": "Start with the foundations. Explore the tools and techniques that connect an idea to a useful piece of work.",
+      "copy": {
+        "footer": "See how these topics connect across each program.",
+        "actionLabel": "Explore the full curriculum"
+      },
+      "type": "modules",
       "items": [
         {
           "title": "AI Tools & ChatGPT for Digital Marketers",
           "category": "Core AI Module",
-          "icon": "Sparkles",
           "items": [
             {
               "name": "AI in Digital Marketing",
@@ -128,7 +139,6 @@
         {
           "title": "Website Development (No-Code)",
           "category": "Foundation",
-          "icon": "Globe",
           "items": [
             {
               "name": "No-Code Website Development",
@@ -147,7 +157,6 @@
         {
           "title": "Search Engine Optimization (SEO)",
           "category": "AI Supported",
-          "icon": "Search",
           "items": [
             {
               "name": "On-Page SEO",
@@ -167,9 +176,10 @@
     },
     {
       "id": "how-it-works",
-      "type": "cards",
-      "eyebrow": "Learning experience",
       "heading": "From first concept to finished work.",
+      "description": "A simple rhythm that turns new knowledge into something you can explain, improve and share.",
+      "eyebrow": "Learning experience",
+      "type": "cards",
       "items": [
         {
           "title": "Learn the essentials",
@@ -187,9 +197,13 @@
     },
     {
       "id": "faq",
-      "type": "faq",
-      "eyebrow": "Good to know",
       "heading": "Frequently asked questions",
+      "description": "Get a clearer picture of the programs, practical work and next steps. Our team can help with anything more specific.",
+      "eyebrow": "Good to know",
+      "copy": {
+        "actionLabel": "Ask our team"
+      },
+      "type": "faq",
       "items": [
         {
           "question": "Which program should I choose?",
@@ -211,9 +225,9 @@
     },
     {
       "id": "guidance",
-      "type": "cta",
       "heading": "Big goals? Start with a conversation.",
       "description": "Ask about curriculum, fees, internship eligibility and upcoming batches. Our team will help you find your fit.",
+      "type": "cta",
       "buttons": [
         {
           "label": "Talk to our team",
@@ -221,5 +235,31 @@
         }
       ]
     }
-  ]
+  ],
+  "experience": {
+    "breadcrumb": "Our courses",
+    "breadcrumbParent": "Courses",
+    "heroChecks": [
+      "Practical learning",
+      "Portfolio preparation"
+    ],
+    "image": "/images/academy-learning-hero.webp",
+    "imageAlt": "Illustrative scene of students learning together around a laptop",
+    "imageCaption": "Your next chapter starts with a skill.",
+    "durationLabel": "Learning paths",
+    "duration": "4 distinct programs",
+    "focusLabel": "Core foundation",
+    "focus": "AI & digital marketing",
+    "factsNote": "Ask about current batches, fees and internship eligibility before enrolling.",
+    "jumpIntro": "EXPLORE YOUR OPTIONS",
+    "jumpLabels": {
+      "programs": "Programs",
+      "overview": "Overview",
+      "skills": "Curriculum",
+      "projects": "Practical work",
+      "next-step": "Career preparation",
+      "faq": "FAQs"
+    },
+    "jumpAction": "Talk to the academy"
+  }
 }

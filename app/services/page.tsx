@@ -1,4 +1,5 @@
 import { getPageContent, getPageMetadata } from '@/lib/content';
+export const dynamic = 'force-dynamic';
 import { EditorialExperience } from '@/components/content/editorial-experience';
 
 export async function generateMetadata() {

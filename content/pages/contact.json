@@ -7,10 +7,10 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
       "heading": "Big ambitions. One conversation away.",
       "description": "Let’s find the right course, skills and career path for you.",
       "eyebrow": "Let’s talk about your future",
+      "type": "hero",
       "buttons": [
         {
           "label": "Send an enquiry",
@@ -24,9 +24,9 @@
     },
     {
       "id": "enquiry",
-      "type": "contact",
       "heading": "Good guidance. A great beginning.",
       "description": "Tell us about your learning goals or project. Use the form for course guidance, batch and fee questions, or a service brief.",
+      "type": "contact",
       "contacts": [
         {
           "label": "Call us",
@@ -89,9 +89,9 @@
     },
     {
       "id": "next-steps",
-      "type": "cards",
       "heading": "A useful conversation starts with a little context.",
       "eyebrow": "How we can help",
+      "type": "cards",
       "items": [
         {
           "title": "For course enquiries",
@@ -109,8 +109,8 @@
     },
     {
       "id": "faq",
-      "type": "faq",
       "heading": "Contact questions",
+      "type": "faq",
       "items": [
         {
           "question": "Where is the academy located?",
@@ -130,5 +130,37 @@
         }
       ]
     }
-  ]
+  ],
+  "experience": {
+    "breadcrumb": "Contact us",
+    "breadcrumbParent": "Services",
+    "heroChecks": [
+      "Practical guidance",
+      "Your goals come first"
+    ],
+    "image": "/images/academy-learning-hero.webp",
+    "imageAlt": "Illustrative scene of students collaborating in a learning studio",
+    "imageCaption": "A conversation is a good place to start.",
+    "board": null,
+    "jumpLabels": {
+      "services": "Our services",
+      "overview": "Overview",
+      "roles": "Career paths",
+      "support": "Career preparation",
+      "scope": "Scope of work",
+      "process": "Our process",
+      "enquiry": "Send an enquiry",
+      "portfolio": "Portfolio",
+      "deliverables": "Deliverables",
+      "faq": "FAQs"
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "heading": "Let’s make things",
+      "highlight": "a little clearer.",
+      "description": "Find out what to include in your enquiry and how to plan a visit.",
+      "actionLabel": "Talk to our team",
+      "actionHref": "#enquiry"
+    }
+  }
 }

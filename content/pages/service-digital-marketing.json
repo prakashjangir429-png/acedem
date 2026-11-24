@@ -7,10 +7,10 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
-      "eyebrow": "Digitonix services",
       "heading": "Digital Marketing that works harder for your goals.",
       "description": "Build a connected marketing plan around your audience, message and business goals. Combine useful content, appropriate channels and clear measurement to guide ongoing decisions.",
+      "eyebrow": "Digitonix services",
+      "type": "hero",
       "buttons": [
         {
           "label": "Discuss a project",
@@ -24,9 +24,9 @@
     },
     {
       "id": "overview",
-      "type": "cards",
       "heading": "Good digital work starts with clear decisions.",
       "eyebrow": "The service in context",
+      "type": "cards",
       "items": [
         {
           "title": "Choose a clear objective",
@@ -44,10 +44,10 @@
     },
     {
       "id": "scope",
-      "type": "modules",
-      "eyebrow": "Inside the service",
       "heading": "A clearer picture of the work.",
       "description": "These are common areas of work. The final scope, deliverables and responsibilities are agreed for your project.",
+      "eyebrow": "Inside the service",
+      "type": "modules",
       "items": [
         {
           "title": "Audience and channel planning",
@@ -93,9 +93,9 @@
     },
     {
       "id": "deliverables",
-      "type": "cards",
       "heading": "Practical deliverables. A defined purpose.",
       "eyebrow": "What a project can look like",
+      "type": "cards",
       "items": [
         {
           "title": "Search and content plans",
@@ -113,10 +113,10 @@
     },
     {
       "id": "process",
-      "type": "modules",
-      "eyebrow": "Working together",
       "heading": "From a first conversation to a considered handoff.",
       "description": "Clear review points keep the work grounded in the agreed brief.",
+      "eyebrow": "Working together",
+      "type": "modules",
       "items": [
         {
           "title": "Discover and define",
@@ -164,10 +164,10 @@
     },
     {
       "id": "prepare",
-      "type": "features",
-      "eyebrow": "Before we begin",
       "heading": "Bring the context. We will help shape the brief.",
       "description": "You do not need a finished specification. A few useful starting points make the first conversation more productive.",
+      "eyebrow": "Before we begin",
+      "type": "features",
       "items": [
         "Your offer, audience and business objective",
         "Current website and social profiles",
@@ -178,9 +178,9 @@
     },
     {
       "id": "faq",
-      "type": "faq",
-      "eyebrow": "Good to know",
       "heading": "Frequently asked questions",
+      "eyebrow": "Good to know",
+      "type": "faq",
       "items": [
         {
           "question": "Is advertising spend included in service fees?",
@@ -200,5 +200,47 @@
         }
       ]
     }
-  ]
+  ],
+  "experience": {
+    "breadcrumb": "Digital Marketing",
+    "breadcrumbParent": "Services",
+    "heroChecks": [
+      "A considered scope",
+      "Clear next steps"
+    ],
+    "image": "/images/academy-learning-hero.webp",
+    "imageAlt": "Illustrative scene of students collaborating in a learning studio",
+    "imageCaption": "Your next step starts with the work you build.",
+    "board": {
+      "toolbar": "THE PROJECT WORKSPACE",
+      "eyebrow": "BUILT AROUND YOUR GOALS",
+      "title": "Connect strategy to action",
+      "items": [
+        "Know the audience",
+        "Shape the message",
+        "Measure and refine"
+      ],
+      "footer": "Discover · Create · Refine"
+    },
+    "jumpLabels": {
+      "services": "Our services",
+      "overview": "Overview",
+      "roles": "Career paths",
+      "support": "Career preparation",
+      "scope": "Scope of work",
+      "process": "Our process",
+      "enquiry": "Send an enquiry",
+      "portfolio": "Portfolio",
+      "deliverables": "Deliverables",
+      "faq": "FAQs"
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "heading": "Let’s make things",
+      "highlight": "a little clearer.",
+      "description": "A few useful answers before you plan a project. For scope, timing and pricing, tell us what you have in mind.",
+      "actionLabel": "Talk to our team",
+      "actionHref": "/contact"
+    }
+  }
 }

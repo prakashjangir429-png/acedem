@@ -62,3 +62,27 @@
 .admin-login-brand .brand-logo{width:200px;height:auto;background:#fff;padding:8px 12px;border:1px solid #ffffff80;border-radius:12px;font-size:initial;line-height:0}
 .admin-account-card .brand-logo.admin-dashboard-logo{width:180px;margin:0 auto 12px;background:transparent;padding:0;border:0;border-radius:0}
 @media(max-width:760px){.admin-login-brand .brand-logo{width:180px}.admin-brand .brand-logo{max-width:190px}}
+
+/* Direct page editor: every field is visible without opening an accordion. */
+.af-page-form{display:grid;gap:18px}
+.admin-app .af-designed-panel,.admin-app .af-section-form{padding:24px;overflow:visible}
+.af-panel-intro{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #eee9f4}
+.af-section-form-header{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:15px}
+.af-section-form-header h3{margin-top:8px;color:#111;font-size:16px;font-weight:650}
+.af-section-form-header small{display:block;margin-top:3px;color:#777;font-size:11px}
+.af-section-form>.af-section-tools{margin:0 0 20px;padding:10px 12px;border:1px solid #ebe6f3;border-radius:12px;background:#faf9fd}
+.af-content-fields{align-items:start}
+.af-content-fields>.af-field-entry{min-width:0}
+.af-content-fields>.af-field-entry:has(.af-wide),.af-content-fields>.af-field-group{grid-column:1/-1}
+.af-field-group{min-width:0;margin:6px 0 2px;padding:17px;border:1px solid #ebe6f3;border-radius:14px;background:#fcfbff}
+.af-field-group>h3{margin:0 0 14px;color:#111;font-size:13px;font-weight:650}
+.af-field-group>.af-fields,.af-field-group>.af-array{width:100%}
+.af-content-fields label{overflow-wrap:anywhere;color:#111!important}
+.af-item-inline{padding:0;margin-top:12px}
+.af-item-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid #eee8f5;background:#faf9fd}
+.af-item-heading strong{min-width:0;color:#111;font-size:12px;font-weight:650;overflow-wrap:anywhere}
+.af-item-heading .af-item-actions{flex-shrink:0;padding:0;border:0;background:transparent}
+.af-item-inline>.af-fields,.af-item-inline>.af-array,.af-item-inline>label{margin:14px}
+.af-item-inline>.af-array{width:calc(100% - 28px)}
+.af-array-heading{margin:8px 0 10px}
+@media(max-width:760px){.admin-app .af-designed-panel,.admin-app .af-section-form{padding:17px}.af-field-group{padding:13px}.af-item-heading{align-items:flex-start;flex-direction:column}.af-item-heading .af-item-actions{flex-wrap:wrap}}

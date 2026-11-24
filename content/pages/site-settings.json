@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "Site settings | Digitonix Academy",
+    "description": "Shared website content",
+    "noIndex": true
+  },
+  "sections": [],
+  "experience": {
+    "navigation": {
+      "links": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Courses",
+          "href": "/courses"
+        },
+        {
+          "label": "Services",
+          "href": "/services"
+        },
+        {
+          "label": "Blogs",
+          "href": "/blogs"
+        },
+        {
+          "label": "Career",
+          "href": "/career"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "phone": "+91 70732 25806",
+      "phoneHref": "tel:+917073225806",
+      "actionLabel": "Enroll Now",
+      "actionHref": "/contact",
+      "coursesMenu": {
+        "eyebrow": "YOUR NEXT CHAPTER",
+        "heading": "Learn with purpose.",
+        "highlight": "Grow with confidence.",
+        "description": "Compare four practical pathways in AI, digital marketing and creative media.",
+        "actionLabel": "Compare all programs"
+      },
+      "servicesMenu": {
+        "eyebrow": "IDEAS INTO IMPACT",
+        "heading": "Make something",
+        "highlight": "that matters.",
+        "description": "Explore considered digital services for your next business goal.",
+        "actionLabel": "Explore all services"
+      },
+      "serviceLinks": [
+        {
+          "title": "Web Development",
+          "description": "Clear websites, landing pages and digital experiences.",
+          "href": "/services/web-development"
+        },
+        {
+          "title": "UI / UX Design",
+          "description": "Thoughtful journeys and interfaces shaped around your audience.",
+          "href": "/services/ui-ux"
+        },
+        {
+          "title": "Digital Marketing",
+          "description": "Connect strategy, content, channels and measurement.",
+          "href": "/services/digital-marketing"
+        }
+      ]
+    },
+    "footer": {
+      "eyebrow": "Your future starts here",
+      "heading": "Ready to build your",
+      "highlight": "digital future?",
+      "description": "Learn in-demand skills, work on real projects, and take the next step toward your career with Digitonix Academy.",
+      "actionLabel": "Start Your Journey",
+      "actionHref": "/contact",
+      "brandDescription": "Premium AI & Digital Marketing Institute in India. 100% practical training, AI-integrated curriculum and placement assistance — built for careers and business growth.",
+      "tagline": "Learn. Grow. Succeed.",
+      "exploreHeading": "Explore",
+      "exploreLinks": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Courses",
+          "href": "/courses"
+        },
+        {
+          "label": "Curriculum",
+          "href": "/curriculum"
+        },
+        {
+          "label": "Student Success",
+          "href": "/career"
+        },
+        {
+          "label": "Our Services",
+          "href": "/services"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      ],
+      "programsHeading": "Our Programs",
+      "contactHeading": "Get In Touch",
+      "addressLabel": "Visit Our Campus",
+      "address": "2nd Floor, Pink Hives Building, Plot No. B-2/425, Sector 2, Chitrakoot Scheme, Vaishali Nagar, Jaipur, Rajasthan 302021",
+      "phoneLabel": "Call Us",
+      "phone": "+91 70732 25806",
+      "phoneHref": "tel:+917073225806",
+      "emailLabel": "Email Us",
+      "email": "info@digitonixacademy.in",
+      "emailHref": "mailto:info@digitonixacademy.in",
+      "copyright": "Digitonix Academy",
+      "copyrightSuffix": ". All rights reserved.",
+      "closing": "Made for ambitious learners",
+      "location": "Jaipur, India"
+    },
+    "journal": {
+      "eyebrow": "THE DIGITONIX JOURNAL",
+      "heading": "Ideas to explore.",
+      "highlight": "Skills to build.",
+      "description": "Perspectives on digital marketing, AI, creative work and taking your next career step. Find a useful idea, then make it your own.",
+      "searchPlaceholder": "Search articles, topics and ideas…",
+      "allTopics": "All topics",
+      "featuredLabel": "LATEST READ",
+      "readLabel": "Read the article",
+      "cardReadLabel": "Read article",
+      "readingListHeading": "Your reading list",
+      "resultsHeading": "Explore the journal",
+      "emptyTitle": "A new chapter is on its way",
+      "emptyDescription": "New perspectives will appear here when they are published. Explore our learning paths in the meantime.",
+      "noResultsTitle": "No articles match your search",
+      "noResultsDescription": "Try a different topic or clear your search.",
+      "unavailableTitle": "Our journal is temporarily unavailable",
+      "unavailableDescription": "Please check back soon. You can explore the curriculum while we reconnect.",
+      "resetLabel": "Reset filters",
+      "exploreLabel": "Explore the curriculum",
+      "detailEyebrow": "KEEP THE CURIOSITY GOING",
+      "detailHeading": "One idea. A useful next step.",
+      "detailDescription": "Explore a learning path or find another perspective in the journal.",
+      "detailCoursesLabel": "Explore courses",
+      "detailMoreLabel": "More articles"
+    }
+  }
+}

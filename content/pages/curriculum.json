@@ -7,16 +7,16 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
       "heading": "Your goals. Your learning path.",
       "description": "Start with shared AI and marketing foundations, then explore your chosen specialisation.",
       "eyebrow": "Your learning journey",
+      "type": "hero",
       "buttons": []
     },
     {
       "id": "paths",
-      "type": "cards",
       "heading": "Choose your curriculum",
+      "type": "cards",
       "items": [
         {
           "title": "Advanced AI & Digital Marketing Program",
@@ -90,9 +90,9 @@
     },
     {
       "id": "guidance",
-      "type": "cta",
       "heading": "Big goals? Start with a conversation.",
       "description": "Ask about curriculum, fees, internship eligibility and upcoming batches. Our team will help you find your fit.",
+      "type": "cta",
       "buttons": [
         {
           "label": "Talk to our team",

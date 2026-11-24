@@ -7,10 +7,10 @@
   "sections": [
     {
       "id": "hero",
-      "type": "hero",
-      "eyebrow": "Career support",
       "heading": "Build skills that open doors.",
       "description": "Explore the roles your training can prepare you for, and learn how to present your work with confidence.",
+      "eyebrow": "Career support",
+      "type": "hero",
       "buttons": [
         {
           "label": "Explore learning paths",
@@ -24,10 +24,10 @@
     },
     {
       "id": "roles",
-      "type": "features",
-      "eyebrow": "Where your skills can take you",
       "heading": "A range of paths in modern marketing.",
       "description": "Your direction depends on your interests, portfolio and experience.",
+      "eyebrow": "Where your skills can take you",
+      "type": "features",
       "items": [
         "SEO and search visibility",
         "Paid media and performance marketing",
@@ -39,32 +39,32 @@
     },
     {
       "id": "support",
-      "type": "cards",
-      "eyebrow": "The career journey",
       "heading": "Support at every step.",
+      "eyebrow": "The career journey",
+      "type": "cards",
       "items": [
         {
           "title": "Build a portfolio",
-          "eyebrow": "01 / SHOW YOUR WORK",
-          "description": "Turn practical projects into clear examples of your thinking, process and results."
+          "description": "Turn practical projects into clear examples of your thinking, process and results.",
+          "eyebrow": "01 / SHOW YOUR WORK"
         },
         {
           "title": "Prepare for interviews",
-          "eyebrow": "02 / TELL YOUR STORY",
-          "description": "Practise talking through your projects and the tools you have learned."
+          "description": "Practise talking through your projects and the tools you have learned.",
+          "eyebrow": "02 / TELL YOUR STORY"
         },
         {
           "title": "Explore opportunities",
-          "eyebrow": "03 / TAKE THE NEXT STEP",
-          "description": "Use career guidance and placement assistance to identify relevant roles and applications."
+          "description": "Use career guidance and placement assistance to identify relevant roles and applications.",
+          "eyebrow": "03 / TAKE THE NEXT STEP"
         }
       ]
     },
     {
       "id": "portfolio",
-      "type": "cards",
       "heading": "Make your work easier to understand.",
       "eyebrow": "Portfolio foundations",
+      "type": "cards",
       "items": [
         {
           "title": "Start with the brief",
@@ -82,9 +82,9 @@
     },
     {
       "id": "readiness",
-      "type": "features",
-      "eyebrow": "Prepare with intention",
       "heading": "A practical checklist for your next application.",
+      "eyebrow": "Prepare with intention",
+      "type": "features",
       "items": [
         "Select projects relevant to the role",
         "Write a clear description of your contribution",
@@ -96,9 +96,9 @@
     },
     {
       "id": "guidance",
-      "type": "cta",
       "heading": "Ready to plan your next move?",
       "description": "Tell us what you want to learn and we will help you compare the available programs. Career outcomes depend on individual skills, experience and opportunities.",
+      "type": "cta",
       "buttons": [
         {
           "label": "Talk to our team",
@@ -108,8 +108,8 @@
     },
     {
       "id": "faq",
-      "type": "faq",
       "heading": "Career preparation questions",
+      "type": "faq",
       "items": [
         {
           "question": "Does completing a course guarantee employment?",
@@ -125,5 +125,37 @@
         }
       ]
     }
-  ]
+  ],
+  "experience": {
+    "breadcrumb": "Career preparation",
+    "breadcrumbParent": "Services",
+    "heroChecks": [
+      "Practical guidance",
+      "Your goals come first"
+    ],
+    "image": "/images/academy-learning-hero.webp",
+    "imageAlt": "Illustrative scene of students collaborating in a learning studio",
+    "imageCaption": "Your next step starts with the work you build.",
+    "board": null,
+    "jumpLabels": {
+      "services": "Our services",
+      "overview": "Overview",
+      "roles": "Career paths",
+      "support": "Career preparation",
+      "scope": "Scope of work",
+      "process": "Our process",
+      "enquiry": "Send an enquiry",
+      "portfolio": "Portfolio",
+      "deliverables": "Deliverables",
+      "faq": "FAQs"
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "heading": "Let’s make things",
+      "highlight": "a little clearer.",
+      "description": "Understand the support available and how to prepare for opportunities.",
+      "actionLabel": "Talk to our team",
+      "actionHref": "/contact"
+    }
+  }
 }
