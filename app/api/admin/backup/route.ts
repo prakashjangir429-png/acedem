@@ -1,39 +1,24 @@
 import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
-import { randomUUID } from 'node:crypto';
-import { mkdir, readFile, readdir, rename, unlink, writeFile } from 'node:fs/promises';
-import path from 'node:path';
 import { isAdmin, sameOrigin } from '@/lib/admin';
 import { getContentKeys } from '@/lib/content';
+import { readManagedPage, restoreManagedPages } from '@/lib/page-store';
 import { pageSchema } from '@/lib/content-schema';
 import { validateExperience, validateHomeSections } from '@/lib/experience-schema';
 import { blogSchema, cleanHtml } from '@/lib/blogs';
 import { adminLeadSchema } from '@/lib/lead-schema';
-import { exclusiveFileWrite, readRecords, type BlogRecord, type LeadRecord } from '@/lib/json-store';
+import { readRecords, exportStoredImages, restoreStoredImages, restoreRecords, type BlogRecord, type LeadRecord } from '@/lib/json-store';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-const pagesDirectory = path.join(process.cwd(), 'content', 'pages');
-const dataDirectory = path.join(process.cwd(), '.data');
 const keyPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const imagePattern = /^\/api\/images\/([a-f0-9]{24})$/;
-
-async function atomicJson(target: string, value: unknown) {
-  await mkdir(path.dirname(target), { recursive: true });
-  const temp = `${target}.${randomUUID()}.tmp`;
-  try { await writeFile(temp, JSON.stringify(value, null, 2) + '\n', 'utf8');await rename(temp, target); }
-  finally { await unlink(temp).catch(() => {}); }
-}
 
 export async function GET() {
   if (!await isAdmin()) return NextResponse.json({ error: 'Sign in required' }, { status: 401 });
   try {
-    const pages = Object.fromEntries(await Promise.all((await getContentKeys()).map(async key => [key, JSON.parse(await readFile(path.join(pagesDirectory, `${key}.json`), 'utf8'))])));
-    const [blogs, leads] = await Promise.all([readRecords<BlogRecord>('blogs'), readRecords<LeadRecord>('leads')]);
-    const images: Record<string, string> = {};
-    const imageDirectory = path.join(dataDirectory, 'images');
-    try { for (const file of await readdir(imageDirectory)) if (/^[a-f0-9]{24}\.webp$/.test(file)) images[file.slice(0, -5)] = (await readFile(path.join(imageDirectory, file))).toString('base64'); }
-    catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }
+    const pages = Object.fromEntries(await Promise.all((await getContentKeys()).map(async key => { const page = await readManagedPage(key);if (!page) throw new Error('NOT_FOUND');return [key, page.content]; })));
+    const [blogs, leads, images] = await Promise.all([readRecords<BlogRecord>('blogs'), readRecords<LeadRecord>('leads'), exportStoredImages()]);
     const backup = { format: 'digitonix-content-backup', version: 1, createdAt: new Date().toISOString(), pages, blogs, leads, images };
     return new Response(JSON.stringify(backup, null, 2), { headers: { 'Content-Type': 'application/json; charset=utf-8', 'Content-Disposition': `attachment; filename="digitonix-content-${new Date().toISOString().slice(0, 10)}.json"`, 'Cache-Control': 'no-store' } });
   } catch { return NextResponse.json({ error: 'Unable to export the content backup.' }, { status: 503 }); }
@@ -73,13 +58,11 @@ export async function POST(request: Request) {
       return [id, bytes] as const;
     });
     for (const blog of blogs) if (blog.coverImage.startsWith('/api/images/')) { const id = blog.coverImage.match(imagePattern)?.[1];if (id && !images.some(([imageId]) => imageId === id)) throw new Error(`Backup image ${id} is missing.`); }
-    await exclusiveFileWrite(async () => {
-      for (const [id, bytes] of images) { const target = path.join(dataDirectory, 'images', `${id}.webp`);await mkdir(path.dirname(target), { recursive: true });await writeFile(target, bytes); }
-      for (const [key, page] of pages) await atomicJson(path.join(pagesDirectory, `${key}.json`), page);
-      await atomicJson(path.join(dataDirectory, 'blogs.json'), blogs);
-      await atomicJson(path.join(dataDirectory, 'leads.json'), leads);
-    });
+    await restoreStoredImages(images);
+    await restoreManagedPages(pages);
+    await restoreRecords('blogs', blogs);
+    await restoreRecords('leads', leads);
     revalidatePath('/', 'layout');
     return NextResponse.json({ ok: true, pages: pages.length, blogs: blogs.length, leads: leads.length, images: images.length });
-  } catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : 'Unable to restore the backup.' }, { status: 400 }); }
+  } catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : 'Unable to restore the backup.' }, { status: error instanceof Error && error.message.startsWith('Persistent storage is not configured') ? 503 : 400 }); }
 }

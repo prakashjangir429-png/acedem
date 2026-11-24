@@ -19,5 +19,5 @@ export async function POST(request:Request){
     const {data,info}=await processor.rotate().resize({width:1600,height:1600,fit:'inside',withoutEnlargement:true}).webp({quality:85}).toBuffer({resolveWithObject:true});
     const id=await saveImage(data);
     return NextResponse.json({url:`/api/images/${id}`,width:info.width,height:info.height});
-  }catch{return NextResponse.json({error:'Image upload failed. Choose a valid image and try again.'},{status:400});}
+  }catch(error){return NextResponse.json({error:error instanceof Error&&error.message.startsWith('Persistent storage is not configured')?error.message:'Image upload failed. Choose a valid image and try again.'},{status:error instanceof Error&&error.message.startsWith('Persistent storage is not configured')?503:400});}
 }

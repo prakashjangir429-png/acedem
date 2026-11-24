@@ -12,6 +12,7 @@
 /.next/
 /.next-preview/
 /.next-local/
+/.next-vercel-test/
 /out/
 
 # production
