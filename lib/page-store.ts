@@ -58,6 +58,8 @@ export async function saveManagedPage(key: string, content: ContentPage, expecte
     const document = JSON.stringify({ content, updatedAt: new Date().toISOString() });
     try { await writeBlob(blobPath(key), document, current?.etag); }
     catch (error) { if (error instanceof BlobPreconditionFailedError) throw new Error('CONFLICT'); if (error instanceof Error && (error.name === 'BlobAlreadyExistsError' || /already exists/i.test(error.message))) throw new Error(create ? 'DUPLICATE' : 'CONFLICT'); throw error; }
+    const verified = await blobPage(key);
+    if (verified?.revision !== nextRevision) throw new Error('The JSON file was written but could not be verified. Reload the page before saving again.');
     return nextRevision;
   }
   return exclusiveFileWrite(async () => {
