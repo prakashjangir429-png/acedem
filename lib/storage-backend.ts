@@ -2,12 +2,12 @@ import 'server-only';
 import { del, get, list, put } from '@vercel/blob';
 
 export function usesBlobStorage() {
-  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+  return Boolean(process.env.BLOB_READ_WRITE_TOKEN || (process.env.BLOB_STORE_ID && (process.env.VERCEL || process.env.VERCEL_OIDC_TOKEN)));
 }
 
 export function requireWritableStorage() {
   if (process.env.VERCEL && !usesBlobStorage()) {
-    throw new Error('Persistent storage is not configured. Connect a private Vercel Blob store and set BLOB_READ_WRITE_TOKEN, then redeploy.');
+    throw new Error('Persistent storage is not configured. Connect a private Vercel Blob store to this project and redeploy.');
   }
 }
 
