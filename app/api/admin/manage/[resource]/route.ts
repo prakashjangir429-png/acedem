@@ -19,7 +19,7 @@ export async function GET(request:Request,{params}:{params:Promise<{resource:str
  if(!await isAdmin())return NextResponse.json({error:'Sign in required'},{status:401});
  try{const {resource}=await params;const url=new URL(request.url);const id=url.searchParams.get('id');const search=(url.searchParams.get('search')||'').trim().toLowerCase();const status=url.searchParams.get('status');
  if(resource==='pages'){
-  if(id){const page=await readManagedPage(id);if(!page)throw new Error('NOT_FOUND');return NextResponse.json({content:page.content,revision:page.revision,protected:builtIn(id)});}
+  if(id){const page=await readManagedPage(id);if(!page)throw new Error('NOT_FOUND');return NextResponse.json({content:page.content,revision:page.revision,protected:builtIn(id),source:page.source,updatedAt:page.updatedAt},{headers:{'Cache-Control':'private, no-store'}});}
   const items=await Promise.all((await getContentKeys()).map(async key=>{const page=await readManagedPage(key);if(!page)throw new Error('NOT_FOUND');return {key,title:page.content.metadata?.title||key,sections:page.content.sections?.length||0,protected:builtIn(key),updatedAt:page.updatedAt};}));return NextResponse.json(paginate(items.filter(item=>`${item.key} ${item.title}`.toLowerCase().includes(search)),url));
  }
  if(resource!=='blogs'&&resource!=='leads')return NextResponse.json({error:'Unknown resource'},{status:404});

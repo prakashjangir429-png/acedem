@@ -22,14 +22,14 @@ async function bundledPage(key: string) {
   try {
     const file = pagePath(key);
     const raw = await readFile(file, 'utf8');
-    return { content: JSON.parse(raw.replace(/^\uFEFF/, '')) as ContentPage, revision: revision(raw), updatedAt: (await stat(file)).mtime.toISOString() };
+    return { content: JSON.parse(raw.replace(/^\uFEFF/, '')) as ContentPage, revision: revision(raw), updatedAt: (await stat(file)).mtime.toISOString(), source: 'bundle' as const };
   } catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null; throw error; }
 }
 async function blobPage(key: string) {
   const stored = await readBlob(blobPath(key));
   if (!stored) return null;
   const value = JSON.parse(stored.data.toString('utf8')) as { content: ContentPage; updatedAt: string };
-  return { content: value.content, revision: revision(serialized(value.content)), updatedAt: value.updatedAt, etag: stored.etag };
+  return { content: value.content, revision: revision(serialized(value.content)), updatedAt: value.updatedAt, etag: stored.etag, source: 'blob' as const };
 }
 export async function readManagedPage(key: string) {
   pagePath(key);
